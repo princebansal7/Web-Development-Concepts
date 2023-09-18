@@ -33,15 +33,15 @@ span{
     background-color: blue;
     color: rgb(239, 161, 226);
     font-size: 35px;
-    margin: 0 0 10px;
-    padding: 15px;
+    /* margin: 0 0 10px; repeatative in both classes => group them
+    padding: 15px; */
 }
 .secondary-box{
     background-color: rgb(27, 126, 52);
     color:gold;
     font-size: 25px;
-     margin: 0 0 10px;
-    padding: 15px;
+     /* margin: 0 0 10px; repeatative in both classes => group them
+    padding: 15px; */
 }
 
 /* Descendant selector */
@@ -62,3 +62,12 @@ p em{
     text-decoration: wavy;
     font-family: cursive;
 }
+
+/* Group Selecor: To group repeatative styles to make code more efficient and readable */
+
+.primary-box, .secondary-box{
+    margin: 0 0 10px; 
+    padding: 15px;
+}
+
+/* NOTE: Organise css style in logical manner => single selector -> descandant selectors -> group selectors */

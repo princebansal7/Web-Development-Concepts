@@ -1,0 +1,55 @@
+/* Custom CSS for Get Your Hands Dirty */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #eee;
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+#container {
+	width: 700px;
+}
+
+#header, #footer {
+	background: #333;
+	color: #fff;
+	padding: 30px;
+	margin: 10px;
+}
+
+#footer {
+	text-align: center;
+	font-size: 12px;
+}
+
+.lead {
+	font-size: 18px;
+}
+
+.blog-post {
+	background: #ecefd5;
+	padding: 30px;
+	margin: 10px;
+}
+
+.blog-post h2 {
+	color:#0e8146
+}
+
+h1, h2, h3 {
+	color: #2dec89;
+}
+
+.blog-post h2, .blog-post p {
+	margin-bottom: 10px;
+}
+
+.blog-post em {
+	color: #5e0909;
+}
