@@ -1,0 +1,64 @@
+/* Selecting everything */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Tag selector */
+
+body{
+    font-size: 25px;
+    font-family: 'Lucida Sans';
+    background-color: rgb(238, 207, 150);
+    text-align: center;
+    color: rgb(167, 30, 149);
+}
+
+span{
+    font-size: 40px;
+    color: #e63232;
+}
+
+/* Id Selector */
+#world{
+    background-color: #dca2dc;
+    font-size: 35px;
+    color:rgb(151, 45, 61)
+}
+
+
+/* Class selector */
+.primary-box{
+    background-color: blue;
+    color: rgb(239, 161, 226);
+    font-size: 35px;
+    margin: 0 0 10px;
+    padding: 15px;
+}
+.secondary-box{
+    background-color: rgb(27, 126, 52);
+    color:gold;
+    font-size: 25px;
+     margin: 0 0 10px;
+    padding: 15px;
+}
+
+/* Descendant selector */
+
+p em{
+    color: rgb(60, 112, 7);
+}
+
+/* selecting class particular child only */
+
+.test-class h2{
+    color:mediumpurple;
+    font-family: monospace;
+}
+
+.test-class p strong{
+    color: #3c1b97;
+    text-decoration: wavy;
+    font-family: cursive;
+}

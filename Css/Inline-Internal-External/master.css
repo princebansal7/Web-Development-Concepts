@@ -1,0 +1,20 @@
+
+body{
+    background-color: rgb(15, 14, 14);
+    font-family: Georgia, Times, monospace;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Helvetica, sans-serif;
+    color: rgb(220, 103, 7);
+}
+p{
+    color: aliceblue;
+
+}
+ol{
+    background-color: bisque;
+    padding: 20px 20px 20px 20px;
+    border: solid 2px #43f989;
+    
+}
