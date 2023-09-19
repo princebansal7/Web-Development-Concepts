@@ -30,7 +30,7 @@ var result = users.find(function (user) {
 console.log(result);
 // console.log(typeof result);
 
-// Exmaples:
+// Exmaples:----------------------------------------------------
 
 // Eg-1:
 
