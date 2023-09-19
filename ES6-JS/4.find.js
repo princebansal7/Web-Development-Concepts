@@ -65,3 +65,49 @@ var foundPost = (posts, comment) => {
 };
 
 console.log(foundPost(posts, comment)); // when calling arrow functions, have to pass arguments too
+
+// Eg-2: finding admin
+var users = [
+  { id: 1, admin: false },
+  { id: 2, admin: false },
+  { id: 3, admin: true },
+];
+
+/* way-1
+
+    var admin = users.find(function (user) {
+        return user.admin === true;
+    });
+
+*/
+// way-2
+var admin = users.find((user) => user.admin);
+console.log(admin);
+
+// Eg-3: Finding balance
+var accounts = [
+  { id: 1, balance: -10 },
+  { id: 2, balance: 12 },
+  { id: 3, balance: 0 },
+];
+var idObj = accounts.find((account) => account.balance === 12);
+console.log(idObj);
+
+console.log();
+
+// Eg-4:
+
+var ladders = [
+  { id: 1, height: 20 },
+  { id: 3, height: 25 },
+];
+
+function findWhere(ladders, criteria) {
+  return ladders.find(function (item) {
+    var property = Object.keys(criteria)[0];
+    // console.log(property);
+    return item[property] === criteria[property];
+  });
+}
+
+console.log(findWhere(ladders, { height: 25 }));
