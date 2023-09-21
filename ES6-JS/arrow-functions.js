@@ -1,11 +1,11 @@
 let add = function (a, b) {
-  return a + b;
+    return a + b;
 };
 console.log(add(6, 9));
 
 // 1. Remove 'function' keyword and use 'Fat Arrow'
 add = (a, b) => {
-  return a + b;
+    return a + b;
 };
 console.log(add(2, 2));
 
@@ -22,24 +22,20 @@ console.log(add(3, 4));
 // 3. if we have single argument => can remove paranthesis around them too.
 
 let double = function (num) {
-  return 2 * num;
+    return 2 * num;
 };
 console.log(double(4));
 
-/* Refactoring it to ES6 arrow function
+// Refactoring it to ES6 arrow function
 
-double = num => 2 * num;  // most compact arrow function example
+double = num => 2 * num; // most compact arrow function example
 console.log(double(39));
 
+// double = (num => 2 * num;) // remove semicolor, else Error
+// console.log(double(39));
 
-double = (num => 2 * num;) // remove semicolor, else error
+double = num => 2 * num; // can also write like this
 console.log(double(39));
-
-
-double = (num => 2 * num) // can also write like this
-console.log(double(39));
-
-*/
 
 // 4.if we have 'multiple arguments' or 'zero arguments' we must use paranthesis
 
@@ -47,7 +43,7 @@ const greet = () => "Hello Folks!";
 console.log(greet());
 
 const greet2 = () => {
-  return "Hello Folks-2!";
+    return "Hello Folks-2!";
 };
 console.log(greet2());
 
@@ -58,34 +54,34 @@ console.log(greet2());
 const nums = [1, 2, 3, 4];
 
 let res = nums.map(function (num) {
-  return 2 * num;
+    return 2 * num;
 });
 console.log(typeof res);
 console.log(res);
 
 // Refactoring above code:
 
-res = nums.map((num) => 2 * num);
+res = nums.map(num => 2 * num);
 console.log(res);
 
 // So, if we didn't had ES6 map() array helper or arrow functions, below is code we had to write
 
 const resArray = [];
 for (let i = 0; i < nums.length; i++) {
-  resArray.push(2 * nums[i]);
+    resArray.push(2 * nums[i]);
 }
 console.log(resArray);
 
 //****Another Problem: which can be solved by arrow functions:**************
 
 let team = {
-  members: ["Jane", "Elsie"],
-  teamName: "Special 404",
-  teamSummary: function () {
-    return this.members.map(function (member) {
-      return `${member} is Member of team ${this.teamName}`; // we can't read teamName using this here => gets 'undefined'
-    });
-  },
+    members: ["Jane", "Elsie"],
+    teamName: "Special 404",
+    teamSummary: function () {
+        return this.members.map(function (member) {
+            return `${member} is Member of team ${this.teamName}`; // we can't read teamName using this here => gets 'undefined'
+        });
+    },
 };
 
 // got undefined because, when we passed iterator anonymous function to map() it gets lost hence we can't use this reference
@@ -96,43 +92,43 @@ console.log(team.teamSummary());
 // Fix-1 (ES5)
 
 team = {
-  members: ["Jane", "Elsie"],
-  teamName: "Special 404",
-  teamSummary: function () {
-    return this.members.map(
-      function (member) {
-        return `${member} is Member of team ${this.teamName}`;
-      }.bind(this) // using bind() helper to find this to current function so it won't get lost (=> binds the function context to current context)
-    );
-  },
+    members: ["Jane", "Elsie"],
+    teamName: "Special 404",
+    teamSummary: function () {
+        return this.members.map(
+            function (member) {
+                return `${member} is Member of team ${this.teamName}`;
+            }.bind(this) // using bind() helper to find this to current function so it won't get lost (=> binds the function context to current context)
+        );
+    },
 };
 console.log(team.teamSummary());
 
 // Fix-2 (Jquery way)
 
 team = {
-  members: ["Jane", "Elsie"],
-  teamName: "Special 404",
-  teamSummary: function () {
-    var self = this; // caching reference to this in self
-    return this.members.map(function (member) {
-      return `${member} is Member of team ${self.teamName}`;
-    });
-  },
+    members: ["Jane", "Elsie"],
+    teamName: "Special 404",
+    teamSummary: function () {
+        var self = this; // caching reference to this in self
+        return this.members.map(function (member) {
+            return `${member} is Member of team ${self.teamName}`;
+        });
+    },
 };
 console.log(team.teamSummary());
 
 // Fix-3 (Arrow function)
 
 team = {
-  members: ["Jane", "Elsie"],
-  teamName: "Special 404",
-  teamSummary: function () {
-    // this === team
-    return this.members.map(
-      (member) => `${member} is Member of team ${this.teamName}`
-    );
-  },
+    members: ["Jane", "Elsie"],
+    teamName: "Special 404",
+    teamSummary: function () {
+        // this === team
+        return this.members.map(
+            member => `${member} is Member of team ${this.teamName}`
+        );
+    },
 };
 console.log(team.teamSummary());
 
@@ -149,27 +145,27 @@ console.log(team.teamSummary());
 
 // Eg-1
 let fibonacci = function (n) {
-  if (n < 3) return 1;
-  return fibonacci(n - 1) + fibonacci(n - 2);
+    if (n < 3) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
 console.log(fibonacci(5));
 
 // Refactored to Arrow function:
 
-fibonacci = (n) => {
-  if (n < 3) return 1;
-  return fibonacci(n - 1) + fibonacci(n - 2);
+fibonacci = n => {
+    if (n < 3) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
 };
 console.log(fibonacci(10));
 
 // Eg-2
 
 let profile = {
-  name: "Alex",
-  getName: function () {
-    return this.name;
-  },
+    name: "Alex",
+    getName: function () {
+        return this.name;
+    },
 };
 
 console.log(profile.getName()); // Alex
@@ -177,8 +173,8 @@ console.log(profile.getName()); // Alex
 // Refactoring above code
 
 profile = {
-  name: "Alex",
-  getName: () => this.name,
+    name: "Alex",
+    getName: () => this.name,
 };
 
 console.log(profile.getName()); //  undefined
