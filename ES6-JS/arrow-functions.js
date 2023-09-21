@@ -34,8 +34,8 @@ console.log(double(39));
 // double = (num => 2 * num;) // remove semicolor, else Error
 // console.log(double(39));
 
-double = num => 2 * num; // can also write like this
-console.log(double(39));
+// double = (num => 2 * num) // can also write like this
+// console.log(double(39));
 
 // 4.if we have 'multiple arguments' or 'zero arguments' we must use paranthesis
 
