@@ -172,7 +172,7 @@ let profile = {
   },
 };
 
-console.log(profile.getName());
+console.log(profile.getName()); // Alex
 
 // Refactoring above code
 
