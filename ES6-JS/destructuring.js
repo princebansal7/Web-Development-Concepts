@@ -231,12 +231,67 @@ signup(userDetails);
 console.log();
 console.log();
 
-// Example-2----------
+// Example-2---------------------------------------
 
-//--------------------------
-// Examples:
+const points = [
+    [2, 4],
+    [6, 9],
+    [7, 8],
+];
 
-// Eg-1
+/* we want to convert above array of arrays to something like this:
+
+[
+    {x:2,y:4},
+    {x:6,y:9},
+    {x:7,y:8},
+]
+*/
+
+// One way would be
+
+const pairsObjArray = [];
+
+points.forEach(pointPair => {
+    const pairObj = {
+        x: pointPair[0],
+        y: pointPair[1],
+    };
+    pairsObjArray.push(pairObj);
+});
+
+console.log(pairsObjArray); // [ { x: 2, y: 4 }, { x: 6, y: 9 }, { x: 7, y: 8 } ]
+
+console.log();
+// Proper ES6 Way------------------------
+
+// 1.we will map (as map returns array) over the array and destructure x,y value of each pair (array's element is array)
+// 2. then we'll use improved object literal syntax to return x,y value
+
+let ans = points.map(point => {
+    // const x = point[0];
+    // const y = point[1];
+    //       OR
+    const [x, y] = point; // (destructure the array)
+    // now we can use x,y varables
+    return { x: x, y: y }; // OR we can use enhanced object literal here (same name => use once)
+});
+
+console.log(ans);
+
+// Most compact version of above code:-----------
+// we destructured array in seperate line, we can do the same in argument itself
+
+ans = points.map(([x, y]) => {
+    return { x, y }; // used enhanced object literal
+});
+console.log(ans);
+
+//***********************************************************
+// Practice Examples:
+
+// Eg-1:
+
 const profile = {
     title: "Engineer",
     department: "Engineering",
@@ -248,6 +303,7 @@ function isEngineer1(profile) {
     return title === "Engineer" && department === "Engineering";
 }
 console.log(isEngineer1(profile));
+
 // Refactored function
 
 function isEngineer2({ title, department }) {
@@ -256,4 +312,61 @@ function isEngineer2({ title, department }) {
 
 console.log(isEngineer2(profile));
 
-// Eg-2
+console.log();
+
+// Eg-2:
+// - Convert this array of arrays into an array of objects, where each object has the keys 'subject',
+//    'time', and 'teacher' and assign the result to 'classesAsObject.  Use array destructuring and the map helper.
+// - An array for a class has the form [subject, time, teacher]
+// - The resulting data structure should look something like the following:
+//    const classesAsObject = [{ subject: 'Geography', time: '2PM', teacher: 'Mrs. Larsen' }]
+
+const classes = [
+    ["Chemistry", "9AM", "Mr. Darnick"],
+    ["Physics", "10:15AM", "Mrs. Lithun"],
+    ["Math", "11:30AM", "Mrs. Vitalis"],
+];
+
+// way-1
+
+let classesAsObject = classes.map(classArr => {
+    const subject = classArr[0];
+    const time = classArr[1];
+    const teacher = classArr[2];
+    return { subject: subject, time: time, teacher: teacher };
+});
+console.log(classesAsObject);
+
+// way -2
+
+classesAsObject = classes.map(classArr => {
+    const [subject, time, teacher] = classArr; // Destructured array
+    return { subject: subject, time: time, teacher: teacher };
+});
+console.log(classesAsObject);
+
+// way-3
+
+classesAsObject = classes.map(([subject, time, teacher]) => {
+    return { subject, time, teacher }; // Enhanced Object literal used
+});
+console.log(classesAsObject);
+
+console.log();
+// Eg-3:
+
+// Use array destructuring, recursion, and the rest/spread operators to create a function 'double' that will
+// return a new array with all values inside of it multiplied by two.  Do not use any array helpers!
+// Sure, the map, forEach, or reduce helpers would make this extremely easy but give it a shot the hard way anyways
+
+const numbers = [1, 2, 3];
+
+function double([num, ...rest]) {
+    console.log(num, rest);
+    if (num === undefined) {
+        return [];
+    }
+    return [num * 2, ...double(rest)];
+}
+
+console.log("Result:", double(numbers));
