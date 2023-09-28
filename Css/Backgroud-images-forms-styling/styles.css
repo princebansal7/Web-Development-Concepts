@@ -123,3 +123,71 @@ code{
     /* Using short-hand */
     background: url(images/skull_background.jpg) bottom left repeat-x;
 }
+
+
+/*   forms styles    */
+
+#container{
+    width: 500px;
+    margin: 0 auto; /* from top and bottom = 0, from left and right = auto => centers the content */
+}
+
+form{
+    background-image: url(images/red_background.jpg);
+    padding: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+form fieldset{
+    background-image: url(images/blue_background.jpg);
+    padding: 40px;
+    border: solid 1px white;
+}
+
+form legend{
+    border: dashed 1px #043a3a;
+    border-radius: 5px;
+    background-image: url(images/blue_background.jpg);
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+}
+
+form input, form textarea{
+    display: block;
+    margin-bottom: 20px;
+    /* Using Texography */
+    -webkit-font-smoothing:antialiased;
+    text-rendering: optimizeLegibility;
+}
+form label{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+/* Selecting attributes */
+form input[type="text"], form input[type="email"], form textarea{
+    padding: 10px;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    color: #fcfafa;
+    border: solid 1px #0bc14e;
+    background-image: url(images/red_background.jpg);
+}
+
+form textarea{
+    width: 300px;
+    height: 100px;
+}
+
+form input[type="submit"]{
+    border:none;
+    background: url(images/Button_Background.jpg) top left repeat-x;
+    padding: 0 20px;
+    height: 40px;
+    border: solid 1px black;
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    cursor: pointer;
+}
