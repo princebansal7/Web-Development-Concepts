@@ -94,3 +94,32 @@ code{
 #box-8{
     border: double 9px rgb(21, 232, 91); /* for double border: min value is 3 (1-1 px for each border, 1px for space between them) */
 }
+
+/* Background Images*/
+
+.background-example{
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
+    margin: 5px;
+}
+
+/* By default, Background images repeats x and y and are positioned top left */
+
+#background-1{
+    background-image: url(images/steak_background.jpg);
+}
+#background-2{
+    /* background-color: bisque; */
+    background-image: url(images/blue_background.jpg);
+}
+#background-3{
+    background-image: url(images/steak_background.jpg);
+    background-repeat: no-repeat; /* stops repeating */
+    background-position: center center; /* x , y postion*/
+}
+
+#background-4{
+    /* Using short-hand */
+    background: url(images/skull_background.jpg) bottom left repeat-x;
+}
