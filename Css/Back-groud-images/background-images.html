@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Background Images</title>
+		
+		<link href="styles.css" rel="stylesheet">
+		
+		<style type="text/css">
+			dl {
+				margin: 10px 0 20px;
+				padding: 10px;
+				background: #353535;
+				color: #eee;
+				border: dashed 2px black;
+				font-family: Helvetica, Arial, sans-serif;
+			}
+			
+			dl dt {
+				margin: 0 0 5px;
+				font-size: 22px;
+				font-weight: bold;
+			}
+			
+			dl code {
+				background: inherit;
+				padding: 0;
+			}
+		</style>
+		
+	</head>
+	<body>
+	
+		<h1>Background Images, Folks!</h1>
+		
+		<!--
+			Background Images Documentation
+			Added by Brad Hussey
+			September 2013
+		-->
+		
+		<h2>Properties</h2>
+		<p>There are a few different background properties:</p>
+		
+		<dl>
+			<dt>background-image</dt>
+			<dd>
+				This property is the location of the image itself, for example:
+				<code>h1 { background-image: url('http://website.com/img/background.jpg'); }</code>
+				
+				<br>
+				or
+				<br><br>
+				
+				<code>h1 { background-image: url('images/background.jpg'); }</code>
+				
+				
+			</dd>
+		</dl>
+		
+		<dl>
+			<dt>background-color</dt>
+			<dd>
+				This allows us to add colour to a background. An example in CSS would like like this:
+				<code>h1 { background-color: green; }</code>
+			</dd>
+		</dl>
+		
+		<dl>
+			<dt>background-repeat</dt>
+			<dd>
+				This is how the image will repeat. The value can be any of the following:
+				
+				<br><br>
+				<code>background-repeat: repeat;</code>
+				<p>This repeats on both the X and Y axis, and will essentially tile the image across the entire background.</p>
+				
+				<br>
+				<code>background-repeat: repeat-x;</code>
+				<p>This repeats the background on the X axis, or horizontally.</p>
+				
+				<br>
+				<code>background-repeat: repeat-y;</code>
+				<p>This repeats the background on the Y axis, or vertically.</p>
+				
+				<br>
+				<code>background-repeat: no-repeat;</code>
+				<p>This shows the image only once, without repeating.</p>
+			</dd>
+		</dl>
+		
+		<dl>
+			<dt>background-position</dt>
+			<dd>
+				This is the actual position of the background image within it's container. The values can be:
+				<code>background-position: top;</code>
+				<code>background-position: right;</code>
+				<code>background-position: bottom;</code>
+				<code>background-position: left;</code>
+				<code>background-position: center;</code>
+				
+				<br>
+				It can also be a percentage, length, or combination, like so:
+				<br>
+				
+				<code>background-position: bottom left;</code>
+			</dd>
+		</dl>
+	
+		<h2>Shorthand!</h2>
+		<p>There's a quick way around background images, and you don't necessarily have to type out all of the above code to set up your background images the way you want them.</p>
+		
+		<dl>
+			<dt>background</dt>
+			<dd>
+				The "background" shorthand can handle them all in one!
+				<code>background: green url('images/background.jpg') top left no-repeat;</code>
+			</dd>
+		</dl>
+
+		<!-- END Documentation -->
+		
+		<h2>Examples</h2>
+		
+		<div id="background-1" class="background-example">
+			Background Image, repeated
+		</div>
+		
+		<div id="background-2" class="background-example">
+			Background Colour
+		</div>
+		
+		<div id="background-3" class="background-example">
+			Background Image, positioned, no repeating
+		</div>
+		
+		<div id="background-4" class="background-example">
+			Background Image, positioned, repeating on X axis
+		</div>
+	
+	</body>
+</html>
