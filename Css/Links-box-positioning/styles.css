@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(36, 9, 33);
+    color: rgb(177, 9, 118);
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+#container {
+    background: rgb(221, 146, 234);
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+h1 {
+    margin: 0 0 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Styling links */
+/* all <a> tags who have href will be selected by this peusdo class */
+/* unvisited links */
+a:link {
+    color: yellow;
+    text-decoration: none;
+}
+
+/* Visited link */
+a:visited {
+    color: purple;
+}
+
+/* Hover on links */
+a:hover {
+    color: rgb(145, 18, 145);
+    text-decoration: underline;
+}
+
+/* active links: when we click*/
+a:active {
+    color: brown;
+}
+
+/* specific link styles */
+
+#link-1:hover {
+    background: bisque;
+    color: rgb(198, 2, 35);
+    text-decoration: none;
+    padding: 5px;
+}
+
+#link-3 {
+    background: greenyellow;
+    padding: 5px;
+    color: rgb(255, 106, 0);
+    border-radius: 5px;
+}
+
+#link-3:hover {
+    background-color: rgb(30, 255, 180);
+    text-decoration: none;
+    color: rgb(195, 100, 251);
+    font-size: 1.3rem;
+}
+
+#link-4:hover {
+    color: rgb(239, 239, 239);
+    text-transform: lowercase;
+    text-decoration: dotted;
+    font-size: 30px;
+    font-family: Menlo;
+}
