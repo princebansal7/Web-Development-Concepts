@@ -12,6 +12,8 @@ app.use(express.json());
 // it always comes in last of the code
 
 app.post("/", (req, res) => {
+    // expected: kidneys:[1,2]
+
     const kidney = req.body.kidneys;
     const kidneyLength = kidney.length;
     res.send(`number kidneys are ${kidneyLength}`);
