@@ -6,4 +6,4 @@
   - Express servers
   - Middlewares
   - Input validation, Zod
-  - Authentication - JWT (JsonWebTokens)tokens concepts
+  - Authentication - JWT (JsonWebTokens)
