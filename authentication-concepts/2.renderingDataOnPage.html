@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>fetch Api</title>
+    </head>
+    <body>
+        <script>
+            async function getUserData() {
+                const result = await fetch(
+                    "https://jsonplaceholder.typicode.com/users"
+                );
+                const finalData = await result.json();
+                console.log(finalData);
+                document.getElementById("container").innerHTML = JSON.stringify(
+                    finalData[0]
+                );
+            }
+        </script>
+        <button onclick="getUserData()">Get Data</button>
+        <div id="container"></div>
+    </body>
+</html>
