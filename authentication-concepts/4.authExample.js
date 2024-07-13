@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 const jwtPassword = "696969"; // we need password to verify the token
 
-// Not using DBs yet so will be doing changes in memory
+// Not using DBs yet so will be doing changes in-memory
 const users = [
     {
         username: "prince.bansal1914@gmail.com",
