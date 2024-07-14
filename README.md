@@ -7,3 +7,4 @@
   - Middlewares
   - Input validation, Zod
   - Authentication - JWT (JsonWebTokens)
+  - Database connectivity
