@@ -23,3 +23,12 @@ const testUser = new TestUser({
 
 // .save() will let you put the defined data in db
 testUser.save().then(() => console.log("user added"));
+
+// Another useful point
+const testUser2 = new TestUser({
+    name: "Tanjiro",
+    email: "slayer@gmail.com",
+    password: "1239",
+    kill: "Muzan", // this is not in schema, so just this key:value won't be stored => won't give any error too
+});
+testUser2.save();
