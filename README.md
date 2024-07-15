@@ -1,7 +1,7 @@
 # Web Developement Concepts
 
-- To learn **JavaScript Basics** | [Link-1](https://github.com/princebansal7/JavaScript-30-days?tab=readme-ov-file) | [Link-2]("https://github.com/princebansal7/Learn-JavaScript")
-- To learn **React Js** | [Link]("https://github.com/princebansal7/Learn-React")
+- To learn **JavaScript Basics** | [Link-1](https://github.com/princebansal7/JavaScript-30-days?tab=readme-ov-file) | [Link-2](https://github.com/princebansal7/Learn-JavaScript)
+- To learn **React Js** | [Link](https://github.com/princebansal7/Learn-React)
 - Backend concpets:
   - Express servers | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/server-code)
   - Middlewares | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/server-code/7.middlewareLogic.js)
