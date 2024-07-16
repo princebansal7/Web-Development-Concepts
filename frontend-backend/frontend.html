@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body id="bod">
+        <input id="a" type="text" placeholder="69" /></input>
+        <br>
+        <input id="b" type="text" placeholder="7" /></input>
+        <button onclick="getSum()">Get Sum</button>
+        <br>
+        <div id="sum"></div>
+
+        <script>
+            async function getSum() {
+                const num1 = parseInt(document.getElementById("a").value);
+                const num2 = parseInt(document.getElementById("b").value);
+                const response =  await fetch(`http://localhost:3000/sum?a=${num1}&b=${num2}`);
+                const ans = await response.text();
+                document.getElementById("sum").innerText = `Sum is ${ans}`;
+            }
+        </script>
+    </body>
+</html>
