@@ -12,6 +12,10 @@
             async function getSum() {
                 const num1 = parseInt(document.getElementById("a").value);
                 const num2 = parseInt(document.getElementById("b").value);
+                
+                // Here we are not writing backend logic, we are just sending a request
+                // to backend server and getting response and using that response for DOM manipulation
+
                 const response =  await fetch(`http://localhost:3000/sum?a=${num1}&b=${num2}`);
                 const ans = await response.text();
                 document.getElementById("sum").innerText = `Sum is ${ans}`;
@@ -19,3 +23,16 @@
         </script>
     </body>
 </html>
+
+<!-- 
+
+Note: 
+    - Here backend computaion & logic isn't very complex hence we could've 
+      done the sum logic here on frontend itself
+
+    - But this is essentially what happens in real world,
+      frontend send bunch of request to backend server and backend returns some 
+      response, using that frontend folks do some DOM manipulation and hence the 
+      whole full stack flow (this is just high level understanding with basic example) 
+
+-->
