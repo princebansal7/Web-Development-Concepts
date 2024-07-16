@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body id="bod">
+        <!-- 
+            We can use the following to do change things as soon as
+            someone enters inputs in input element:
+            - onchange: changes when user completes typing input and click out
+            - oninput: changes simultaneously when user types
+         -->
+        <input oninput="getSum()" id="a" type="text" placeholder="69" /></input>
+        <br>
+        <input oninput="getSum()" id="b" type="text" placeholder="7" /></input>
+        <br>
+        <div id="sum"></div>
+        <script>
+            function getSum() {
+                const num1 = parseInt(document.getElementById("a").value);
+                const num2 = parseInt(document.getElementById("b").value);
+                document.getElementById("sum").innerText = `Sum is ${ num1 + num2}`;
+            }
+        </script>
+    </body>
+</html>
