@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        Principle: <input id="principle" type="text" placeholder="5000" /></input>
+        <br>
+        Rate (%): <input id="rate" type="text" placeholder="10" /></input>
+        <br>
+        Time (yr): <input id="time" type="text" placeholder="2" /></input>
+        <br>
+        <button onclick="getSimpleInterest()">Simple Interest?</button>
+        <br><br>
+        <div id="si"></div>
+        <div></div>
+        <div id="total-amount"></div>
+
+        <script>
+            async function getSimpleInterest() {
+                const p = parseInt(document.getElementById("principle").value);
+                const r = parseInt(document.getElementById("rate").value);
+                const t = parseInt(document.getElementById("time").value);
+                const response =  await fetch(`http://localhost:3000/interest-data?p=${p}&r=${r}&t=${t}`);
+                const interestData = await response.json();
+                document.getElementById("si").innerHTML = `<b>Simple Interest is: ${interestData.simpleInterest}</b>`;
+                document.getElementById("total-amount").innerHTML = `<b>Total Amount is: ${interestData.totalAmount}</b>`;
+            }
+        </script>
+    </body>
+</html>
+
