@@ -12,8 +12,9 @@
                 // it returns promise
                 fetch("https://jsonplaceholder.typicode.com/users").then(
                     function (response) {
-                        // response also returns promise and we know,
-                        // we are expecting JSON data hence, response.json()
+                        // response also returns promise, as it implemented that way
+                        // it need to figure out what kind of data is coming and accordingly do stuff
+                        // We know, we are expecting JSON data hence, response.json()
                         // (alternative is axios library instead of fetch()
                         response.json().then(function (finalData) {
                             console.log(finalData);
