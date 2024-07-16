@@ -8,3 +8,4 @@
   - Input validation, Zod | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/input-validation)
   - Authentication - JWT (JsonWebTokens) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/authentication-concepts/3.authenticationPrereqs.md)
   - Database connectivity | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/1.database.md)
+  - forntend-backend connection | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend)
