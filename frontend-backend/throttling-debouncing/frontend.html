@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!--         
+        Debouncing 
+        - I have added oninput => as soon as we type at each keystroke, 
+          getSum() is called and request goes to backend. 
+        - Real world example: like on amazon when we search for product: 
+            - if we type slowly then we see suggestions of similar spelled 
+              products in search box => here also request is going on at backend
+              logic which is returning us those suggestions 
+            - But if we type fast then those product suggestions
+              shows after a delay => request is going after a certian delay
+              => this is called Debouncing 
+            - It is used for optimising the performance as we are
+              optimising the request fequency
+    -->
+        Number-1:
+        <input
+            id="a"
+            oninput="debouncePopulateDiv()"
+            type="text"
+            placeholder="69"
+        />
+        <br />
+        Number-2:
+        <input
+            id="b"
+            oninput="debouncePopulateDiv()"
+            type="text"
+            placeholder="72"
+        />
+        <div id="sum"></div>
+
+        <script>
+            // Implementing Debouncing (FrontEnd):
+            // - we'll call debouncePopulateDiv() instead of populateDiv() directly
+            //   as it will wait for lets say 100 ms when user is typing the input.
+            // - Now 2 cases can be there:
+            //   1. if user doesn't type in those 100 ms
+            //      => it needs to call populateDiv() (as user waits we need to give suggestion or result)
+            //   2. if user types again in those 100 ms
+            //      => it again needs to wait 100 ms, instead of calling populateDiv()
+            //      (as user is still gonna type, so we'll hold off showing suggestions yet and
+            //      hence optimising request frequencey)
+            //
+            // Some things to know about setTimeOut():
+            //   - The setTimeout function in JavaScript returns a timeoutID. This is a numeric value that
+            //     uniquely identifies the timer created by the function call.
+            //   - You can use this timeoutID to cancel the timer before it expires using the
+            //     clearTimeout() function.
+            //
+            //  Now, here the flow is like: (Dry Run of debounce)
+            //   - 1st time when user types, debouncePoplateDiv() gets called
+            //   - clearTimeOut() gets called with undefined value of timeoutId => it does nothing
+            //     as no clock was running
+            //   - the setTimeout() gets called and waits for 500 ms, timeoutId for running clock generated
+            //     and if user is typing before 500 ms completed => debouncePopulateDiv() called
+            //   - this time when clearTimeOut() called, it have the previous clock timeoutId
+            //     => it clears that clock
+            //   - and again setTimeOut() is called for 500ms (which is essentially what we want
+            //     if user start typing before the wait time, we'll hold off the backend request)
+
+            let myTimeoutId;
+            function debouncePopulateDiv() {
+                // we need to reset previous clock (if any running)
+                clearTimeout(myTimeoutId);
+                // we delayed calling populateDiv() by 500 ms
+                // (to see real time difference, i increased the time)
+                myTimeoutId = setTimeout(function () {
+                    populateDiv();
+                }, 500);
+            }
+            // Above debonce function is generic we can pass any following function
+            // to make optimise requests after passing them instead of populateDiv()
+
+            async function populateDiv() {
+                const num1 = parseInt(document.getElementById("a").value);
+                const num2 = parseInt(document.getElementById("b").value);
+                const response = await fetch(
+                    `http://localhost:3000/sum?a=${num1}&b=${num2}`
+                );
+                const ans = await response.text();
+                document.getElementById(
+                    "sum"
+                ).innerHTML = `<h5>Sum is: ${ans}</h5>`;
+            }
+        </script>
+    </body>
+</html>
