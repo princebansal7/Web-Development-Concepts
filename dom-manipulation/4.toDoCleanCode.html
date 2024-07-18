@@ -55,3 +55,27 @@
         </script>
     </body>
 </html>
+<!--
+
+Problems with this approach ?
+ - DOM manipulation using provided primitives by DOM is very Hard to add or remove elements!
+ - It makes creating Dynamic websites hard
+ - No central "state"
+   - What is state ?
+       - for real world toDo application - there will be a backend, if someone makes some
+         change using todo app then it needs to reflect on the todo website too, but there
+         we'll get updated list of tasks and we'll need to perform some calculations to
+         figure out whether something is added or removed.
+       - we will need some update() and remove() functions to do those tasks
+       - So at a given time let's say backend returns a list of toDos, accordingly we 
+         need to render it on webpage i.e, update or remove the tasks according to given state.
+       - And after some after time say backend returns a new list of toDos => now we need 
+         to again update the new task as per new list and remove the old state
+   - So, That's basically a state where at any given time we have some list of data and 
+     accodingly we need to render the webpage!!
+   - we can say State is a big object which contains structure of our application data
+     at a given time.
+     eg: LinkedIn page have a certain post, message, notification etc number at a given time
+         which gets change time to time => state is changing
+ 
+-->
