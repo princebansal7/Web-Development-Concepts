@@ -2,9 +2,11 @@
 <html lang="en">
     <body>
         <!--         
-        Debouncing 
         - I have added oninput => as soon as we type at each keystroke, 
-          getSum() is called and request goes to backend. 
+          populateDiv() was called and request goes to backend. 
+          (now instead of populateDiv() we are calling deboucePopulateDiv(), you'll see why)
+          
+         Debouncing Concept:
         - Real world example: like on amazon when we search for product: 
             - if we type slowly then we see suggestions of similar spelled 
               products in search box => here also request is going on at backend
