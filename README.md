@@ -17,5 +17,5 @@
   - forntend-backend connection | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend)
   - Debouncing & Throttling | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend/throttling-debouncing)
   
-- JavaScript Basics | [JS-30-Days](https://github.com/princebansal7/JavaScript-30-days?tab=readme-ov-file) | [ES6](https://github.com/princebansal7/Web-Development-Concepts/tree/main/javascript-es6) | [Extras](https://github.com/princebansal7/JavaScript-Projects/tree/master/1.Basics) 
+- JavaScript Basics | [JS-30-Days](https://github.com/princebansal7/JavaScript-30-days?tab=readme-ov-file) | [ES6](https://github.com/princebansal7/Web-Development-Concepts/tree/main/javascript-es6) | [old](https://github.com/princebansal7/JavaScript-Projects/tree/master/1.Basics) 
 - Learn React Js (Old) | [link](https://github.com/princebansal7/Learn-React)
