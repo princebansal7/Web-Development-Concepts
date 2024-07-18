@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ToDo-DOM</title>
+    </head>
+    <body>
+        <h2>ToDo with State</h2>
+        <br />
+        <br />
+        <input id="title" type="text" placeholder="Title" />
+        <br />
+        <textarea
+            id="description"
+            cols="17"
+            rows="3"
+            placeholder="Description"
+        ></textarea>
+        <br />
+        <div id="task-container"></div>
+
+        <script>
+            function createChildsStructure(title, description, id) {
+                const child = document.createElement("div");
+                const grandChild1 = document.createElement("div");
+                grandChild1.innerHTML = title;
+                const grandChild2 = document.createElement("div");
+                grandChild2.innerHTML = description;
+                const grandChild3 = document.createElement("button");
+                grandChild3.innerHTML = "Mark as done";
+                child.appendChild(grandChild1);
+                child.appendChild(grandChild2);
+                child.appendChild(grandChild3);
+                child.setAttribute("id", id);
+                return child;
+            }
+
+            function updateDOMaccordingToState(state) {
+                const parent = document.getElementById("task-container");
+                // clearing previous state results before adding the new ones
+                parent.innerHTML = "";
+                // appending new state data
+                for (let i = 0; i < state.length; i++) {
+                    const child = createChildsStructure(
+                        state[i].title,
+                        state[i].description,
+                        state[i].id
+                    );
+                    parent.appendChild(child);
+                }
+            }
+
+            // State constraints:
+            //  -  state will always be an array
+            //  -  every array element will be having title, description and id (some known structure)
+            // updateDOMaccordingToState([
+            //     {
+            //         id: 1,
+            //         title: "Task-1",
+            //         description: "1-task-1-ddd dcdd dclcs",
+            //     },
+            //     {
+            //         id: 2,
+            //         title: "Task-2",
+            //         description: "2-task-2-ddd dcdd dclcs",
+            //     },
+            //     {
+            //         id: 3,
+            //         title: "Task-3",
+            //         description: "3-task-3-ddd dcdd dclcs",
+            //     },
+            // ]);
+
+            // This way we can change the state in every 5 seconds
+            //   - no need to worry about backend code -  it is just for understanding
+            //     how frontend sends request in regular intervals and webpage gets updated
+            //     accordingly
+            window.setInterval(async function () {
+                const response = await fetch("http://localhost:3000/tasks");
+                const state = await response.json();
+
+                // Getting different state from backend and updating it on DOM by calling below fxn
+                updateDOMaccordingToState(state);
+            }, 3000);
+        </script>
+    </body>
+</html>
+
+<!--  React Foundation ---------------------------------
+
+   - Above example is what people did in pre-react days
+   - There are few problems in our above approach like:
+        - Everything gets clear first then page gets update
+        - ideally we should update only those things which got changed
+          because, 1st case is backend can return the same results sometimes 
+          in such case we don't want to clear and update the DOM
+          => Don't clear the DOM upfront, update it based on what has changed
+
+   - Ideal solution ?
+     Calculate the difference (diff) between Old state and new State and then
+     update the DOM according to those difference instead of clearing the DOM
+    
+   - So, anytime new state comes we need to have the current existing state to
+     calculate the diff  => this existing state is called Virtual DOM
+
+   - React does this above mention solution => it Maintains the virtual DOM
+     it is the most optimal frontend framework in these manners
+    ------------------------------------------------------------------------------------
+   - So, 'React library' does all this heavy lifting for us, we don't have to 
+     write such code like below functions for DOM Manipulation 
+        - createChildsStructure()
+        - updateDOMaccordingToState() 
+     and Frontend guy just need to call the backend who returns the state
+     and react like this fxn updateDOMaccordingToState() will do the DOM manipulation
+
+   - we just need to provide 'State' and few other important things to react and it will
+     do the heavy job for us - Frontend dev life becomes a little easier.
+
+-->
