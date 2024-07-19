@@ -6,7 +6,9 @@
   - HTML | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/html-basics)
   - CSS | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/css-basics)
   - DOM Manipulation | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/dom-manipulation)
-  - React JS `state` foundation | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/dom-manipulation/todo-with-state)
+  - React JS foundation
+    - `state` concept with naive DOM manipulation | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/dom-manipulation/todo-with-state)
+    - `state` rendering on DOM like React does (High level) | [link]()
   - Learn React Js (Old) | [link](https://github.com/princebansal7/Learn-React)
 
 - Backend concepts:
