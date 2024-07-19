@@ -16,36 +16,95 @@
             placeholder="Description"
         ></textarea>
         <br />
-        <div id="task-container"></div>
+        <button onclick="addTodo()">Add Task</button><br /><br />
+        <div id="todos"></div>
 
         <script>
-            // DOM Manipulation (Correct way like React)
-            //  - We saw how we can render data on webpage according to the state
-            //    but there were problems like clearing the whole page etc.
-            //  - Here we will update the webpage like react does i.e, calculating the
-            //    diff and accordingly render only changed data instead of clearing the
-            //    whole webpage upfront.
-            //  - We'll follow the below steps: (This is the whole crux of React)
-            //      - Update the state variable (Important to calculate the diff)
-            //      - delegate the task of calculating diff to another hefty function (react)
-            //      - tell that hefty function how to update, remove or add elements  (reactDom)
-
-            //  - REACT JS Foundation
-            //      - React: It calculates the "diff"
-            //      - ReactDom: it tells react how to put, update or remove things on DOM
-            //      - React Native: it tells react this is how to put, update or remove things on Native application
-            //
-            //  - React is very optimised so it doesn't put the changed state changes from virtual DOM
-            //    to Real DOM immediatly, we waits for bunch of changes to come and then updates the DOM, i.e, update etc
-            //    (unlike what we are doing here and updating everything, we are just mimicking how react works
-            //    under the hood)
-
-            let globalId = 0;
+            let globalId = 1;
             let todoState = [];
-            let oldToDoState = [];
-            function addToDO() {}
-            function removeToDo() {}
-            function updateToDO() {}
+            let oldTodoState = [];
+
+            function addTodo() {
+                const title = document.getElementById("title").value;
+                const description =
+                    document.getElementById("description").value;
+                todoState.push({
+                    title: title,
+                    description: description,
+                    id: globalId++,
+                });
+                updateState(todoState);
+            }
+
+            function removeTodoElement(todoId) {
+                const element = document.getElementById(todoId);
+                if (element) {
+                    element.parentElement.removeChild(element);
+                }
+                // Update the state after removal
+                todoState = todoState.filter(todo => todo.id !== todoId);
+                oldTodoState = [...todoState];
+            }
+
+            function updateTodoElement(newTodo) {
+                const element = document.getElementById(newTodo.id);
+                if (element) {
+                    element.children[0].innerHTML = newTodo.title;
+                    element.children[1].innerHTML = newTodo.description;
+                }
+            }
+
+            function addTodoElement(newTodo) {
+                const element = document.createElement("div");
+                element.setAttribute("id", newTodo.id);
+
+                const title = document.createElement("div");
+                title.innerHTML = newTodo.title;
+                element.appendChild(title);
+
+                const description = document.createElement("div");
+                description.innerHTML = newTodo.description;
+                element.appendChild(description);
+
+                const button = document.createElement("button");
+                button.innerHTML = "Remove";
+                button.onclick = () => removeTodoElement(newTodo.id);
+                element.appendChild(button);
+
+                document.getElementById("todos").appendChild(element);
+            }
+
+            function updateState(newTodos) {
+                // Calculate the difference between newTodos and oldTodos.
+                const added = newTodos.filter(
+                    newTodo =>
+                        !oldTodoState.some(oldTodo => oldTodo.id === newTodo.id)
+                );
+                const deleted = oldTodoState.filter(
+                    oldTodo =>
+                        !newTodos.some(newTodo => newTodo.id === oldTodo.id)
+                );
+                const updated = newTodos.filter(newTodo =>
+                    oldTodoState.some(oldTodo => oldTodo.id === newTodo.id)
+                );
+
+                // Call addTodo, removeTodo, updateTodo functions on each of the elements
+                added.forEach(newTodo => addTodoElement(newTodo));
+                deleted.forEach(oldTodo => removeTodoElement(oldTodo.id));
+                updated.forEach(newTodo => updateTodoElement(newTodo));
+
+                oldTodoState = [...newTodos];
+            }
         </script>
     </body>
 </html>
+
+<!--
+
+ This way, the whole web page doesn't gets cleared upfront before updating or removing
+ elements, and just updates the state after calculating the diffences
+ - But this is way too hard to write and more complex applications, that's 
+   where React, ReactDOM comes into picture, they handles all this complex tasks
+ - We'll build ToDo using react and see the difference ! 
+
+-->
