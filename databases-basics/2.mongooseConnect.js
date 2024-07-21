@@ -3,7 +3,7 @@ require("dotenv").config();
 
 // Very Naive code to understand how db connection works! (There are various checks need to be in-place)
 
-// connecting with mongoose DB, where first_mongo_db is database name
+// connecting with mongoDB, where first_mongo_db is database name
 mongoose.connect(`${process.env.DB_CONNECTION_URL}/first_mongo_db`);
 
 // Creating model with table name (1st arg) and schema (2nd arg) to let mongo know what kinda data is coming
