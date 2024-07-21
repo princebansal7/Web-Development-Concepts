@@ -65,8 +65,8 @@ app.post("/signup", isValidUserMiddleware, async (req, res) => {
 });
 
 app.get("/signin", isValidUserMiddleware, async (req, res) => {
-    const email = req.body.email;
-    const password = req.body.password;
+    const email = req.headers.email;
+    const password = req.headers.password;
     const isUserInDB = await userExists(email);
     if (!isUserInDB) {
         return res.json({
