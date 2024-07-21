@@ -6,8 +6,9 @@ require("dotenv").config();
 // connecting with mongoose DB, where first_mongo_db is database name
 mongoose.connect(`${process.env.DB_CONNECTION_URL}/first_mongo_db`);
 
-// Defining Schema to let mongo know what kinda data is coming
-// - here Test_User_Table is table name inside the first_mongo_db database
+// Creating model with table name (1st arg) and schema (2nd arg) to let mongo know what kinda data is coming
+//   - Here Test_User_Table is table name inside the first_mongo_db database
+//   - model is the object on which we can call different CRUD functions
 const TestUser = mongoose.model("Test_User_Table", {
     name: String,
     email: String,
