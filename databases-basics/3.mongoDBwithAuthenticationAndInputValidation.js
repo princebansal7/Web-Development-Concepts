@@ -91,6 +91,7 @@ app.get("/users", async function (req, res) {
         // searches mongoDB for passed email to exists or not and put that user in data!
         const data = await Users.find({ email: email });
         if (data) {
+            // find({}) : retrieves all documents in collection
             const allUsers = await Users.find({});
             for (let i = 0; i < allUsers.length; i++) {
                 if (allUsers[i].email !== data[0].email) {
