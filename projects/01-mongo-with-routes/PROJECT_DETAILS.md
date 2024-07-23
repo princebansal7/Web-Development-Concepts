@@ -34,7 +34,7 @@ You need to use mongodb to store all the data persistently.
 ### User routes
 - POST /users/signup
   Description: Creates a new user account.
-  Input: { username: 'user', password: 'pass' }
+  Input: Body: { username: 'user', password: 'pass' }
   Output: { message: 'User created successfully' }
 - GET /users/courses
   Description: Lists all the courses.
