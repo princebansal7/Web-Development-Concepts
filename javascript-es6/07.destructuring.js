@@ -273,14 +273,14 @@ let ans = points.map(point => {
     // const y = point[1];
     //       OR
     const [x, y] = point; // (destructure the array)
-    // now we can use x,y varables
+    // now we can use x,y variables
     return { x: x, y: y }; // OR we can use enhanced object literal here (same name => use once)
 });
 
 console.log(ans);
 
 // Most compact version of above code:-----------
-// we destructured array in seperate line, we can do the same in argument itself
+// we destructured array in separate line, we can do the same in argument itself
 
 ans = points.map(([x, y]) => {
     return { x, y }; // used enhanced object literal

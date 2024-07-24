@@ -19,7 +19,7 @@
         <div id="task-container"></div>
 
         <script>
-            function createChildsStructure(title, description, id) {
+            function createChildStructure(title, description, id) {
                 const child = document.createElement("div");
                 const grandChild1 = document.createElement("div");
                 grandChild1.innerHTML = title;
@@ -40,7 +40,7 @@
                 parent.innerHTML = "";
                 // appending new state data
                 for (let i = 0; i < state.length; i++) {
-                    const child = createChildsStructure(
+                    const child = createChildStructure(
                         state[i].title,
                         state[i].description,
                         state[i].id
@@ -107,7 +107,7 @@
     ------------------------------------------------------------------------------------
    - So, 'React library' does all this heavy lifting for us, we don't have to 
      write such code like below functions for DOM Manipulation 
-        - createChildsStructure()
+        - createChildStructure()
         - updateDOMaccordingToState() 
      and Frontend guy just need to call the backend who returns the state
      and react like this fxn updateDOMaccordingToState() will do the DOM manipulation

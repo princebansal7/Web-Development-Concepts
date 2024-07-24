@@ -31,7 +31,7 @@ app.get("/ride2", (req, res) => {
         });
     } else {
         res.status(411).json({
-            msg: "not old enough to buy ride 2 tickett",
+            msg: "not old enough to buy ride 2 ticket",
         });
     }
 });

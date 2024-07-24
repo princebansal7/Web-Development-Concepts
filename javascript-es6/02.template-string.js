@@ -1,4 +1,4 @@
-// Template Strings: it's just a nicer way to combine JS varibles with string
+// Template Strings: it's just a nicer way to combine JS variables with string
 
 const year = new Date().getFullYear();
 let ans = "This is year " + year;

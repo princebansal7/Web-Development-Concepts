@@ -10,7 +10,7 @@
         <input id="title" type="text" placeholder="Title" />
         <br />
         <textarea
-            id="discription"
+            id="description"
             cols="17"
             rows="3"
             placeholder="Description"
@@ -29,12 +29,12 @@
                 parent.children[1].innerHTML = `<s>${parent.children[1].innerHTML}<s>`;
                 parent.children[2].innerHTML = "Completed!";
             }
-            function createChildsStructure(title, discription, id) {
+            function createChildStructure(title, description, id) {
                 const child = document.createElement("div");
                 const grandChild1 = document.createElement("div");
                 grandChild1.innerHTML = title;
                 const grandChild2 = document.createElement("div");
-                grandChild2.innerHTML = discription;
+                grandChild2.innerHTML = description;
                 const grandChild3 = document.createElement("button");
                 grandChild3.innerHTML = "Mark as done";
                 grandChild3.setAttribute("onclick", `markAsDoneAction(${id})`);
@@ -46,10 +46,10 @@
             }
             function addTask() {
                 const title = document.getElementById("title").value;
-                const disc = document.getElementById("discription").value;
+                const disc = document.getElementById("description").value;
                 const parent = document.getElementById("task-container");
                 parent.appendChild(
-                    createChildsStructure(title, disc, globalId++)
+                    createChildStructure(title, disc, globalId++)
                 );
             }
         </script>
@@ -72,7 +72,7 @@ Problems with this approach ?
        - And after some after time say backend returns a new list of toDos => now we need 
          to again update the new task as per new list and remove the old state
    - So, That's basically a state where at any given time we have some list of data and 
-     accodingly we need to render the webpage!!
+     accordingly we need to render the webpage!!
    - we can say State is a big object which contains structure of our application data
      at a given time.
      eg: LinkedIn page have a certain post, message, notification etc number at a given time

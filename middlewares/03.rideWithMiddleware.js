@@ -14,7 +14,7 @@ function ticketSellerMiddleware(req, res, next) {
     age >= 14
         ? next()
         : res.status(411).json({
-              msg: "not old enough to buy ride 1 ticket",
+              msg: "not old enough to buy ride ticket",
           });
 }
 

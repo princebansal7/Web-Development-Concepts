@@ -1,4 +1,4 @@
-// We know basic of JS Objects => check my repositoty if not
+// We know basic of JS Objects => check my repository if not
 
 // Let's create a function which returns JS object (later we'll update it in ES6 way)
 
@@ -38,9 +38,11 @@ console.log();
 /*___________________________________________________________
 
     - Refactoring createBookShop() function
-    -  Making returned object => Enhanced Object acc to ES6 (It's just a way to write objects in more compact manner):
-        1. Don't use same name for 'key' and 'value' like we were using inventory: inventory => we can just write it once as key (internally works same, just code becomes compact)
-        => if key and value are identicle => can use just once
+    -  Making returned object => Enhanced Object acc to ES6 (It's just a way to write objects 
+       in more compact manner):
+        1. Don't use same name for 'key' and 'value' like we were using inventory: inventory
+         => we can just write it once as key (internally works same, just code becomes compact)
+         => if key and value are identical => can use just once
         {inventory: inventory, }  => {inventory,}
 
         2. We can remove 'function' keyword and 'colon' too.

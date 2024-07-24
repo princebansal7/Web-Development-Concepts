@@ -29,12 +29,12 @@ app.get("/", function (req, res) {
 app.use(express.json()); // we use app.use() to get the body parameter in post request (we'll see in middleware)
 
 // Reason why we have to use app.use(express.json()) for body unlike query parameters and headers
-// becuase body can be anything, text, html, json
+// because body can be anything, text, html, json
 // => we explicitly need to tell using middleware that we are expecting json here! (check 10.appDotUse.js)
 
 // for post request: body is way to send data
 app.post("/", function (req, res) {
-    const isHealthy = req.body.isHealthy; // this req.body diectly can't be parsed with express => need to use app.use(express.json())
+    const isHealthy = req.body.isHealthy; // this req.body directly can't be parsed with express => need to use app.use(express.json())
     users[0].kidneys.push({
         healthy: isHealthy,
     });

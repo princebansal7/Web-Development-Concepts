@@ -11,7 +11,7 @@ console.log(add(2, 2));
 
 // 2. Returns single JS expression
 // => remove curly braces
-// => remove 'return' keyword (will return implicitily)
+// => remove 'return' keyword (will return implicitly)
 
 add = (a, b) => a + b;
 console.log(add(3, 4));
@@ -19,7 +19,7 @@ console.log(add(3, 4));
 // Note: if you use curly braces => you must use 'return' keyword too
 //       when expression is too long, it's recommended to use return and braces
 
-// 3. if we have single argument => can remove paranthesis around them too.
+// 3. if we have single argument => can remove parenthesis around them too.
 
 let double = function (num) {
     return 2 * num;
@@ -31,13 +31,13 @@ console.log(double(4));
 double = num => 2 * num; // most compact arrow function example
 console.log(double(39));
 
-// double = (num => 2 * num;) // remove semicolor, else Error
+// double = (num => 2 * num;) // remove semicolon, else Error
 // console.log(double(39));
 
 // double = (num => 2 * num) // can also write like this
 // console.log(double(39));
 
-// 4.if we have 'multiple arguments' or 'zero arguments' we must use paranthesis
+// 4.if we have 'multiple arguments' or 'zero arguments' we must use parenthesis
 
 const greet = () => "Hello Folks!";
 console.log(greet());
@@ -64,7 +64,8 @@ console.log(res);
 res = nums.map(num => 2 * num);
 console.log(res);
 
-// So, if we didn't had ES6 map() array helper or arrow functions, below is code we had to write
+// So, if we didn't had ES6 map() array helper or arrow functions, below is code
+// we had to write
 
 const resArray = [];
 for (let i = 0; i < nums.length; i++) {
@@ -84,7 +85,8 @@ let team = {
     },
 };
 
-// got undefined because, when we passed iterator anonymous function to map() it gets lost hence we can't use this reference
+// got undefined because, when we passed iterator anonymous function to map() it get
+// lost hence we can't use this reference
 console.log(team.members);
 console.log(team.teamName);
 console.log(team.teamSummary());
@@ -134,10 +136,13 @@ console.log(team.teamSummary());
 
 /* Why arrow function worked ?
 
-1. Arrow functions use 'Lexical this' => depends upon where we are placing 'this' it will behave accordingly => Here 'this' automatically equals to surrounding context
+1. Arrow functions use 'Lexical this' => depends upon where we are placing 'this' 
+   it will behave accordingly => Here 'this' automatically equals to surrounding context
                          =>    this === team
 
-    So, arrow functions fixes all above problems as 'this' behaves like what we expected them too behave when using in arrow functions. (which it didn't behave when we used normal functions, and we didn't had to cache or learn bind() etc too)
+    So, arrow functions fixes all above problems as 'this' behaves like what we expected
+    them too behave when using in arrow functions. (which it didn't behave when we used 
+    normal functions, and we didn't had to cache or learn bind() etc too)
 
 */
 
@@ -181,7 +186,9 @@ console.log(profile.getName()); //  undefined
 
 /*
 
-The reason the first code works as expected while the second one returns `undefined` is due to the difference in how arrow functions (`() =>`) and regular functions (`function`) handle the `this` keyword in JavaScript.
+The reason the first code works as expected while the second one returns `undefined`
+is due to the difference in how arrow functions (`() =>`) and regular functions (`function`)
+handle the `this` keyword in JavaScript.
 
 In the first code:
 
@@ -194,7 +201,11 @@ let profile = {
 };
 ```
 
-Here, you are using a regular function for `getName`. Regular functions have their own `this` context, which is determined by how they are called. In this case, when you call `profile.getName()`, the `this` inside the function refers to the `profile` object, so `this.name` correctly accesses the `name` property of the `profile` object, and it returns "Alex."
+Here, you are using a regular function for `getName`. Regular functions have their 
+own `this` context, which is determined by how they are called. In this case, 
+when you call `profile.getName()`, the `this` inside the function refers to the 
+`profile` object, so `this.name` correctly accesses the `name` property of the `profile` 
+object, and it returns "Alex."
 
 In the second code:
 
@@ -205,8 +216,14 @@ profile = {
 };
 ```
 
-Here, you are using an arrow function for `getName`. Arrow functions do not have their own `this` context; instead, they inherit the `this` value from the surrounding (lexical) context. In this case, when you create the `profile` object, there is no surrounding function that sets `this`, so `this` in the arrow function refers to the `this` value of the enclosing context, which is likely the global `this`. Since there is no `name` property on the global `this`, it returns `undefined`.
+Here, you are using an arrow function for `getName`. Arrow functions do not have their 
+own `this` context; instead, they inherit the `this` value from the surrounding (lexical) context. 
+In this case, when you create the `profile` object, there is no surrounding function that sets `this`,
+so `this` in the arrow function refers to the `this` value of the enclosing context, which is likely 
+the global `this`. Since there is no `name` property on the global `this`, it returns `undefined`.
 
-To summarize, regular functions have their own `this` context, which makes them suitable for methods of objects, while arrow functions inherit `this` from their surrounding context, which can lead to unexpected behavior when used in object methods like in the second example.
+To summarize, regular functions have their own `this` context, which makes them suitable for 
+methods of objects, while arrow functions inherit `this` from their surrounding context, which 
+can lead to unexpected behavior when used in object methods like in the second example.
 
 */

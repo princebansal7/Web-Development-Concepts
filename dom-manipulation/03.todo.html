@@ -7,7 +7,7 @@
         <input id="title" type="text" placeholder="Title" />
         <br />
         <textarea
-            id="discription"
+            id="description"
             cols="17"
             rows="3"
             placeholder="Description"
@@ -32,13 +32,13 @@
             }
 
             //--------#2 READ ME SECOND---------------------------------------
-            function createChildsStructure(title, discription, id) {
+            function createChildStructure(title, description, id) {
                 const child = document.createElement("div"); // creates element named div => <div></div> (in memory)
 
                 const grandChild1 = document.createElement("div"); // creates element named div => <div></div> (in memory)
                 grandChild1.innerHTML = title; // putting user <div>'title-user-enters'</div>
                 const grandChild2 = document.createElement("div"); // creates element named div => <div></div> (in memory)
-                grandChild2.innerHTML = discription; // putting user <div>'discription-user-enters'</div>
+                grandChild2.innerHTML = description; // putting user <div>'description-user-enters'</div>
                 const grandChild3 = document.createElement("button"); // creates element named button => <button></button> (in memory)
                 grandChild3.innerHTML = "Mark as done"; // putting user <button>Done</button>
                 grandChild3.setAttribute("onclick", `markAsDoneAction(${id})`); // adds attributes to button element => <button onclick="doneAction(id)"></button>
@@ -66,13 +66,13 @@
                 //     <button onclick="markAsDoneAction(${id})">Mark as Done</button>
                 // </div>
 
-                // complete div structure is created with requried attributes!
+                // complete div structure is created with required attributes!
                 return child;
             }
             //--------#1 READ ME FIRST---------------------------------------
             function addTask() {
                 const title = document.getElementById("title").value;
-                const disc = document.getElementById("discription").value;
+                const disc = document.getElementById("description").value;
 
                 // 1. We want to add something like:
 
@@ -113,7 +113,7 @@
 
                 const parent = document.getElementById("task-container");
                 parent.appendChild(
-                    createChildsStructure(title, disc, globalId++)
+                    createChildStructure(title, disc, globalId++)
                 );
             }
         </script>

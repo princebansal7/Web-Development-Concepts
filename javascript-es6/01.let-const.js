@@ -2,7 +2,7 @@
 
 # var:   1. "Function Scoped" => available everywhere in which function it is defined 
        2. if not defined in function => becomes global scoped &
-          var varibles can be redefined with the same name again.
+          var variables can be redefined with the same name again.
        3. we can use 'var' defined variables before defining them.
           example:
                   console.log(x);
@@ -22,7 +22,7 @@
                  obj = 29;  // ERROR
                  or 
                  obj = {val:"69"}; // ERROR
-    - very Helpul in code understanding as coder gets clear idea what can change and what can not in complex codes
+    - very Helpful in code understanding as coder gets clear idea what can change and what can not in complex codes
 
 */
 
@@ -44,7 +44,7 @@ Example:
 var statuses = [
   { code: "OK", response: "Request successful" },
   { code: "FAILED", response: "There was an error with your request" },
-  { code: "PENDING", response: "Your reqeust is still pending" },
+  { code: "PENDING", response: "Your request is still pending" },
 ];
 var message = "";
 var currentCode = "OK";
@@ -64,7 +64,7 @@ for (var i = 0; i < statuses.length; i++) {
 const statuses = [
     { code: "OK", response: "Request successful" },
     { code: "FAILED", response: "There was an error with your request" },
-    { code: "PENDING", response: "Your reqeust is still pending" },
+    { code: "PENDING", response: "Your request is still pending" },
 ];
 let message = "";
 let currentCode = "OK";

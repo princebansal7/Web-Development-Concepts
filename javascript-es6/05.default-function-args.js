@@ -1,4 +1,5 @@
-// Let's make a function to make ajax request, where function will take argument 'url' and request method type as 'method'
+// Let's make a function to make ajax request, where function will take argument
+// 'url' and request method type as 'method'
 // method can be 'GET', 'PUT', 'POST' etc (most common is GET method)
 
 function makeAjaxRequest(url, method) {
@@ -16,7 +17,7 @@ function makeAjaxRequest(url, method) {
 makeAjaxRequest("google.com");
 makeAjaxRequest("google.com", "GET");
 // In above both calls "GET" method gets assigned as method
-// But had to write seperate check manually
+// But had to write separate check manually
 
 console.log();
 console.log();
@@ -41,7 +42,8 @@ makeAjaxRequest("google.com", null); // if we don't want to assign any method, u
 // EXAMPLES--------------------------
 
 // Eg-1
-// After default argument all formal args must have default args too else if user doesn't pass all, will give wrong result (like c++ rule)
+// After default argument all formal args must have default args too else if user doesn't
+// pass all, will give wrong result (like c++ rule)
 
 let add = function (x, y) {
     return x + y;

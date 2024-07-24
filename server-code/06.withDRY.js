@@ -67,8 +67,8 @@ app.listen(port, () => {
 });
 
 // Problem ?
-// Still there is a lot of code repeatation
+// Still there is a lot of code repetition
 // Solution?
 // Using MIDDLEWARES
-// whenevers there are bunch of validation checks or pre-checks => move all of them to some other place
-// and that place is Middleware!
+// whenever there are bunch of validation checks or pre-checks => move all of them to
+// some other place and that place is Middleware!

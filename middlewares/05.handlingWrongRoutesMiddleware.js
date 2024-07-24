@@ -11,7 +11,7 @@ function ticketSellerMiddleware(req, res, next) {
           });
 }
 
-// we know, below all routes will need the ticketchecker middleware
+// we know, below all routes will need the ticket-checker middleware
 // hence we can use app.use()
 // it automatically add to middleware to the routes defined below it
 

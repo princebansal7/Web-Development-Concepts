@@ -16,7 +16,7 @@ setInterval(() => {
     numberOfRequestsForUser = {};
 }, 1000);
 
-// rate limitter middleware
+// rate limiter middleware
 app.use(function (req, res, next) {
     const userId = req.headers["user-id"];
     if (numberOfRequestsForUser[userId]) {

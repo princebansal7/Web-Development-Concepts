@@ -29,7 +29,7 @@ console.log();
 
 //***************************************************/
 // Using rest '...' operator with can capture any number of arguments => it Gathers elements
-// Now, we can pass any number of arguments with worrying about accepting them seperately in formal arguments
+// Now, we can pass any number of arguments with worrying about accepting them separately in formal arguments
 // '...' operator catches all the elements and puts in a single array
 
 function addNum4(...numArray) {
@@ -51,7 +51,7 @@ const userColors = ["purple", "pink", "orange"];
 // old way
 console.log(defaultColors.concat(userColors));
 
-// using spread operator, we created new array and speaded all elements of other arrays
+// using spread operator, we created new array and spread all elements of other arrays
 
 console.log([...defaultColors, ...userColors]);
 
@@ -94,7 +94,8 @@ console.log();
 
 // Eg-2
 
-// let we have this object and it become famous => we want to optimise and add new method which does same task
+// let we have this object and it become famous => we want to optimize and
+// add new method which does same task
 let mathLibrary = {
     calProduct(a, b) {
         return a * b;
@@ -108,7 +109,7 @@ mathLibrary = {
         return a * b;
     },
     multiply(a, b) {
-        // some optimisations
+        // some optimizations
         return a * b;
     },
 };
@@ -122,13 +123,13 @@ console.log(mathLibrary.calProduct(2, 4));
 mathLibrary = {
     calProduct(...list) {
         console.log(
-            "calProduct() method is depreciated, please use mutiply() method"
+            "calProduct() method is depreciated, please use multiply() method"
         );
         // console.log(...list);
         return this.multiply(...list);
     },
     multiply(a, b) {
-        // some optimisations
+        // some optimizations
         console.log("using multiply() now..");
         return a * b;
     },
