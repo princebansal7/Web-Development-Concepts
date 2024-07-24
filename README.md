@@ -15,7 +15,7 @@
 - Backend concepts:
   
   - Express servers | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/server-code)
-  - Middlewares | [link-1](https://github.com/princebansal7/Web-Development-Concepts/blob/main/server-code/07.SomeBasicsBeforeMiddleware.js) | [link-2](https://github.com/princebansal7/Web-Development-Concepts/tree/main/middlewares)
+  - Middlewares | [Pre-req](https://github.com/princebansal7/Web-Development-Concepts/blob/main/server-code/06.withDRY.js) | [Examples](https://github.com/princebansal7/Web-Development-Concepts/tree/main/middlewares)
   - Input validation, Zod | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/input-validation)
   - Authentication - JWT (JsonWebTokens) | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/authentication-concepts/03.authenticationPrereqs.md)
   - Database connectivity | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/01.database.md) | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/02.mongooseConnect.js)
