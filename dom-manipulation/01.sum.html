@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body id="bod">
+        <input id="a" type="text" placeholder="69" /></input>
+        <br>
+        <input id="b" type="text" placeholder="7" /></input>
+        <br>
+        <button onclick="getSum()">Get Sum</button>
+        <div id="sum"></div>
+
+
+        <script>
+            // Using DOM (Document Object Model) we make website interactive and dynamic!
+            // - dynamic means once the website is loaded, we can still change elements
+            // - as here calculating sum based on the inputs rendering on the screen
+            // - classes and id are important for DOM
+            //    - classes are helpful in avoiding code repetition
+            //    - ids: 
+            //        - usually used for javaScript
+            //        - lets you do the styles 
+            //        - lets you access elements via the DOM API
+            //   - Few important points:
+            //      - document let's you do all this
+            //      - getElementById(): gives you the HTML element for which id is specified
+            //      - getElementByClassName(): gives you the HTML element for which class is specified
+            //      - querySelector("#id-name/.class-name"): gives you just that element on which id/class is applied
+            //      - querySelectorAll("#id-name/.class-name"): gives you all the elements on which id/class is applied
+            //      - innerHTML: gives the child as string
+            //      - innerText: gives you text inside element (which is mostly strings)
+            //      - value: used to get values of html input element unlike innerText is used for other
+            //      - parseInt(): global function to convert numeric strings to int
+
+            function getSum() {
+                const num1 = parseInt(document.getElementById("a").value);
+                const num2 = parseInt(document.getElementById("b").value);
+                const ans = num1 + num2;
+                document.getElementById("sum").innerText = `Sum is ${ans}`;
+            }
+        </script>
+    </body>
+</html>

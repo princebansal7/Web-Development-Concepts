@@ -8,7 +8,7 @@ app.use(express.json());
 // But user can send any data in body, which can be wrong too like, string, number wrong data
 // in such case:
 // const kidneyLength = kidney.length; will throw exceptions which we don't want user to see
-// We can use another middleware which catches all such exceptions, have 4 arguments (express recogonize it due to these 4 args)
+// We can use another middleware which catches all such exceptions, have 4 arguments (express recognize it due to these 4 args)
 // it always comes in last of the code
 
 app.post("/", (req, res) => {
