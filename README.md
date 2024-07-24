@@ -19,8 +19,8 @@
   - Input validation, Zod | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/input-validation)
   - Authentication - JWT (JsonWebTokens) | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/authentication-concepts/03.authenticationPrereqs.md)
   - Database connectivity | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/01.database.md) | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/02.mongooseConnect.js)
-  - frontend-backend connection | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend)
-  - Debouncing & Throttling | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend/throttling-debouncing)
+  - frontend-backend connection | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend-connect)
+  - Debouncing & Throttling | [link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend-connect/03.throttling-debouncing)
   
 - Databases 
-  - MongoDB | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/01.database.md) | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/03.mongoDBwithAuthInputValidation.js)
+  - MongoDB | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/01.database.md#databases) | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/03.mongoDBwithAuthInputValidation.js)
