@@ -4,7 +4,7 @@
         <!--         
         - I have added oninput => as soon as we type at each keystroke, 
           populateDiv() was getting called and request goes to backend. 
-          (now instead of populateDiv() we are calling deboucePopulateDiv(), you'll see why)
+          (now instead of populateDiv() we are calling debouncePopulateDiv(), you'll see why)
           
          Debouncing Concept:
         - Real world example: like on amazon when we search for product: 
@@ -12,10 +12,10 @@
               products in search box => here also request is going on at backend
               logic which is returning us those suggestions 
             - But if we type fast then those product suggestions
-              shows after a delay => request is going after a certian delay
+              shows after a delay => request is going after a certain delay
               => this is called Debouncing 
-            - It is used for optimising the performance as we are
-              optimising the request fequency
+            - It is used for optimizing the performance as we are
+              optimizing the request frequency
     -->
         Number-1:
         <input
@@ -44,7 +44,7 @@
             //   2. if user types again in those 100 ms
             //      => it again needs to wait 100 ms, instead of calling populateDiv()
             //      (as user is still gonna type, so we'll hold off showing suggestions yet and
-            //      hence optimising request frequencey)
+            //      hence optimizing request frequency)
             //
             // Some things to know about setTimeOut():
             //   - The setTimeout function in JavaScript returns a timeoutID. This is a numeric value that
@@ -53,7 +53,7 @@
             //     clearTimeout() function.
             //
             //  Now, here the flow is like: (Dry Run of debounce)
-            //   - 1st time when user types, debouncePoplateDiv() gets called
+            //   - 1st time when user types, debouncePopulateDiv() gets called
             //   - clearTimeOut() gets called with undefined value of timeoutId => it does nothing
             //     as no clock was running
             //   - the setTimeout() gets called and waits for 500 ms, timeoutId for running clock generated
@@ -73,8 +73,8 @@
                     populateDiv();
                 }, 500);
             }
-            // Above debonce function is generic we can pass any following function
-            // to make optimise requests after passing them instead of populateDiv()
+            // Above debounce function is generic we can pass any following function
+            // to make optimize requests after passing them instead of populateDiv()
 
             async function populateDiv() {
                 const num1 = parseInt(document.getElementById("a").value);

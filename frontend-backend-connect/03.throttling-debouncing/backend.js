@@ -17,5 +17,5 @@ app.listen(3000);
 // Throttling (not needed for now)
 // - it is just like debouncing but instead frontend we apply it on backend
 // - we limit the responses sent by backend by some interval or number so
-//   that resposes are not sent in rapid succession but after a duration, this is
+//   those responses are not sent in rapid succession but after a duration, this is
 //   called throttling (server responding back slowly)

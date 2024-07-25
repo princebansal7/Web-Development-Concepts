@@ -7,7 +7,6 @@ const jwtPassword = "secret";
 //    Should return null if the username is not a valid email or if the password is less than 6 characters. Try using the zod library here
 //  - Write a function that takes a jwt as input and returns true if the jwt can be DECODED (not verified). Return false otherwise
 //  - Write a function that takes a jwt as input and returns true if the jwt can be VERIFIED. Return false otherwise
-//  - To test, go to the 02-jwt folder and run `npx jest ./tests`
 
 const usernameSchema = z.string().email();
 const passwordSchema = z.string().min(6);
