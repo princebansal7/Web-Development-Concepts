@@ -41,7 +41,7 @@ router.get("/courses", async (req, res) => {
     res.json(allCourse);
 });
 
-// routes to user/courses/id
+// routes to user/courses/id: // user/courses/<anything> => as courseId is dynamic value
 router.post("/courses/:courseId", userMiddleware, async (req, res) => {
     // Implement course purchase logic
     // we had Purchase table separate, we could've done:
