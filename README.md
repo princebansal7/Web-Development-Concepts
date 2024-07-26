@@ -1,7 +1,7 @@
-# Web Developement Concepts
+# Web Development Concepts
 
 - `nvm` commands | [nvm](https://github.com/princebansal7/JavaScript-Projects?tab=readme-ov-file#steps-to-install-nodejs-via-nvm) 
-- Frontend concepts:
+- Frontend:
  
   - HTML | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/html-basics)
   - CSS | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/css-basics)
@@ -12,7 +12,7 @@
     - `state` rendering on DOM like React does under the hood (High level) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/dom-manipulation/todo-react-underhood/todoReactUnderhood.html)
   - Learn React Js (Old) | [Link](https://github.com/princebansal7/Learn-React)
 
-- Backend concepts:
+- Backend:
   
   - Express servers | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/server-code)
   - Middlewares | [Pre-req](https://github.com/princebansal7/Web-Development-Concepts/blob/main/server-code/06.withDRY.js) | [Examples](https://github.com/princebansal7/Web-Development-Concepts/tree/main/middlewares)
