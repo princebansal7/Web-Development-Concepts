@@ -58,3 +58,8 @@ app.get("/", cb1, cb2, cb3, (req, res) => {
 app.listen(port, () => {
     console.log(`http://localhost:${port}/`);
 });
+
+// NOTE: Middlewares mostly used to do below 3 tasks:
+//       1. End the request
+//       2. Forward the request to next middleware
+//       3. Pass data along to the next middleware (Important while doing authentications)
