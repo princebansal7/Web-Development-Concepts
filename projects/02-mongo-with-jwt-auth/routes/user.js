@@ -1,13 +1,15 @@
 const { Router } = require("express");
+const jwt = require("jsonwebtoken");
 const router = Router();
 const userMiddleware = require("../middleware/user");
 const { User, Course } = require("../db/schemas");
 
 // User Routes
+
+// user/signup
 router.post("/signup", async (req, res) => {
     // Implement user signup logic
-    const username = req.body.username;
-    const password = req.body.password;
+    const { username, password } = req.body;
 
     const userExist = await User.findOne({ username });
     if (userExist) {
@@ -30,30 +32,40 @@ router.post("/signup", async (req, res) => {
     }
 });
 
-// open for all => anyone can see available courses
-// in real world admin courses will have additional keys, which helps
-// to protect and access from normal users and admin, eg: isPublished
+// user/signin
+router.post("/signin", async (req, res) => {
+    // Implement user signup logic
+    const { username, password } = req.headers;
+    // check admin exist in DB or not
+    const user = await User.findOne({
+        username,
+        password,
+    });
+    if (user) {
+        const jwtToken = jwt.sign({ username }, process.env.JWT_SECRET);
+        return res.json({
+            token: jwtToken,
+        });
+    } else {
+        res.status(411).json({
+            msg: "incorrect email or password",
+        });
+    }
+});
 
-// routes to /user/courses
+// user/courses
 router.get("/courses", async (req, res) => {
     // Implement listing all courses logic
     const allCourse = await Course.find({});
     res.json(allCourse);
 });
 
-// routes to user/courses/id: // user/courses/<anything> => as courseId is dynamic value
+// user/courses/<anything> : as courseId is dynamic value
 router.post("/courses/:courseId", userMiddleware, async (req, res) => {
     // Implement course purchase logic
-    // we had Purchase table separate, we could've done:
-    // Purchase.create({
-    //     userId,
-    //     purchaseId
-    // })
-    // But we have purchase in user table itself
-    // 1. get the courseId
+    const username = req.username; // sent by userMiddleware
+    // console.log(username);
     const courseId = req.params.courseId;
-    //2. get the username (headers, if middleware passes)
-    const username = req.headers.username;
     await User.updateOne(
         {
             username: username,
@@ -70,10 +82,10 @@ router.post("/courses/:courseId", userMiddleware, async (req, res) => {
     });
 });
 
-// user/get-courses
-router.get("/get-courses", userMiddleware, async (req, res) => {
-    // Implement fetching purchased courses logic
-    const userCourses = await User.findOne({ username: req.headers.username });
+// user/purchasedCourses
+router.get("/purchasedCourses", userMiddleware, async (req, res) => {
+    const username = req.username; // sent by userMiddleware
+    const userCourses = await User.findOne({ username });
     // console.log(userCourses.purchasedCourses);
     const courses = await Course.find({
         _id: {
