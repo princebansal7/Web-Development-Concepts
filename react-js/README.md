@@ -17,7 +17,8 @@
 ## React JS
 
 - **React essentials**
-  - Creators of Frontend realized all websites can effectively be divided in 3 parts
+  - Creators of Frontend realized all websites can effectively be divided in 3 parts:
+  
     - **`State`**: An object which represents current `state` of the application, it represents dynamic things in your app (i.e, things that change, e.g: value of the *counter* in previous example, for counter example state will look like:
       ```js
           {
@@ -34,4 +35,4 @@
     3. give me how the `state` is connected to the given `components` 
   - React essentially after having the above things updates DOM etc under the hood.
   - You usually have to define all of your **components** once and then all you have to do is update the **state** of your app and React takes care of **re-rendering** your app.
-  - Counter app with state, components (without reactJS) | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/02.counter-state-component/counter-state-component.html)
+  - Counter app with state, components and re-rendering (without using reactJS) | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/02.counter-state-component/counter-state-component.html)
