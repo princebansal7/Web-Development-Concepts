@@ -13,3 +13,26 @@
 - So libraries like React Js, which uses complex DOM manipulation under the hood keeping developer side code simple and efficient.
 - React is just easier way to write **HTML/CSS/JS**
 - It's a new syntax which under the hood gets converted into **HTML/CSS/JS**
+  
+## React JS
+
+- **React essential**
+  - Creators of Frontend realized all websites can effectively be divided in 3 parts
+    - **State**: An object which represents current `state` of the application, it represents dynamic things in your app (i.e, things that change, e.g: value of the *counter* in previous example)
+    - for for counter example state will look like:
+      ```js
+          {
+              counter:1
+          }
+      ```
+    - **Components**: It is how a DOM element should render given a state => It is reusable, dynamic, HTML snippet that changes given a state. In Counter example, button is a component, which takes state (counter) as a input and is supposed to render accordingly
+    - **Re-Rendering**: whenever state get updated (from backend requests or any way), then react takes only the changed value from state and updates the component and DOM, this is called re-rendering. `state` change triggers a `re-render` => **re-render represents the actual DOM being manipulated when the state changes.**
+  
+- **React expectation?**
+  - High level React expectation from developers is: 
+    1. give me the `state` of your app => give me a object which have dynamic parts of app
+    2. give me all your individual `components` and how they are structured together
+    3. give me how the `state` is connected to the given `components` 
+  - React essentially after having the above things updates DOM etc under the hood.
+  - You usually have to define all of your **components** once and then all you have to do is update the **state** of your app and React takes care of **re-rendering** your app.
+  - Counter app with state, components (without reactJS) | [link]()

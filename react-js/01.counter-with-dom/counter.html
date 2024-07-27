@@ -39,9 +39,11 @@
             function increase2() {
                 const str = document.getElementById("counter").innerText; // 'Counter 0'
                 let valArr = str.split(" "); // ["Counter","0"]
-                let val = parseInt(valArr[1]); // 0
-                val++;
-                document.getElementById("counter").innerText = `Counter ${val}`;
+                let counter = parseInt(valArr[1]); // 0
+                counter++;
+                document.getElementById(
+                    "counter"
+                ).innerText = `Counter ${counter}`;
             }
         </script>
     </body>
