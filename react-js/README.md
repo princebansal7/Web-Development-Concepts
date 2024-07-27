@@ -16,7 +16,7 @@
   
 ## React JS
 
-- **React essential**
+- **React essentials**
   - Creators of Frontend realized all websites can effectively be divided in 3 parts
     - **State**: An object which represents current `state` of the application, it represents dynamic things in your app (i.e, things that change, e.g: value of the *counter* in previous example)
     - for for counter example state will look like:
