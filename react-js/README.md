@@ -18,14 +18,14 @@
 
 - **React essentials**
   - Creators of Frontend realized all websites can effectively be divided in 3 parts
-    - `**State**`: An object which represents current `state` of the application, it represents dynamic things in your app (i.e, things that change, e.g: value of the *counter* in previous example, for counter example state will look like:
+    - **`State`**: An object which represents current `state` of the application, it represents dynamic things in your app (i.e, things that change, e.g: value of the *counter* in previous example, for counter example state will look like:
       ```js
           {
               counter:1
           }
       ```
-    - `**Components**`: It is how a DOM element should render given a state => It is reusable, dynamic, HTML snippet that changes given a state. In Counter example, button is a component, which takes state (counter) as a input and is supposed to render accordingly
-    - `**Re-Rendering**`: whenever state get updated (from backend requests or any way), then react takes only the changed value from state and updates the component and DOM, this is called re-rendering. `state` change triggers a `re-render` => **re-render represents the actual DOM being manipulated when the state changes.**
+    - **`Components`**: It is how a DOM element should render given a state => It is reusable, dynamic, HTML snippet that changes given a state. In Counter example, button is a component, which takes state (counter) as a input and is supposed to render accordingly
+    - **`Re-Rendering`**: whenever state get updated (from backend requests or any way), then react takes only the changed value from state and updates the component and DOM, this is called re-rendering. `state` change triggers a `re-render` => **re-render represents the actual DOM being manipulated when the state changes.**
   
 - **React expectation?**
   - High level React expectation from developers is: 
