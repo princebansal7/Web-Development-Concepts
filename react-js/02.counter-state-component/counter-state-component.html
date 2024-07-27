@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                background: #282626;
+                color: bisque;
+            }
+            #container {
+                font-size: large;
+                text-align: center;
+                padding: 30vi;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+
+        <script>
+            // global "state" (in memory)
+            const state = {
+                counter: 0,
+            };
+
+            // 4. whenever uses clicks button => it updates the state and re renders the button component
+            //    Developer just need to write this part (in react)
+            function increaseCounter() {
+                state.counter++;
+                // react takes care of it (whenever state changes)
+                buttonComponentReRender();
+            }
+
+            // 2. button gets "rendered again and again" according to the value of state.counter
+            //    React take care of it
+            function buttonComponentReRender() {
+                const parentDiv = document.getElementById("container");
+                // react doesn't clear the page fist => it calculates the diff using virtual DOM
+                // for simplicity, I did this
+                parentDiv.innerHTML = "";
+                const component = buttonComponent(state.counter);
+                parentDiv.appendChild(component);
+            }
+            // 3. we are creating the button "component"
+            //   takes state as input and spits out some html snippet
+            //   Developer just need to write this part (in react)
+            function buttonComponent(counter) {
+                const button = document.createElement("button");
+                button.innerHTML = `Counter ${counter}`;
+                button.setAttribute("onclick", "increaseCounter()");
+                return button;
+            }
+
+            // 1. Button get rendered when we load the page which initial state.counter 0
+            //   1st render wwe have to do manually in react too
+            buttonComponentReRender();
+        </script>
+    </body>
+</html>

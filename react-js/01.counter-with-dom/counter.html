@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                background: #282626;
+                color: bisque;
+            }
+            #container {
+                font-size: large;
+                text-align: center;
+                padding: 30vi;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <!-- Example-1  -->
+            <button id="increase-counter" onclick="increase()">+</button>
+            <span id="counter-value">0</span>
+            <button id="decrease-counter" onclick="decrease()">-</button>
+            <!-- Example-2 -->
+            <br /><br /><br />
+            <button id="counter" onclick="increase2()">Counter 0</button>
+        </div>
+
+        <script>
+            // Example-1
+            let counter = 0;
+            function increase() {
+                counter++;
+                document.getElementById("counter-value").innerText = counter;
+            }
+            function decrease() {
+                counter--;
+                document.getElementById("counter-value").innerText = counter;
+            }
+            // Example-2
+            function increase2() {
+                const str = document.getElementById("counter").innerText; // 'Counter 0'
+                let valArr = str.split(" "); // ["Counter","0"]
+                let counter = parseInt(valArr[1]); // 0
+                counter++;
+                document.getElementById(
+                    "counter"
+                ).innerText = `Counter ${counter}`;
+            }
+        </script>
+    </body>
+</html>
