@@ -34,5 +34,5 @@
         - 1st value as state variable value
         - 2nd value as react internal dispatch function which
                   re-renders the component when state variable value changes
-    - Hence, using react it is that easy to do same thing we did in `02.counter-state-component`
+  4. Hence, using react it is that easy to do same thing we did in `02.counter-state-component`
     in just few lines of code
