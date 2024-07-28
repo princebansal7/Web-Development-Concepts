@@ -36,3 +36,17 @@
             );
         }
     ```
+
+- Here we are returning elements (which will shown on DOM) like this:
+    ```jsx
+        return <button onClick={increaseCounter}>Counter {props.count}</button>; // Modern way
+
+                       |
+                       |  Transpiled
+                       |
+                       \/
+
+        return React.createElement("button",{onClick:increaseCounter},`Counter ${props.count}`) // Old way
+    ``` 
+- Initially react was written like the transpiled version (which is more relatable to DOM manipulation we wrote)
+- But in later versions it was made more cleaner and is basically a syntactic sugar
