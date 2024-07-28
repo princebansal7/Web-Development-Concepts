@@ -4,6 +4,7 @@
     react component, wrap it in {}, it renders an dynamic
     variable
  2. in jsx we write XML not HTML
+   
     => in html: 
     ```html
     <button onclick="increaseCounter()"></button>
@@ -14,7 +15,7 @@
     ```
  3. we have defined a global variable named state => but when we update it 
     react doesn't re-render the component
-    
+
     **why ?**
 
     Because React isn't watching it 
