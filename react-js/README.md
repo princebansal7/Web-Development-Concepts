@@ -42,4 +42,4 @@
   - when we use: `npm run build` it takes all our react code and creates a `dist` folder which have html and js file (which essentially browser understand)
   - we just need `dist` folder to host our app.
   - **Examples:**
-    - Counter app using react | [Link]()
+    - Counter app using react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
