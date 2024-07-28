@@ -1,5 +1,8 @@
 ## Counter App
 
+- Check files: `App.jsx` and `main.jsx`
+- We start components with Capital alphabets (standard convention)
+  
  1. Whenever we need any js variable or expression in 
     react component, wrap it in {}, it renders an dynamic
     variable
