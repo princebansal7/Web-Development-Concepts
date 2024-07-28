@@ -1,4 +1,4 @@
-# React Basics and need
+# React Basics and it's need
 
 - Previously in [DOM Manipulation](https://github.com/princebansal7/Web-Development-Concepts/blob/main/dom-manipulation/03.todo.html) we saw the need of `react` and `react dom`
 - In `static` website we don't need react but in `Dynamic` websites where content is getting changed as per user activity, `React` removes a lot of headache which if we simply use DOM manipulation, we can't avoid.
@@ -37,10 +37,11 @@
   - You usually have to define all of your **components** once and then all you have to do is update the **state** of your app and React takes care of **re-rendering** your app.
   - Counter app with state, components and re-rendering (without using reactJS) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/02.counter-state-component/counter-state-component.html)
 
-- **React JS with examples**
+- **React JS install and build**
   - to install use:  `npm create vite@latest`
   - when we use: `npm run build` it takes all our react code and creates a `dist` folder which have html and js file (which essentially browser understand)
   - we just need `dist` folder to host our app.
-  - **Examples:**
-    - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
-    - Counter with props | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/04.react-counter-app-props)
+  
+## Examples:
+  - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
+  - Counter app with props | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/04.react-counter-app-props)
