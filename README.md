@@ -10,7 +10,8 @@
   - React JS foundation
     - `state` concept with naive DOM manipulation | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/dom-manipulation/todo-with-state)
     - `state` rendering on DOM like React does under the hood (High level) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/dom-manipulation/todo-react-underhood/todoReactUnderhood.html)
-  - Learn React Js (Old) | [Link](https://github.com/princebansal7/Learn-React)
+  - React JS (2024) | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/README.md)
+  - React Js (Old) | [Link](https://github.com/princebansal7/Learn-React)
 
 - Backend:
   

@@ -1,6 +1,6 @@
 # React Basics and need
 
-- We previously saw in [DOM Manipulation](https://github.com/princebansal7/Web-Development-Concepts/blob/main/dom-manipulation/03.todo.html) we saw the need of `react` and `react dom`
+- Previously in [DOM Manipulation](https://github.com/princebansal7/Web-Development-Concepts/blob/main/dom-manipulation/03.todo.html) we saw the need of `react` and `react dom`
 - In `static` website we don't need react but in `Dynamic` websites where content is getting changed as per user activity, `React` removes a lot of headache which if we simply use DOM manipulation, we can't avoid.
 - Counter (using DOM Manipulation) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/01.counter-with-dom/counter.html), we need to write a lot of code for such simple DOM Manipulation and to make it dynamic.
 - In Real world applications like LinkedIn, facebook have lot of dynamic content so DOM code gets much complex.
@@ -25,8 +25,8 @@
               counter:1
           }
       ```
-    - **Components**: It is how a DOM element should render given a state => It is reusable, dynamic, HTML snippet that changes given a state. In Counter example, button is a component, which takes state (counter) as a input and is supposed to render accordingly
-    - **Re-Rendering**: whenever state get updated (from backend requests or any way), then react takes only the changed value from state and updates the component and DOM, this is called re-rendering. `state` change triggers a `re-render` => **re-render represents the actual DOM being manipulated when the state changes.**
+    - **`Components`**: It is how a DOM element should render given a state => It is reusable, dynamic, HTML snippet that changes given a state. In Counter example, button is a component, which takes state (counter) as a input and is supposed to render accordingly
+    - **`Re-Rendering`**: whenever state get updated (from backend requests or any way), then react takes only the changed value from state and updates the component and DOM, this is called re-rendering. `state` change triggers a `re-render` => **re-render represents the actual DOM being manipulated when the state changes.**
   
 - **React expectation?**
   - High level React expectation from developers is: 
