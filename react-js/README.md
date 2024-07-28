@@ -2,7 +2,7 @@
 
 - Previously in [DOM Manipulation](https://github.com/princebansal7/Web-Development-Concepts/blob/main/dom-manipulation/03.todo.html) we saw the need of `react` and `react dom`
 - In `static` website we don't need react but in `Dynamic` websites where content is getting changed as per user activity, `React` removes a lot of headache which if we simply use DOM manipulation, we can't avoid.
-- Counter (using DOM Manipulation) | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/01.counter-with-dom/counter.html), we need to write a lot of code for such simple DOM Manipulation and to make it dynamic.
+- Counter (using DOM Manipulation) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/01.counter-with-dom/counter.html), we need to write a lot of code for such simple DOM Manipulation and to make it dynamic.
 - In Real world applications like LinkedIn, facebook have lot of dynamic content so DOM code gets much complex.
 - So, people realized it's hard to do DOM Manipulation in conventional way
 - So, There were different libraries came into the picture which made DOM Mani. slightly easy but still for complex big apps it was still hard (**JQuery**)
@@ -19,7 +19,7 @@
 - **React essentials**
   - Creators of Frontend realized all websites can effectively be divided in 3 parts:
   
-    - **`State`**: An object which represents current `state` of the application, it represents dynamic things in your app (i.e, things that change, e.g: value of the *counter* in previous example, for counter example state will look like:
+    - **`State`**: An object which represents current `state` of the application, it represents dynamic things in your app (i.e, things that change, e.g: value of the *counter*) in previous example, for counter example state will look like:
       ```js
           {
               counter:1
@@ -35,4 +35,11 @@
     3. give me how the `state` is connected to the given `components` 
   - React essentially after having the above things updates DOM etc under the hood.
   - You usually have to define all of your **components** once and then all you have to do is update the **state** of your app and React takes care of **re-rendering** your app.
-  - Counter app with state, components and re-rendering (without using reactJS) | [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/02.counter-state-component/counter-state-component.html)
+  - Counter app with state, components and re-rendering (without using reactJS) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/02.counter-state-component/counter-state-component.html)
+
+- **React JS with examples**
+  - to install use:  `npm create vite@latest`
+  - when we use: `npm run build` it takes all our react code and creates a `dist` folder which have html and js file (which essentially browser understand)
+  - we just need `dist` folder to host our app.
+  - **Examples:**
+    - Counter app using react | [Link]()
