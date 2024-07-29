@@ -10,7 +10,8 @@
   - Initialize a node project 
     - **package.json** (have all the info about **external dependencies** and stuff)
     - We never share `node_modules` as it is containing bunch of libraries and is heavy
-    - We share `package.json` and with `npm install` anyone can download required dependencies.
+    - We share `package.json`, `package-lock.json` and with `npm install` anyone can download required dependencies.
+    - `package-lock.json` file locks the current versions so all team members can have the same version and brings symmetry to project.
     - Now, to Initialize node project: `npm init` or `npm init -y`
   - Endpoints and payloads:
     - POST request on `/todo` to create todos
