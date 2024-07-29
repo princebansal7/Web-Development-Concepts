@@ -4,9 +4,15 @@ require("dotenv").config();
 mongoose.connect(`${process.env.DB_URL}/todo-app-db1`);
 
 const todoSchema = new mongoose.Schema({
-    title: String,
+    title: {
+        type: String,
+        required: true,
+    },
     description: String,
-    completed: Boolean,
+    completed: {
+        type: Boolean,
+        default: false,
+    },
 });
 
 const todo = mongoose.model("todo-table", todoSchema);
