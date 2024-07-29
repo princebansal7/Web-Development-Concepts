@@ -2,6 +2,7 @@
 
 - Check files: `App.jsx` and `main.jsx`
 - We can pass arguments as `props` in component just like HTML attributes (syntax different)
+- **props** are **properties**.
 - we can call it anything instead of calling `props` (but props is standard)
 - Here we also separated button component, benefits is we can use it multiple times in other components like here in App, it makes code cleaner :
   - initial
