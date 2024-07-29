@@ -8,7 +8,7 @@
   - JavaScript | [JS-30-Days](https://github.com/princebansal7/JavaScript-30-days?tab=readme-ov-file) | [ES6](https://github.com/princebansal7/Web-Development-Concepts/tree/main/javascript-es6) | [Old](https://github.com/princebansal7/JavaScript-Projects/tree/main/basics) 
   - DOM Manipulation | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/dom-manipulation)
   - React JS foundation
-    - `state` concept with naive DOM manipulation | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/dom-manipulation/todo-with-state)
+    - `state` concept with **ToDo app** using naive DOM manipulation | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/dom-manipulation/todo-with-state)
     - `state` rendering on DOM like React does under the hood (High level) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/dom-manipulation/todo-react-underhood/todoReactUnderhood.html)
   - React JS (2024) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/README.md)
   - React Js (Old) | [Link](https://github.com/princebansal7/Learn-React)
