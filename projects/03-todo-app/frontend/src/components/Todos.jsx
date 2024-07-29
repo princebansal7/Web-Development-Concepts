@@ -1,10 +1,20 @@
-function Todos() {
-    // we want something like this to be rendered
+function Todos(props) {
+    const { todos } = props;
     return (
         <div>
-            <h4>Title should be here</h4>
-            <p>Description should be here</p>
-            <button>Mark as completed</button>
+            {todos.map(todo => {
+                return (
+                    <div>
+                        <h4>{todo.title}</h4>
+                        <p>{todo.description}</p>
+                        <button>
+                            {todo.completed == true
+                                ? "Completed"
+                                : "Mark as Completed"}
+                        </button>
+                    </div>
+                );
+            })}
         </div>
     );
 }

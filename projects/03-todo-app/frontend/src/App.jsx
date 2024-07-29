@@ -5,7 +5,20 @@ function App() {
     return (
         <>
             <CreateToDo />
-            <Todos />
+            <Todos
+                todos={[
+                    {
+                        title: "Task-1",
+                        description: "this is task-1, do it",
+                        completed: false,
+                    },
+                    {
+                        title: "Task-2",
+                        description: "this is task-2, do it",
+                        completed: true,
+                    },
+                ]}
+            />
         </>
     );
 }
