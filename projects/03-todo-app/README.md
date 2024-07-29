@@ -32,3 +32,6 @@
         completed: Boolean
       }
       ```
+- **Frontend**:
+  - use `npm create vite@latest` in outside `backend` folder and setup `frontend` folder
+  - `devDependencies` are what *vite* adds for developer while developing to help, not needed in prod dist (distribution)
