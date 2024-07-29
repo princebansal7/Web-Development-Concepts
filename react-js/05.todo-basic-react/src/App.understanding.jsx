@@ -13,10 +13,23 @@ function App() {
         // eg: nums = [1, 2, 4]
         //    [...nums, 69] => [1, 2, 4, 69]
         // using setTodos(), provided by useState => so that it renders the updated state
-        setTodos([
-            ...todos,
-            { title: "New ToDo", description: "new description" },
-        ]);
+        //
+        // setTodos([
+        //     ...todos,
+        //     { title: "New ToDo", description: "new description" },
+        // ]);
+
+        // or (naive way with using array helper method map)
+
+        const newTodos = [];
+        for (let i = 0; i < todos.length; i++) {
+            newTodos.push(todos[i]);
+        }
+        newTodos.push({
+            title: "New ToDo",
+            description: "new description",
+        });
+        setTodos(newTodos);
     }
 
     // just for understanding child rendering
