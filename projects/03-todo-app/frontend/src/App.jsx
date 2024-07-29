@@ -1,24 +1,17 @@
 import { CreateToDo } from "./components/CreateToDo";
+import { useState } from "react";
 import Todos from "./components/Todos";
 
 function App() {
+    const [todosBE, setTodosBE] = useState([]);
+    fetch("http://localhost:3000/todos").then(async response => {
+        const json = await response.json();
+        setTodosBE(json.todos);
+    });
     return (
         <>
             <CreateToDo />
-            <Todos
-                todos={[
-                    {
-                        title: "Task-1",
-                        description: "this is task-1, do it",
-                        completed: false,
-                    },
-                    {
-                        title: "Task-2",
-                        description: "this is task-2, do it",
-                        completed: true,
-                    },
-                ]}
-            />
+            <Todos todos={todosBE} />
         </>
     );
 }

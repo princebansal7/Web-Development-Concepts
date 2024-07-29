@@ -3,9 +3,13 @@ const { createTodoSchema, updateTodoSchema } = require("./types");
 const { todo } = require("./db/db.js");
 require("dotenv").config();
 const PORT = process.env.PORT || 3000;
+const cors = require("cors");
 const app = express();
 
 app.use(express.json());
+
+app.use(cors()); // to allow from any frontend
+// app.use(cors({ origin: "http://localhost/5173" })); // to allow from our machine
 
 app.post("/todo", async (req, res) => {
     const createPayLoad = req.body;
