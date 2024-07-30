@@ -49,7 +49,7 @@
     - To visualize `Re-rendering`, install react dev tools extension > in Component > click setting icon > check `Highlight updates when components render.`
     - A Parent component re-render triggers all the children components re-rendering | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/06.react-experiments/src/App.jsx)
     - To minimize above case, one way would be to **push down the state** to the `lowest common ancestor` of the child where the state is required and not put the state in root | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/07.react-minimize-renders/README.md)
-    - Another way would be using `React.memo()` | [Link]()
+    - Another way would be using `React.memo()` | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/08.react-minimize-renders-memo#how-can-we-minimize-this-re-rendering-behavior-parent-to-child)
 
 ## Examples:
   - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
