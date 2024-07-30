@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors()); // to allow from any frontend
-// app.use(cors({ origin: "http://localhost/5173" })); // to allow from our machine
+// app.use(cors({ origin: "http://localhost/5173" })); // to allow from our machine to hit backend
 
 app.post("/todo", async (req, res) => {
     const createPayLoad = req.body;
