@@ -27,6 +27,7 @@
       ```
     - **`Components`**: It is how a DOM element should render given a state => It is reusable, dynamic, HTML snippet that changes given a state. In Counter example, button is a component, which takes state (counter) as a input and is supposed to render accordingly
     - **`Re-Rendering`**: whenever state get updated (from backend requests or any way), then react takes only the changed value from state and updates the component and DOM, this is called re-rendering. `state` change triggers a `re-render` => **re-render represents the actual DOM being manipulated when the state changes.**
+    - Thumb Rule of React is to have **minimum Re-Rendering**
   
 - **React expectation?**
   - High level React expectation from developers is: 
@@ -41,6 +42,12 @@
   - to install use:  `npm create vite@latest`
   - when we use: `npm run build` it takes all our react code and creates a `dist` folder which have html and js file (which essentially browser understand)
   - we just need `dist` folder to host our app.
+  
+- **React Hooks with examples and Important points**
+  - Some key points
+    - React `Component returns` only one element (top level xml) => can't return multiple siblings! **why?** 
+    - **Reconciliation:** because of reconciliation. **What is Reconciliation?** It is the process of figuring out when & what DOM updates needs to happen as the application grows i.e, The process of updating the UI when the state or props of a component change is called **"reconciliation"** (Virtual DOM, Diffing Algorithm, Update Mechanism are some key concepts of reconciliation)
+    - 
   
 ## Examples:
   - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
