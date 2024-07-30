@@ -1,7 +1,7 @@
 # Web Development Concepts
 
 - `nvm` commands | [nvm](https://github.com/princebansal7/JavaScript-Projects?tab=readme-ov-file#steps-to-install-nodejs-via-nvm) 
-- Frontend:
+- **Frontend**:
  
   - HTML | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/html-basics)
   - CSS | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/css-basics)
@@ -13,16 +13,23 @@
   - React JS (2024) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/README.md#react-basics-and-its-need) | [Examples](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/README.md#examples)
   - React Js (Old) | [Link](https://github.com/princebansal7/Learn-React)
 
-- Backend:
+- **Backend**:
   
   - Express servers | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/server-code)
   - Middlewares | [Pre-req](https://github.com/princebansal7/Web-Development-Concepts/blob/main/server-code/06.withDRY.js) | [Examples](https://github.com/princebansal7/Web-Development-Concepts/tree/main/middlewares)
   - Input validation, Zod | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/input-validation)
   - Authentication - JWT | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/authentication-concepts/03.authenticationPrereqs.md)
-  - Database connectivity | [theory](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/01.database.md) | [mongoDB connect](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/02.mongooseConnect.js)
+  - Database connectivity | [mongoDB connect](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/02.mongooseConnect.js)
   - frontend-backend connection | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend-connect)
   - Debouncing & Throttling | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend-connect/03.throttling-debouncing)
   
-- Databases 
-  - MongoDB example (unstructured) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/03.mongoDBwithAuthInputValidation.js)
-  - MongoDB Projects (structured) | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects)
+- **Databases** 
+  
+  - Database basics | [theory](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/01.database.md)
+  - MongoDB example with auth & input validation | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/03.mongoDBwithAuthInputValidation.js)
+   
+- **Projects**
+  
+  - MongoDB Project (structured) | [without-auth](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/01-mongo-with-routes) | [with-auth](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/02-mongo-with-jwt-auth)
+
+  - React ToDo App (frontend & Backend) | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/03-todo-app)
