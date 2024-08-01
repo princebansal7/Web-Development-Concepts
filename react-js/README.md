@@ -51,6 +51,13 @@
   - Another way would be using `React.memo()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/08.react-minimize-renders-memo#how-can-we-minimize-this-re-rendering-behavior-parent-to-child)
   - Concept of `key` in React when using list or arrays | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/09.react-keys-with-todo#readme)
   - `Wrapper Components`: It takes the inner react component as input. | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/10.react-wrapper-component#readme)
+  
+- **Hooks in ReactJs**
+  - `Hooks` are the functions which starts with `use` like: **useState(), useMemo(), useEffect()** etc. They allow you to `hook into` react state and lifecycle features from function components.
+  - Lifecycle features ? => when react syntax was class based, it gave access to lifecycle functions like: `onComponentMount()`,`componentDidMount()`, `onComponentUnMount()`, `onRender()` etc. basically when component 1st time rendered (mounted), removed from the DOM (unMounted) or re-rendered, they we would do certain tasks using these lifecycle functions
+  - But, it was hard to know when what will get render and accordingly put logic and we needed to know this quite often, so to solve these kind of issues `hooks` were introduced in **functional components**.
+  - For instance n our [ToDo project](https://github.com/princebansal7/Web-Development-Concepts/blob/main/projects/03-todo-app/frontend/src/App.jsx), when we were using `fetch()` it was infinitely re-rendering, so to solve this we could use `useEffect()` which is also a lifecycle function which solves that problem, **useEffect()** is same as **componentDidMount()** 
+  | [todo-app-useEffect]()
 
 ## Examples:
   - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
