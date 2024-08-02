@@ -15,13 +15,14 @@ function getRandomInt(min, max) {
 // Helper function to generate random todos
 function generateTodos() {
     const todos = [];
-    const todoCount = getRandomInt(2, 10); // Random number between 2 and 15
+    const todoCount = getRandomInt(1, 7); // Random number between 2 and 15
 
     for (let i = 0; i < todoCount; i++) {
         todos.push({
             id: i + 1,
             title: `Todo Title ${i + 1}`,
             description: `Description for todo ${i + 1}`,
+            completed: false,
         });
     }
 

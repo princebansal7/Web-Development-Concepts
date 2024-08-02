@@ -2,33 +2,52 @@ import { useState, useEffect } from "react";
 /* eslint-disable react/prop-types */
 
 function App() {
-    const [todo, setTodo] = useState([]);
+    const [todos, setTodos] = useState([]);
 
+    // way-1 (fetch() with promise)
+    // useEffect(() => {
+    //     fetch("http://localhost:3000/todos").then(async response =>
+    //         setTodo(await response.json())
+    //     );
+    // }, []);
+
+    // way-2 (fetch with async await, put it in another function as useEffect can't be asynchronous)
+    //       - to make useEffect() asynchronous we can another useAsyncEffect()
+    async function getTodos() {
+        const response = await fetch("http://localhost:3000/todos");
+        const resultTodos = await response.json();
+        setTodos(resultTodos);
+    }
+
+    // To refresh todos in every 10 seconds
     useEffect(() => {
-        async function getTodos() {
-            const response = await fetch("http://localhost:3000/todos");
-            const resultTodos = await response.json();
-            setTodo(resultTodos);
-        }
-        getTodos();
+        setInterval(() => {
+            getTodos();
+        }, 1000);
     }, []);
 
     return (
         <>
-            <ToDos todos={todo} />
+            {todos.map(todo => {
+                return (
+                    <>
+                        <ToDos
+                            key={todo.id}
+                            title={todo.title}
+                            description={todo.description}
+                        />
+                    </>
+                );
+            })}
         </>
     );
 }
 
-function ToDos({ todos }) {
+function ToDos({ title, description }) {
     return (
         <div>
-            {todos.map(todo => (
-                <div key={todos.id}>
-                    <h2>{todo.title}</h2>
-                    <p>{todo.description}</p>
-                </div>
-            ))}
+            <h2>{title}</h2>
+            <h3>{description}</h3>
         </div>
     );
 }
