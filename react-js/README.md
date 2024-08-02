@@ -58,6 +58,7 @@
   - But, it was hard to know when what will get render and accordingly put logic and we needed to know this quite often, so to solve these kind of issues `hooks` were introduced in **functional components**.
   - For instance in our [ToDo project](https://github.com/princebansal7/Web-Development-Concepts/blob/main/projects/03-todo-app/frontend/src/App.jsx), when we were using `fetch()` it was infinitely re-rendering, so to solve this we could use `useEffect()` which is also a lifecycle function which solves that problem, **useEffect()** is same as **componentDidMount()** 
   | [todo-app-useEffect](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/11.react-todo-useEffect#todo-app-with-useeffect-hook)
+  - `useEffect()` [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/11.react-todo-useEffect#readme)
 
 ## Examples:
   - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
