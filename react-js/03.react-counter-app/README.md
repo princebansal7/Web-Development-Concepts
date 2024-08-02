@@ -28,12 +28,15 @@
     accordingly components who are having those state variables should re-render
 
    - to use state variable as per react expectation so that react watches we 
-       need to use a **'hook'** named **"useState"**
+       need to use a **'hook'** named **"useState()"**
 
       ```js
        const [counter,setCounter] = useState(initial_val)
       ```
-   - useState() hook returns array with:
+   - `useState()` hook returns array with:
       - 1st value as state variable value
       - 2nd value as react internal dispatch function which re-renders the component when state variable value changes
 6. Hence, using react it is that easy to do same thing we did in `02.counter-state-component` in just few lines of code
+
+7. More about `useState()` hook:
+   - It lets you describe the state of your app, whenever state updates, it triggers a re-render which finally results in a DOM update.

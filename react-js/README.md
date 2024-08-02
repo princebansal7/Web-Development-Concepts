@@ -51,12 +51,16 @@
   - Another way would be using `React.memo()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/08.react-minimize-renders-memo#how-can-we-minimize-this-re-rendering-behavior-parent-to-child)
   - Concept of `key` in React when using list or arrays | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/09.react-keys-with-todo#readme)
   - `Wrapper Components`: It takes the inner react component as input. | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/10.react-wrapper-component#readme)
+  - `side effects`: concept of side effects encompasses any operation that reach outside the functional scope of react component means, other then rendering there can be other tasks like Async operations => anything which is **not related** to **rendering** are called **side effects**. they can like using *setTimeout(), setInterval(), fetch() or directly manipulating DOM* etc.
   
 - **Hooks in ReactJs**
+  - `Hooks` feature introduced in React 16.8 that allows you to use state and other React features without writing a class.
+  - They enable functional components to have access to stateful logic and lifecycle features, which were previously possible with only class components, this led in writing more concise and readable way of writing components in react.
   - `Hooks` are the functions which starts with `use` like: **useState(), useMemo(), useEffect()** etc. They allow you to `hook into` react state and lifecycle features from function components.
-  - Lifecycle features ? => when react syntax was class based, it gave access to lifecycle functions like: `onComponentMount()`,`componentDidMount()`, `onComponentUnMount()`, `onRender()` etc. basically when component 1st time rendered (mounted), removed from the DOM (unMounted) or re-rendered, they we would do certain tasks using these lifecycle functions
+  - `Lifecycle features` ? => when react syntax was class based, it gave access to lifecycle functions like: `onComponentMount()`,`componentDidMount()`, `onComponentUnMount()`, `onRender()` etc. basically when component 1st time rendered (mounted), removed from the DOM (unMounted) or re-rendered, they we would do certain tasks using these lifecycle functions
   - But, it was hard to know when what will get render and accordingly put logic and we needed to know this quite often, so to solve these kind of issues `hooks` were introduced in **functional components**.
   - For instance in our [ToDo project](https://github.com/princebansal7/Web-Development-Concepts/blob/main/projects/03-todo-app/frontend/src/App.jsx), when we were using `fetch()` it was infinitely re-rendering, so to solve this we could use `useEffect()` which is also a lifecycle function which solves that problem, **useEffect()** is same as **componentDidMount()**
+  - `useState()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app#readme)
   - `useEffect()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/11.react-todo-useEffect#readme)
 
 ## Examples:
