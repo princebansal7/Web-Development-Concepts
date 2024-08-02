@@ -24,6 +24,23 @@ function App() {
     //     getTodos();
     // }, []);
 
+    // return (
+    //     <>
+    //         <ToDos todos={todo} />
+    //         {todos.map(todo => {
+    //             return (
+    //                 <>
+    //                     <ToDos
+    //                         key={todo.id}
+    //                         title={todo.title}
+    //                         description={todo.description}
+    //                     />
+    //                 </>
+    //             );
+    //         })}
+    //     </>
+    // );
+
     return (
         <>
             <ToDoId id={2} />
