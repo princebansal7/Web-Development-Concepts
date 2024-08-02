@@ -18,14 +18,14 @@ function App() {
         setTitle("Title-1: Random number (1 to 10) is: " + str);
     }
     return (
-        <>
+        <div>
             <button onClick={updateTitle}>Get Random Number</button>
             <Header title={title} />
             <Header title="Title-2: I will not re-render" />
             <Header title="Title-3: I will not re-render" />
             <Header title="Title-4: I will not re-render" />
             <Header title="Title-5: I will not re-render" />
-        </>
+        </div>
     );
 }
 
