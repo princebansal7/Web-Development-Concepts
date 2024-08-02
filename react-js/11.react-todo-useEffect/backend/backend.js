@@ -15,7 +15,7 @@ function getRandomInt(min, max) {
 // Helper function to generate random todos
 function generateTodos() {
     const todos = [];
-    const todoCount = getRandomInt(1, 7); // Random number between 2 and 15
+    const todoCount = getRandomInt(10, 20);
 
     for (let i = 0; i < todoCount; i++) {
         todos.push({
@@ -30,9 +30,26 @@ function generateTodos() {
 }
 
 // Route to get random todos
+// app.get("/todos", (req, res) => {
+//     console.log("todos ep hit");
+//     const todos = generateTodos();
+//     res.json(todos);
+// });
+
+// Route to get a specific todo by id
 app.get("/todos", (req, res) => {
+    console.log("todos ep with id hit");
+    const id = parseInt(req.query.id);
     const todos = generateTodos();
-    res.json(todos);
+    const todo = todos.find(t => t.id === id);
+
+    if (todo) {
+        res.json(todo);
+    } else {
+        res.status(404).send({
+            error: "todo with id from 1 to 10 always generated, the current passed id todo is not found",
+        });
+    }
 });
 
 // Start the server
