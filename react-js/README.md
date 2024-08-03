@@ -1,5 +1,6 @@
 # ReactJS in Detail
 
+- Codebase | [Click](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js)
 - Previously in [DOM Manipulation](https://github.com/princebansal7/Web-Development-Concepts/blob/main/dom-manipulation/03.todo.html) we saw the need of `react` and `react dom`
 - In `static` website we don't need react but in `Dynamic` websites where content is getting changed as per user activity, `React` removes a lot of headache which if we simply use DOM manipulation, we can't avoid.
 - Counter (using DOM Manipulation) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/01.counter-with-dom/counter.html), we need to write a lot of code for such simple DOM Manipulation and to make it dynamic.
@@ -61,7 +62,7 @@
   - But, it was hard to know when what will get render and accordingly put logic and we needed to know this quite often, so to solve these kind of issues `hooks` were introduced in **functional components**.
   - `useState()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app#readme)
   - `useEffect()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/11.react-todo-useEffect#readme)
-  - For instance in our [ToDo project](https://github.com/princebansal7/Web-Development-Concepts/blob/main/projects/03-todo-app/frontend/src/App.jsx), when we were using `fetch()` it was infinitely re-rendering, so to solve this we could use `useEffect()` which is also a lifecycle function which solves that problem.
+    - For instance in our [ToDo project](https://github.com/princebansal7/Web-Development-Concepts/blob/main/projects/03-todo-app/frontend/src/App.jsx), when we were using `fetch()` it was infinitely re-rendering, so to solve this we could use **useEffect()** which is also a lifecycle function which solves that problem.
   - `useMemo()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/13.react-useMemo#readme)
 
 ## Examples:
