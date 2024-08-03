@@ -37,8 +37,8 @@ function App() {
     );
 }
 
-//  - memo is helping in stop child component to re-render even when parent re-renders
-//    as Child have no changing props
+//  - memo is helping in stopping the child component to re-render even when parent
+//    re-renders as Child have no changing props
 //  - we want child to render only when it's prop changes
 
 const ChildComponent = memo(({ myProp }) => {
