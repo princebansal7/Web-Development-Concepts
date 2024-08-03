@@ -65,4 +65,4 @@
     	- memo optimizes the ChildComponent by preventing re-renders when its props do not change. This works effectively with useCallback to ensure ChildComponent only re-renders when necessary.
 
 This approach ensures that ChildComponent does not re-render unless its props change, optimizing performance by avoiding unnecessary updates.
-- [Example]()
+- [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/14.react-useCallback/src/App.jsx)
