@@ -42,4 +42,4 @@
 - useEffect() can't have asynchronous fxn to avoid Race conditions, so either use promises or use another asynchronous function in it as shown in above examples.
 - to make it asynchronous use useAsyncEffect() | [Read more](https://marmelab.com/blog/2023/01/11/use-async-effect-react.html)
 - `useEffect()` [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/11.react-todo-useEffect/frontend/src/App.jsx)
-- `useEffect() Dependency Array significance` | [Example]()
+- `useEffect() Dependency Array significance` | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/12.react-todo-useEffect-dependency/frontend/src/App.jsx)
