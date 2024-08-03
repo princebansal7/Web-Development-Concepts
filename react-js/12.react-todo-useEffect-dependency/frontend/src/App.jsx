@@ -31,13 +31,7 @@ function App() {
             >
                 3
             </button>
-            <button
-                onClick={function () {
-                    setSelectedId(4);
-                }}
-            >
-                4
-            </button>
+            <button onClick={() => setSelectedId(4)}>4</button>
             <ToDoId id={selectedId} />
         </>
     );
