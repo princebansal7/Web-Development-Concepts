@@ -65,10 +65,8 @@ function ToDoId({ id }) {
 
     const [todo, setTodo] = useState({});
 
-    // So, here I put id in dependency array, as I want react to watch it,
-    // and if id changes then only render the todo, and not after every re-render
     useEffect(() => {
-        fetch(`http://localhost:3000/todos?id=${id}`).then(async response => {
+        fetch(`http://localhost:3000/todo?id=${id}`).then(async response => {
             const data = await response.json();
             setTodo(data);
         });
