@@ -10,10 +10,34 @@ function App() {
     // react way state variable
     const [counter, setCounter] = useState(0);
 
-    // updating state
+    // 1. Updating state
+    //  - state.counter++ // changing global state counter
+    //  - counter = counter + 1 ; // not the correct way to update state variable value
+
+    // 2. react doesn't update state variable synchronously
+    //    it takes buffer and update whenever it finds it efficient
+    //    =>  => counter will still update like 0 -> 1 -> 2 -> 3 ...
+    // function increaseCounter() {
+    //     setCounter(counter + 1); // 0 + 1 => counter = 1 (nope, still counter = 0)
+    //     setCounter(counter + 1); // 1 + 1 => counter = 2 (nope, still counter = 0)
+    //     console.log(counter); // 0 (remains 0)
+    //     setCounter(counter + 1); // 2 + 1 => counter = 3 (nope, still counter = 0)
+    // }
+
+    // 3. we want to update like above use functions
+    //   => counter will update like 0 -> 3 -> 6 -> 9 ...
+    // function increaseCounter() {
+    //     setCounter(function (counter) {
+    //         return counter + 1;
+    //     }); // 0 + 1 => counter = 1 (yes)
+    //     setCounter(counter => {
+    //         return counter + 1;
+    //     }); // 1 + 1 => counter = 2 (yes)
+    //     setCounter(counter => counter + 1); // 2 + 1 => counter = 3 (yes)
+    // }
+
+    // Actual what we are doing (state update)
     function increaseCounter() {
-        // state.counter++ // changing global state counter
-        // counter = counter + 1 ;      // not the correct way to update state variable value
         setCounter(counter + 1); // correct way to update state variable
     }
 
