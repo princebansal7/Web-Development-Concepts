@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 //  - In this Example, you will create a component that renders a large list of
 //    sentences and includes an input field for filtering these items.
@@ -8,7 +8,7 @@ import { useState } from "react";
 //    one value in the dependency array
 
 const words = ["hi", "my", "name", "is", "for", "to", "random", "word"];
-const TOTAL_LINES = 600;
+const TOTAL_LINES = 60;
 const ALL_WORDS = [];
 for (let i = 0; i < TOTAL_LINES; i++) {
     let sentence = "";
@@ -20,10 +20,14 @@ for (let i = 0; i < TOTAL_LINES; i++) {
 }
 
 function FilterItems() {
-    const [sentences, setSentences] = useState(ALL_WORDS);
+    const [sentences] = useState(ALL_WORDS);
     const [filter, setFilter] = useState("");
 
-    const filteredSentences = sentences.filter(x => x.includes(filter));
+    // anytime sentences or filter changes then should render
+    const filteredSentences = useMemo(
+        () => sentences.filter(x => x.includes(filter)),
+        [sentences, filter]
+    );
 
     return (
         <div>
