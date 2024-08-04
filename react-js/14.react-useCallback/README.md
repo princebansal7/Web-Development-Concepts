@@ -66,3 +66,4 @@
 
 This approach ensures that ChildComponent does not re-render unless its props change, optimizing performance by avoiding unnecessary updates.
 - [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/14.react-useCallback/src/App.jsx)
+- [Example-2](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/16.react-hooks-examples/02.useCallback#readme)
