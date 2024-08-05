@@ -68,9 +68,9 @@
   - `useRef()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/15.react-useRef#useref-hook)
 
 - **Routing in ReactJS**
-  - [Check here]() 
-  - `useNavigate()` hook | [Example]()
-  - `Lazy Loading` | [Example]()
+  - Routing and related concepts in react | [Check here](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/17.react-routing#readme) 
+  - `useNavigate()` hook | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/18.react-useNavigate#usenavigate-hook)
+  - `Lazy Loading` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/19.react-lazy-loading#readme)
 
 ## Examples:
   - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)

@@ -49,4 +49,4 @@
               />
             </Routes>
       ```
-- [Example]()
+- [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/19.react-lazy-loading/src/App.jsx)
