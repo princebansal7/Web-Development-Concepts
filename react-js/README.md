@@ -69,6 +69,8 @@
 
 - **Routing in ReactJS**
   - [Check here]() 
+  - `useNavigate()` hook | [Example]()
+  - `Lazy Loading` | [Example]()
 
 ## Examples:
   - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
