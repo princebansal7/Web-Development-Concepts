@@ -76,7 +76,9 @@
   - How should be the state managed ? keep everything at top level component? (NO), keep everything as low as possible? (Yes, at LCA of children that need a state), we already saw [pushing down](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/07.react-minimize-renders#readme) the state as low as possible!
   - [Prop Drilling](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/20.react-prop-drilling#prop-drilling)
   - [Context API](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/21.react-context-api#context-api)
-
+  - [Context API Problem]()
+  - Now, we know keeping component and state separate is beneficial.
+ 
 ## Examples:
   - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
   - Counter app with props | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/04.react-counter-app-props)

@@ -28,8 +28,8 @@ function App() {
     const [count, setCount] = useState(0);
     return (
         <>
-            <CountContext.Provider value={{ count, setCount }}>
-                <Count />
+            <CountContext.Provider value={count}>
+                <Count setCount={setCount} />
             </CountContext.Provider>
         </>
     );
@@ -47,12 +47,12 @@ function App() {
 // }
 
 // New,  as we don't need count prop in this
-function Count() {
+function Count({ setCount }) {
     return (
         <div>
             <CountRenderer />
             <br />
-            <Buttons />
+            <Buttons setCount={setCount} />
         </div>
     );
 }
@@ -94,8 +94,8 @@ function CountRenderer() {
 
 // New, We need count prop directly here
 // useContext() hook with value which have context
-function Buttons() {
-    const { count, setCount } = useContext(CountContext);
+function Buttons({ setCount }) {
+    const count = useContext(CountContext);
     return (
         <>
             <button
