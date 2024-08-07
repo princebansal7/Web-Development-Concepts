@@ -66,7 +66,7 @@ function Count() {
 //  - useContext() hook with value which have context
 //  - this way we have access to count prop without it being passed as prop
 function CountRenderer() {
-    const count = useContext(CountContext);
+    const { count } = useContext(CountContext);
     return <>{count}</>;
 }
 
