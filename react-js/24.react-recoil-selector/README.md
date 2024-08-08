@@ -33,5 +33,5 @@
     ```
    - Then selector concept is useful, is isEven depends on count, which is derived from recoil 
    - in store folder, create new folder named selector and add the selector there (can also add in same file which is in atom folder too)
-   - selector have similar syntax to atom | [example]()
-   - [Selector Example]()
+   - selector have similar syntax to atom | [example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/24.react-recoil-selector/src/store/selectors/selector.jsx)
+   - [Selector Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/24.react-recoil-selector/src/App.jsx)
