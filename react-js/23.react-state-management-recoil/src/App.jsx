@@ -141,3 +141,5 @@ export default App;
 // 1. Prop drilling (which can also be resolved by Context api)
 // 2. Re-rendering of components which were not using state but
 //    was still getting re-rendered
+
+// This is the Most Optimized app, we have minimized the re-rendering on DOM!
