@@ -4,7 +4,7 @@
 - Context API:
   - Makes re-rendering more efficient ? => No
   - Makes syntax cleaner/ get rid of prop drilling ? => Yes 
-- Problem with Context API is **it doesn't fix re-rendering**, **only fixes Prop Drilling**[Example]()
+- Problem with Context API is **it doesn't fix re-rendering**, **only fixes Prop Drilling** [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/22.react-context-api-drawback/src/App.jsx)
 - To solve this, which can do both i.e, doesn't let re-render and also fixes pop drilling, we can use **state management** using **recoil** library
 - Other state management libraries are **redux**, **zustand** etc
 - Framework vise these libraries lets you divide your project in 2 parts,
