@@ -78,6 +78,10 @@
   - [Context API](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/21.react-context-api#context-api)
   - [Context API Problem](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/22.react-context-api-drawback#context-api-shortcoming-and-drawbacks)
   - Now, we know keeping component and state separate is beneficial.
+
+- **State Management using Recoil**
+  - `recoil` has a concept of `atom` to store the state, it can be defined outside the component and can be teleported to any component. [check video](https://www.youtube.com/watch?v=_ISAA_Jt9kI) 
+  - [Example]()
  
 ## Examples:
   - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
