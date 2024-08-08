@@ -6,6 +6,7 @@
    -  `useRecoilState()` hook (same as useState, gives value and despatcher function, like count & setCount)
    -  `useRecoilValue()` hook (it gives just the value, like count)
    -  `useSetRecoilState()` hook  (to update the value, like setCount)
+   -  `selector`: we'll see later
 - We can choose what our component needs and accordingly use one of the above hook
   
 
