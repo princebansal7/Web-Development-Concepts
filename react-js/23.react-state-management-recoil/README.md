@@ -10,10 +10,10 @@
   
 
 1. Create atom in store/atoms folder and add new file (good practice)
-2. create atom which expects 1 object argument having must one unique **key** (it uniquely signifies the atom) and **default** value for your state variable. (which is now represented by atom) | [example](put atom file reference here)
+2. create atom which expects 1 object argument having must one unique **key** (it uniquely signifies the atom) and **default** value for your state variable. (which is now represented by atom) | [example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/23.react-state-management-recoil/src/store/atoms/count.jsx)
 3. use the recoil hooks wherever needed
 4. Also wrap the components which uses recoil logic inside RecoilRoot component 
-5. [Example]()
+5. [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/23.react-state-management-recoil/src/App.jsx)
 
 
 **NOTE:** 
