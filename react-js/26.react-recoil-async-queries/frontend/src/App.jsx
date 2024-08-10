@@ -6,7 +6,7 @@ import axios from "axios";
 
 // - We'll setup a basic app which sends backend request and get random
 //   notification values for top bar !
-// - This is initial way (need some improvements)
+// - This is initial code (need some improvements in correct way to handle async, queries)
 
 function App() {
     return (
@@ -24,6 +24,7 @@ function LinkedInTopBar() {
     console.log(notifications);
 
     // Making async call using fetch or axios => use useEffect() hook
+
     useEffect(() => {
         axios.get("http://localhost:3000/notifications").then(response => {
             setNotifications(response.data);
