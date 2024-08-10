@@ -1,4 +1,9 @@
-import { RecoilRoot, useRecoilState, useRecoilValue } from "recoil";
+import {
+    RecoilRoot,
+    useRecoilState,
+    useRecoilValue,
+    useSetRecoilState,
+} from "recoil";
 import {
     networkAtom,
     jobAtom,
@@ -22,10 +27,12 @@ function LinkedInTopBar() {
     const jobsAtomVal = useRecoilValue(jobAtom);
     const notificationsAtomVal = useRecoilValue(notificationAtom);
     const totalNotifications = useRecoilValue(totalNotificationSelector);
-    // const messagesAtomVal = useRecoilValue(messageAtom);
+    const messagesAtomVal = useRecoilValue(messageAtom);
 
     // Because, now we need to update value too => useRecoilState(), which gives both
-    const [messagesAtomVal, setMessagesAtomVal] = useRecoilState(messageAtom);
+    // const [messagesAtomVal, setMessagesAtomVal] = useRecoilState(messageAtom);
+
+    // We just need to update the state => useSetRecoilState()
 
     return (
         <div>
@@ -39,11 +46,16 @@ function LinkedInTopBar() {
                 Notification (
                 {notificationsAtomVal >= 100 ? "99+" : notificationsAtomVal})
             </button>
-            <button onClick={() => setMessagesAtomVal(cnt => cnt + 1)}>
-                Me
-            </button>
+            <MessageUpdate />
             <h3>Total Notifications:{totalNotifications}</h3>
         </div>
+    );
+}
+
+function MessageUpdate() {
+    const setMessagesAtomVal = useSetRecoilState(messageAtom);
+    return (
+        <button onClick={() => setMessagesAtomVal(cnt => cnt + 1)}>Me</button>
     );
 }
 
