@@ -10,7 +10,7 @@ export const jobAtom = atom({
 });
 export const messageAtom = atom({
     key: "messageAtom",
-    default: 94,
+    default: 91,
 });
 export const notificationAtom = atom({
     key: "notificationAtom",
