@@ -1,8 +1,8 @@
-import { RecoilRoot, useRecoilState, useRecoilValue } from "recoil";
+import { RecoilRoot, useRecoilValue } from "recoil";
 import { notificationsAtom } from "./store/atoms/atom";
 import { totalNotificationSelector } from "./store/selectors/selector";
-import { useEffect } from "react";
-import axios from "axios";
+// import { useEffect } from "react";
+// import axios from "axios";
 
 // - We'll setup a basic app which sends backend request and get random
 //   notification values for top bar !
@@ -19,17 +19,21 @@ function App() {
 }
 
 function LinkedInTopBar() {
-    const [notifications, setNotifications] = useRecoilState(notificationsAtom);
+    // const [notifications, setNotifications] = useSetRecoilState(notificationsAtom);
+    const notifications = useRecoilValue(notificationsAtom);
     const totalNotifications = useRecoilValue(totalNotificationSelector);
     console.log(notifications);
 
     // Making async call using fetch or axios => use useEffect() hook
 
-    useEffect(() => {
-        axios.get("http://localhost:3000/notifications").then(response => {
-            setNotifications(response.data);
-        });
-    }, [setNotifications]);
+    // No need of useEffect hook now, as making async call in atom itself,
+    // check atoms/atom.jsx
+
+    // useEffect(() => {
+    //     axios.get("http://localhost:3000/notifications").then(response => {
+    //         setNotifications(response.data);
+    //     });
+    // }, [setNotifications]);
 
     return (
         <div>
