@@ -83,6 +83,8 @@
   - `recoil` has a concept of `atom` to store the state, it can be defined outside the component and can be teleported to any component. [check video](https://www.youtube.com/watch?v=_ISAA_Jt9kI) 
   - [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/23.react-state-management-recoil#state-management-using-recoil)
   - [Selector in Recoil](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/24.react-recoil-selector#selector-in-recoil)
+  - recoil useRecoilVal(), useSetRecoilState(), useRecoilState() | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/25.react-recoil-example/src/App.jsx)
+  - Async data queries | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/26.react-recoil-async-queries/frontend/src/App.jsx)
  
 ## Examples:
   - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
