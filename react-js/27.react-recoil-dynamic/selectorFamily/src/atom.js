@@ -34,3 +34,7 @@ export const todoAtomFam = atomFamily({
 //         },
 //     }),
 // });
+
+// - We know we are getting data from backend => sometimes it can take little time to
+//   get back to us, like we mimicked in selector example using setTimeout
+// - Now, instead of showing empty screen, we want to show some loader
