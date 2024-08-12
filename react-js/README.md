@@ -85,7 +85,9 @@
   - [Selector in Recoil](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/24.react-recoil-selector#selector-in-recoil)
   - recoil `useRecoilVal()`, `useSetRecoilState()`, `useRecoilState()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/25.react-recoil-example/src/App.jsx)
   - Async data queries | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/26.react-recoil-async-queries/frontend/src/App.jsx)
-  - atomFamily, selectorFamily, useRecoilStateLoadable concepts  | [Example]()
+  - `atomFamily()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/27.react-recoil-dynamic/atomFamily/src/App.jsx)
+  - `selectorFamily()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/27.react-recoil-dynamic/selectorFamily/src/atom.js)
+  - `useRecoilStateLoadable`, `useRecoilValueLoadable` & **Skeleton loading** | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/27.react-recoil-dynamic/useLoadable/src/App.jsx)
  
 ## Examples:
   - Counter app with react | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/03.react-counter-app)
