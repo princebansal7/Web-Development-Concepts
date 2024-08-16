@@ -33,3 +33,4 @@
   
   - MongoDB Project (structured) | [without-auth](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/01-mongo-with-routes) | [with-auth](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/02-mongo-with-jwt-auth)
   - React ToDo App (frontend & Backend) | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/03-todo-app)
+  - Background update | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/04-react-tailwind-bgchange#readme) | [Demo](https://www.youtube.com/watch?v=eo0Fj72lmsc)
