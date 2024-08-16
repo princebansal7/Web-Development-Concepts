@@ -13,4 +13,4 @@
 
   - Tailwind is by-default mobile first => whatever you write without breakpoints is default true for mobile anything after that use breakpoints
   - this means class takes affect when layout reaches greater than or equal to break-point
-- How to install tailwind in vite react [refer link](https://tailwindcss.com/docs/guides/vite)
+- How to install tailwind in vite react [refer-link](https://tailwindcss.com/docs/guides/vite)
