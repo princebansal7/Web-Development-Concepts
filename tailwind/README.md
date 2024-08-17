@@ -12,5 +12,6 @@
     <img src="./02.tailwind-react/src/assets/mobile-first.png" alt="mobile-first" width="800" height="1000" /> 
 
   - Tailwind is by-default mobile first => whatever you write without breakpoints is default true for mobile anything after that use breakpoints
-  - this means class takes affect when layout reaches greater than or equal to break-point
+  - this means class takes affect when layout reaches greater than or equal to break-point.
+  - Project [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/04-react-tailwind-bgchange#readme)
 - How to install tailwind in vite react [refer-link](https://tailwindcss.com/docs/guides/vite)
