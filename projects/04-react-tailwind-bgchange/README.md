@@ -2,5 +2,4 @@
 
 Click [Here](https://youtu.be/eo0Fj72lmsc)
 
-![img](./src/public/demo.gif)
 ![img](./src/public/demo.png)
