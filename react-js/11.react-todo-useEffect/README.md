@@ -38,7 +38,7 @@
 - `useEffect()`: It allows you to perform **side effects** in function components
 - **side effects** are operations that can affect other components or can't be done during rendering, such as data fetching, subscriptions or manually changing the DOM in react components.
 - `useEffect()` hook serve the same purpose as `componentDidMount`, `componentDidUpdate` and `componentWillUnmount` in react class components, but **unified into a single API**.
-- We 2nd arg i.e, dependency array is optional depending on the use case. If we are not using state to re-render the component and just making let say backend call, then we can just provide 1 arg in useEffect() i.e, callback function.
+- In useEffect() 2nd arg i.e, dependency array is optional depending on the use case. If we are not using state to re-render the component and just making let say backend call, then we can just provide 1 arg in useEffect() i.e, callback function.
   - Then why do use useEffect() at all ? 
   - If you’re making a backend call without using useEffect and not managing state for the say todos, the main difference lies in how and when the backend call is triggered:
 	1.	Using useEffect: The backend call is made when the component mounts (or according to the dependency array if provided). useEffect is designed to handle side effects like data fetching, and it ensures that the call happens at the right time in the component’s lifecycle (e.g., after the component has rendered).
