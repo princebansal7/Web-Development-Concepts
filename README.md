@@ -21,6 +21,7 @@ I created this repository to provide a clear and structured pathway for understa
   - Express servers | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/server-code)
   - Middlewares | [Pre-req](https://github.com/princebansal7/Web-Development-Concepts/blob/main/server-code/06.withDRY.js) | [Examples](https://github.com/princebansal7/Web-Development-Concepts/tree/main/middlewares)
   - Input validation, Zod | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/input-validation)
+  - fetch - [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/fetch-axios-api/fetch.js) | axios - [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/fetch-axios-api/axios.js)
   - Authentication - JWT | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/authentication-concepts/03.authenticationPrereqs.md)
   - Database connectivity | [mongoDB connect](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/02.mongooseConnect.js)
   - frontend-backend connection | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend-connect)
