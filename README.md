@@ -25,7 +25,7 @@ I created this repository to provide a clear and structured pathway for understa
   - Authentication - JWT | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/authentication-concepts/03.authenticationPrereqs.md)
   - Database connectivity | [mongoDB connect](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/02.mongooseConnect.js)
   - frontend-backend connection | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend-connect)
-  - Debouncing & Throttling | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend-connect/03.throttling-debouncing)
+  - Debouncing [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/frontend-backend-connect/03.throttling-debouncing/frontend.html) | Throttling [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/frontend-backend-connect/03.throttling-debouncing/backend.js)
   
 - **Databases** 
   
