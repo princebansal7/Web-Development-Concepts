@@ -52,7 +52,7 @@
   - Another way would be using `React.memo()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/08.react-minimize-renders-memo#how-can-we-minimize-this-re-rendering-behavior-parent-to-child)
   - Concept of `key` in React when using list or arrays | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/09.react-keys-with-todo#readme)
   - `Wrapper Components`: It takes the inner react component as input. | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/10.react-wrapper-component#readme)
-  - `side effects`: concept of side effects encompasses any operation that reach outside the functional scope of react component means, other then rendering there can be other tasks like Async operations => anything which is **not related** to **rendering** are called **side effects**. they can like using *setTimeout(), setInterval(), fetch() or directly manipulating DOM* etc.
+  - `side effects`: concept of side effects encompasses any operation that reach outside the functional scope of react component means, other then rendering there can be other tasks like Async operations => anything which is **not related** to **rendering** are called **side effects**. Examples: using *setTimeout(), setInterval(), fetch() or directly manipulating DOM* etc.
   
 - **Hooks in ReactJs**
   - `Hooks` feature introduced in React 16.8 that allows you to use state and other React features without writing a class.

@@ -36,7 +36,9 @@
    - `useState()` hook returns array with:
       - 1st value as state variable value
       - 2nd value as react internal dispatch function which re-renders the component when state variable value changes
-6. Hence, using react it is that easy to do same thing we did in `02.counter-state-component` in just few lines of code
+6. Hence, using react it is that easy to do same thing we did in [`02.counter-state-component`](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/02.counter-state-component/counter-state-component.html) in just few lines of code
 
 7. More about `useState()` hook:
    - It lets you describe the state of your app, whenever state updates, it triggers a re-render which finally results in a DOM update.
+   - [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/03.react-counter-app/src/App.jsx)
+   - **Interview question** related to when `useState()` updates the value also added in above example.
