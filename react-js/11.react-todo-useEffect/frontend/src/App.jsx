@@ -5,7 +5,7 @@ function App() {
     // const [todos, setTodos] = useState([]);
 
     // way-1 (fetch() with promise)
-    //    - Dependency array is [] => fetch() call will open happen once when, 1st
+    //    - Dependency array is [] => fetch() call will happen once when 1st
     //      render happens (if using React.strictMode, then renders twice)
     // useEffect(() => {
     //     fetch("http://localhost:3000/todos").then(async response =>
@@ -13,8 +13,10 @@ function App() {
     //     );
     // }, []);
 
-    // way-2 (fetch with async await, put it in another function as useEffect can't be asynchronous)
+    // way-2 (fetch with async await, put it in another function as useEffect can't have asynchronous
+    //        fxn as 1st arg)
     //       - to make useEffect() asynchronous we can another useAsyncEffect()
+
     // async function getTodos() {
     //     const response = await fetch("http://localhost:3000/todos");
     //     const resultTodos = await response.json();

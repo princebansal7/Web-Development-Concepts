@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
     - Create a simple application which calculate the sum till user's entered number
     - sum from 1 to n
     - Also have a counter button
-    constraint: everything should inside App component
+    constraint: everything should be inside App component
 */
 
 /*      
@@ -17,7 +17,7 @@ function App() {
     function getSum() {
         const val = parseInt(document.querySelector("input").value);
         console.log("user input is:", val);
-        let sum = (val * (val + 1)) / 2;
+        let sum = (val * (val + 1)) / 2;  // say it's an expensive operation (if were using loop)
         console.log("Sum is", sum);
         setUserInput(sum);
     }
@@ -36,12 +36,10 @@ function App() {
 */
 
 /*
-// 2nd solution (still ugly code)
+// 2nd solution (still ugly code) - with direct DOM manipulation
 //   - As we can see, using 2 state variables independent of each other
 //     But when counter changes, sum logic again gets evaluated.
 //   - Hence, not optimal code.
-//   - useMemo() hook can be helpful in such cases
-//     but first let see, useEffect() can also make this optimal
 
 function App() {
     const [userInput, setUserInput] = useState(0);
@@ -122,9 +120,9 @@ function App() {
 //     useEffect() was doing i.e, when userInput changes, then we want the sum
 //     logic to happen, else not.
 //   - useMemo() is same as useEffect() => also runs some logic based on dependency array
-//     here, just we don't need to use extra state variable just for running a logic based
+//     here, we don't need to use extra state variable just for running a logic based
 //     on some condition
-//     => here now, whenever userInput changes, then only sum logic runs
+//     => here now, whenever userInput changes, then only then sum logic runs
 
 function App() {
     const [userInput, setUserInput] = useState(0);

@@ -52,6 +52,8 @@ function ToDoId({ id }) {
     // useEffect() again run the fetch logic.
 
     // SO, that was the significance of dependency array!
+    // => we put those things in dependency array on which side effects updates
+    //    are dependent
 
     console.log(id);
     const [todo, setTodo] = useState({});
