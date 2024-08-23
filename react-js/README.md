@@ -66,6 +66,7 @@
   - `useMemo()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/13.react-useMemo#readme)
   - `useCallback()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/14.react-useCallback#readme)
   - `useRef()` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/15.react-useRef#useref-hook)
+  - `Custom Hooks` | [Example]()
 
 - **Routing in ReactJS**
   - Routing and related concepts in react | [Check here](https://github.com/princebansal7/Web-Development-Concepts/tree/main/react-js/17.react-routing#readme) 
