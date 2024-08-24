@@ -1,5 +1,4 @@
 import useSWR from "swr";
-import axios from "axios";
 import "./App.css";
 
 const fetcher = async url => {
