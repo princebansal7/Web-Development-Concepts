@@ -23,6 +23,13 @@ Hooks provide 2 things:
   - Starts with `use`
 
 - Examples:
-  - Data fetching hooks | [Basic Example]()
+  - Data fetching hooks
+    - Without custom hook | [Example]()
+    - With custom hook | [Example]()
+    - improved custom hook - loading | [Example]()
+    - custom hook with auto refreshing but bad code | [Example]()
+    - Improved custom hook with auto refreshing code | [Example]()
+    - using external Data fetching library `swr` | [Example]()
+
   - Browser functionality related hooks like: useWindowSize, useMousePosition, useOnlineStatus
   - Performance/Timer based hooks like: useDebounce, useInterval

@@ -1,31 +1,24 @@
-import { useEffect, useState } from "react";
+import useSWR from "swr";
 import axios from "axios";
 import "./App.css";
 
-// Creating custom hook
-// - should use pre-defined hook
-// - need to start with 'use'
-// Handles getting todos from backend and we are returning just the todos
-// and not the updater fxn as user will need just the todos list
-
-function useTodo() {
-    const [todos, setTodos] = useState([]);
-
-    useEffect(() => {
-        axios.get("http://localhost:3000/todos").then(res => {
-            setTodos(res.data.todos);
-        });
-    }, []);
-
+const fetcher = async url => {
+    const response = await axios.get(url);
+    const todos = response.data.todos;
+    console.log(todos);
     return todos;
-}
+};
 
-// Our component is now clean and concise
 function App() {
-    const todos = useTodo();
+    const { data, error, isLoading } = useSWR(
+        "http://localhost:3000/todos",
+        fetcher
+    );
+    if (error) return <h1>Failed to load..</h1>;
+    if (isLoading) return <h1>Loading..</h1>;
     return (
         <>
-            {todos.map(todo => (
+            {data.map(todo => (
                 <MyTodo key={todo.id} todo={todo} />
             ))}
         </>
