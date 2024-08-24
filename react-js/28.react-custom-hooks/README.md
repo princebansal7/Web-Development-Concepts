@@ -20,7 +20,8 @@ Hooks provide 2 things:
 - Hooks that you create yourself so that others can use them are called custom hooks
 - A **custom hook** is effectively a function but with these following properties
   - uses another **hook internally** (like useState, useEffect, another custom hook)
-  - Starts with `use`
+  - [IMP] This is important: we can't use hooks inside a normal native functions, i.e, function should either be a component or an hook itself
+  - custom hook name must start with `use`
 
 - Examples:
   - Data fetching hooks
