@@ -33,4 +33,8 @@ Hooks provide 2 things:
     - using external Data fetching library `swr` | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/02.custom-data-fetching-hook/src/App.jsx)
 
   - Browser functionality related hooks like: useWindowSize, useMousePosition, useOnlineStatus
+    - Checking whether the user is online or not | [Example]()
+    - Checking Mouse pointer location | [Example]()
+    - Checking Inner window dimensions | [Example]()
+  
   - Performance/Timer based hooks like: useDebounce, useInterval
