@@ -1,20 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, Component } from "react";
 import "./App.css";
 
 // Let's unmount the component after 5 secs
-// To demonstrate life-cycle event using useEffect()
+// To demonstrate life-cycle event in class based components
 
 function App() {
     const [render, setRender] = useState(true);
-
-    // After 5 seconds it will change the state to false
-    // we can see then component gets unmounted in console too
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setRender(false);
-    //     }, 5000);
-    // }, []);
 
     // To mount, unmount component after every 5 sec
     useEffect(() => {
@@ -23,19 +14,22 @@ function App() {
         }, 5000);
     }, []);
 
-    return <>{render ? <CounterFunctionComponent /> : <></>}</>;
+    return <>{render ? <CounterClassComponent /> : <></>}</>;
 }
 
-function CounterFunctionComponent() {
-    useEffect(() => {
+// To demonstrate life-cycle event in class based components
+class CounterClassComponent extends Component {
+    componentDidMount() {
         console.log("Component mounted");
+    }
 
-        return () => {
-            console.log("Component unmounted");
-        };
-    }, []);
-
-    return <>Inside Main component</>;
+    componentWillUnmount() {
+        // cleanup tasks like: remove eventListeners or cancel subscriptions
+        console.log("Component Unmounted");
+    }
+    render() {
+        return <>Inside Main component</>;
+    }
 }
 
 export default App;
