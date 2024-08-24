@@ -24,12 +24,12 @@ Hooks provide 2 things:
 
 - Examples:
   - Data fetching hooks
-    - Without custom hook | [Example]()
-    - With custom hook | [Example]()
-    - improved custom hook - loading | [Example]()
-    - custom hook with auto refreshing but bad code | [Example]()
-    - Improved custom hook with auto refreshing code | [Example]()
-    - using external Data fetching library `swr` | [Example]()
+    - Without custom hook | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/02.custom-data-fetching-hook/src/App.example1.jsx)
+    - With custom hook | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/02.custom-data-fetching-hook/src/App.example2.jsx)
+    - improved custom hook - loading | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/02.custom-data-fetching-hook/src/App.example3.jsx)
+    - custom hook with auto refreshing but bad code | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/02.custom-data-fetching-hook/src/App.example4.jsx)
+    - Improved custom hook with auto refreshing code | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/02.custom-data-fetching-hook/src/App.example5.jsx)
+    - using external Data fetching library `swr` | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/02.custom-data-fetching-hook/src/App.jsx)
 
   - Browser functionality related hooks like: useWindowSize, useMousePosition, useOnlineStatus
   - Performance/Timer based hooks like: useDebounce, useInterval
