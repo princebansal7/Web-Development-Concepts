@@ -11,4 +11,5 @@ Hooks provide 2 things:
      - Whenever a component mounts => put on the screen 1st time
      - Whenever a component unmounts => taken off from screen
    - In function components it's done using `useEffect()` hook
-   - `useEffect()` return function flow [concept]() | [Example]() 
+   - `useEffect()` returning a function flow to understand lifecycle event [concept]() | [Example]()
+   - class based component lifecycle event | [Example]()
