@@ -1,4 +1,4 @@
-## TypeScript
+# TypeScript
 
 ### Basics
  - TypeScript is superset of javaScript and is just a syntactical language
@@ -46,3 +46,5 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
   - `removeComments`: we can enable whether to include or not include the comments in transpiled `.js` files, we usually set to `true` so that file js files doesn't become bulky as no one reads them. They are just for browsers/node runtime to understand.
   - `noImplicitAny`: It allows or disallows of 'any' type, be default it's `true`, That's why when we don't specify the types explicitly, by default it gives error as variables takes 'any' as a default type which is not strict types. To learning purpose we can set it to `false`.
   - Check `tsconfig.json` and `./src/Test.ts file` | [Example]()
+
+### Interface
