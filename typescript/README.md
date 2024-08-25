@@ -36,7 +36,7 @@
 - How to assign type when passing in function arguments | [Example]()
 - How to assign type when passing function as argument | [Example]()
 
-### tsconfig file
+### tsconfig.json file
 
 In `tsconfig.json` file, we can toggle some line according to which transpilation happens
 
@@ -47,12 +47,19 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
   - `noImplicitAny`: It allows or disallows of 'any' type, be default it's `true`, That's why when we don't specify the types explicitly, by default it gives error as variables takes 'any' as a default type which is not strict types. To learning purpose we can set it to `false`.
   - Check `tsconfig.json` and `./src/Test.ts file` | [Example]()
 
-### Interfaces
+### Interfaces in TS
 
-- **Interfaces** helps in defining a collective type like for objects i.e, helps to `aggregate` the data
+- `interface` helps in defining a collective type like for objects i.e, helps to `aggregate` the data
   - Without interface | [Example]()
   - With interface | [Example]()
   - React with TypeScript | [Example]()
 - **Interfaces** can be implemented as a `class`, similar like `java` language.
   - This is also an important difference between **interfaces** and **types**
   - class implementing an interface | [Example]()
+
+### types in TS
+
+- `type` also helps in aggregation of data | [Example]()
+- type can let you do few extra things like
+  - **union**: use **"|"** symbol, lets you take either of data type | [Example]()
+  - **intersection**: use **"&"** symbol, helps in let you have every property of multiple `type` or `interface` | [Example]()
