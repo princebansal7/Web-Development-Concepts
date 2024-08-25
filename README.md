@@ -13,8 +13,9 @@ I created this repository to provide a clear and structured pathway for understa
     - `state` concept with **ToDo app** using naive DOM manipulation | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/dom-manipulation/todo-with-state)
     - `state` rendering on DOM like React does under the hood (High level) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/dom-manipulation/todo-react-underhood/todoReactUnderhood.html)
   - React JS (2024) | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/README.md#react-basics-and-its-need)
-  - Tailwind | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/tailwind#tailwind-basics)
   - React Js (Old) | [Link](https://github.com/princebansal7/Learn-React)
+  - Tailwind | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/tailwind#tailwind-basics)
+  - TypeScript | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/typescript#typescript)
 
 - **Backend**:
   
