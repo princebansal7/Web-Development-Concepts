@@ -1,7 +1,9 @@
-const mongoose = require("mongoose");
-require("dotenv").config();
+import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-mongoose.connect(`${process.env.DB_URL}/todo-app-db1`);
+dotenv.config();
+
+mongoose.connect(`${process.env.DB_URL}/todo-app`);
 
 const todoSchema = new mongoose.Schema({
     title: {
@@ -15,7 +17,4 @@ const todoSchema = new mongoose.Schema({
     },
 });
 
-const todo = mongoose.model("todo-table", todoSchema);
-module.exports = {
-    todo,
-};
+export const Todo = mongoose.model("Todo", todoSchema);
