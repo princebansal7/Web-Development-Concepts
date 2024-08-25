@@ -31,10 +31,10 @@
 
 ### Basic programs to understand types
 
-- first program | [Example]()
-- Potential error | [Example]()
-- How to assign type when passing in function arguments | [Example]()
-- How to assign type when passing function as argument | [Example]()
+- first program | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/01.tsc-basics/01.firstTS.ts)
+- Potential error | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/01.tsc-basics/02.secondTS.ts)
+- How to assign type when passing in function arguments | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/01.tsc-basics/03.basicTypes.ts)
+- How to assign type when passing function as argument | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/01.tsc-basics/04.functionTypes.ts)
 
 ### tsconfig.json file
 
@@ -45,21 +45,21 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
   - `outDir`: We provide the path here where we want compiler to spit out the `.js` files after transpilation, Good practice is to use `./dist` folder.
   - `removeComments`: we can enable whether to include or not include the comments in transpiled `.js` files, we usually set to `true` so that file js files doesn't become bulky as no one reads them. They are just for browsers/node runtime to understand.
   - `noImplicitAny`: It allows or disallows of 'any' type, be default it's `true`, That's why when we don't specify the types explicitly, by default it gives error as variables takes 'any' as a default type which is not strict types. To learning purpose we can set it to `false`.
-  - Check `tsconfig.json` and `./src/Test.ts file` | [Example]()
+  - Check `tsconfig.json` and `./src/Test.ts file` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/typescript/02.tsconfig-toggles)
 
 ### Interfaces in TS
 
 - `interface` helps in defining a collective type like for objects i.e, helps to `aggregate` the data
-  - Without interface | [Example]()
-  - With interface | [Example]()
-  - React with TypeScript | [Example]()
+  - Without interface | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/03.interfaces/src/01.withoutInterface.ts)
+  - With interface | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/03.interfaces/src/02.interface.ts)
+  - React with TypeScript | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/04.react-typescript-demo/src/App.tsx)
 - **Interfaces** can be implemented as a `class`, similar like `java` language.
   - This is also an important difference between **interfaces** and **types**
-  - class implementing an interface | [Example]()
+  - class implementing an interface | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/05.implement-interface/src/implement.ts)
 
 ### types in TS
 
-- `type` also helps in aggregation of data | [Example]()
+- `type` also helps in aggregation of data | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/06.type/src/01.type.ts)
 - type can let you do few extra things like
-  - **union**: use **"|"** symbol, lets you take either of data type | [Example]()
-  - **intersection**: use **"&"** symbol, helps in let you have every property of multiple `type` or `interface` | [Example]()
+  - **union**: use **"|"** symbol, lets you take either of data type | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/06.type/src/02.union.ts)
+  - **intersection**: use **"&"** symbol, helps in let you have every property of multiple `type` or `interface` | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/06.type/src/03.intersection.ts)
