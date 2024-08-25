@@ -47,17 +47,17 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
   - `noImplicitAny`: It allows or disallows of 'any' type, be default it's `true`, That's why when we don't specify the types explicitly, by default it gives error as variables takes 'any' as a default type which is not strict types. To learning purpose we can set it to `false`.
   - Check `tsconfig.json` and `./src/Test.ts file` | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/typescript/02.tsconfig-toggles)
 
-### Interfaces in TS
+### Interface in TS
 
 - `interface` helps in defining a collective type like for objects i.e, helps to `aggregate` the data
   - Without interface | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/03.interfaces/src/01.withoutInterface.ts)
   - With interface | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/03.interfaces/src/02.interface.ts)
   - React with TypeScript | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/04.react-typescript-demo/src/App.tsx)
-- **Interfaces** can be implemented as a `class`, similar like `java` language.
-  - This is also an important difference between **interfaces** and **types**
+- **Interface** can be implemented by `class`, similar like `java` language, but with **type** you can not.
+  - above is also an important difference between **interface** and **type**
   - class implementing an interface | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/05.implement-interface/src/implement.ts)
 
-### types in TS
+### type in TS
 
 - `type` also helps in aggregation of data | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/06.type/src/01.type.ts)
 - type can let you do few extra things like
