@@ -49,7 +49,10 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
 
 ### Interfaces
 
-- Interfaces helps in defining a collective type like for objects 
+- **Interfaces** helps in defining a collective type like for objects i.e, helps to `aggregate` the data
   - Without interface | [Example]()
   - With interface | [Example]()
   - React with TypeScript | [Example]()
+- **Interfaces** can be implemented as a `class`, similar like `java` language.
+  - This is also an important difference between **interfaces** and **types**
+  - class implementing an interface | [Example]()
