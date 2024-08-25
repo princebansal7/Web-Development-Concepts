@@ -16,12 +16,12 @@ function useTodo() {
         });
     }, []);
 
-    return [todos, loading];
+    return { todos, loading };
 }
 
 // Our component is now clean and concise
 function App() {
-    const [todos, loading] = useTodo();
+    const { todos, loading } = useTodo();
     if (loading) return <h1>Loading...</h1>;
     else
         return (

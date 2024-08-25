@@ -20,7 +20,8 @@ Hooks provide 2 things:
 - Hooks that you create yourself so that others can use them are called custom hooks
 - A **custom hook** is effectively a function but with these following properties
   - uses another **hook internally** (like useState, useEffect, another custom hook)
-  - Starts with `use`
+  - [IMP] This is important: we can't use hooks inside a normal native functions, i.e, function should either be a component or an hook itself
+  - custom hook name must start with `use`
 
 - Examples:
   - Data fetching hooks
@@ -32,4 +33,10 @@ Hooks provide 2 things:
     - using external Data fetching library `swr` | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/02.custom-data-fetching-hook/src/App.jsx)
 
   - Browser functionality related hooks like: useWindowSize, useMousePosition, useOnlineStatus
+    - Checking whether the user is online or not | [Example]()
+    - Checking Mouse pointer location | [Example]()
+    - Checking Inner window dimensions | [Example]()
+  
   - Performance/Timer based hooks like: useDebounce, useInterval
+    - created useInterval hook which run a function after every n seconds | [Example]()
+    - useDebounce hook, should debounce the value for some n interval | [Example]()
