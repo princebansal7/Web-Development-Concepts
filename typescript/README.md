@@ -35,3 +35,14 @@
 - Potential error | [Example]()
 - How to assign type when passing in function arguments | [Example]()
 - How to assign type when passing function as argument | [Example]()
+
+### tsconfig file
+
+In `tsconfig.json` file, we can toggle some line according to which transpilation happens
+
+  - `target`: specify ECMA Script version here, like `es4`, `es5`, `es2016` etc, and accordingly `tsc` compiler will generate the final JS code (can be helpful when writing browser specific TS applications)
+  - `rootDir`: We provide the path here where we want compiler to look for `.ts` files, Good practice is to use `./src` folder.
+  - `outDir`: We provide the path here where we want compiler to spit out the `.js` files after transpilation, Good practice is to use `./dist` folder.
+  - `removeComments`: we can enable whether to include or not include the comments in transpiled `.js` files, we usually set to `true` so that file js files doesn't become bulky as no one reads them. They are just for browsers/node runtime to understand.
+  - `noImplicitAny`: It allows or disallows of 'any' type, be default it's `true`, That's why when we don't specify the types explicitly, by default it gives error as variables takes 'any' as a default type which is not strict types. To learning purpose we can set it to `false`.
+  - Check `tsconfig.json` and `./src/Test.ts file` | [Example]()
