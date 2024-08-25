@@ -38,3 +38,5 @@ Hooks provide 2 things:
     - Checking Inner window dimensions | [Example]()
   
   - Performance/Timer based hooks like: useDebounce, useInterval
+    - created useInterval hook which run a function after every n seconds | [Example]()
+    - useDebounce hook, should debounce the value for some n interval | [Example]()
