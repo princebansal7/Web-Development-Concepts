@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function CreateToDo() {
+function CreateToDo() {
     // Now, we need to put data in DB from our frontend
 
     // 2. using local state variables
@@ -72,4 +72,4 @@ export function CreateToDo() {
     );
 }
 
-// export default CreateToDo;
+export default CreateToDo;

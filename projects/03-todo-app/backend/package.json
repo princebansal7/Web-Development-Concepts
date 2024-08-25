@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "First basic version of todo app with backend & frontend",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
