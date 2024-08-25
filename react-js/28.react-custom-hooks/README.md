@@ -33,10 +33,10 @@ Hooks provide 2 things:
     - using external Data fetching library `swr` | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/02.custom-data-fetching-hook/src/App.jsx)
 
   - Browser functionality related hooks like: useWindowSize, useMousePosition, useOnlineStatus
-    - Checking whether the user is online or not | [Example]()
-    - Checking Mouse pointer location | [Example]()
-    - Checking Inner window dimensions | [Example]()
+    - Checking whether the user is online or not | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/03.custom-browser-hook/src/hooks/useOnline.jsx)
+    - Checking Mouse pointer location | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/03.custom-browser-hook/src/hooks/useMousePointer.jsx)
+    - Checking Inner window dimensions | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/03.custom-browser-hook/src/hooks/useDimension.jsx)
   
   - Performance/Timer based hooks like: useDebounce, useInterval
-    - created useInterval hook which run a function after every n seconds | [Example]()
-    - useDebounce hook, should debounce the value for some n interval | [Example]()
+    - created useInterval hook which run a function after every n seconds | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/04.custom-performace-timer-hook/src/components/TimerComponent.jsx)
+    - useDebounce hook, should debounce the value for some n interval | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/react-js/28.react-custom-hooks/04.custom-performace-timer-hook/src/components/DebounceSearchBarComponent.jsx)
