@@ -15,6 +15,7 @@
   ```js
     import c, { a , b } from "./a.js"
     console.log(c);
+
     // or
 
     import AnyNameForImportedC, { a , b } from "./a.js"
@@ -24,6 +25,7 @@
   ```
 - TypeScript by default uses **ES6**  import export
 - In JavaScript, in `package.json` if want to use ES6 import/export add `"type": "module`
+  
   ```json
     {
       "type": "module", // Like this
