@@ -8,9 +8,9 @@
     const c = 100;
     export default c;
   ```
-- In file `b.js` 
-- while importing and destructuring name should be same, expect for the default exported value
+- While importing and destructuring name should be same, expect for the default exported value
 - Can give any name to Default exported value
+- In file `b.js` 
 
   ```js
     import c, { a , b } from "./a.js"
