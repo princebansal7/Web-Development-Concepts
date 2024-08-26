@@ -19,9 +19,9 @@
     // or
 
     import AnyNameForImportedC, { a , b } from "./a.js"
-    console.log(a);
-    console.log(b);
-    console.log(AnyNameForImportedC);
+    console.log(a); // 1
+    console.log(b); // 69
+    console.log(AnyNameForImportedC); // 100
   ```
 - TypeScript by default uses **ES6**  import export
 - In JavaScript, in `package.json` if want to use ES6 import/export add `"type": "module"`
