@@ -55,6 +55,7 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
   - React with TypeScript | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/04.react-typescript-demo/src/App.tsx)
 - **Interface** can be implemented by `class`, similar like `java` language, but with **type** you can not.
   - above is also an important difference between **interface** and **type**
+  - interface can **extend** other interface but **type** can not.
   - class implementing an interface | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/05.implement-interface/src/implement.ts)
 
 ### type in TS
