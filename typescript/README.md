@@ -73,17 +73,17 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
       let str: string[] = ["1","Prince","Bansal"];
       let bool: boolean[] = [true,false,true,true];
     ```
-  - [Example]()
+  - array type [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/07.arrays/src/array.ts)
   
 ### enum in TS
 
 - **enums** (short for Enumerations) is feature which allows you to define a set of **named constants**
-- enum | [Example]()
-- enum express use case | [Example]()
+- enum | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/08.enums/src/01.enums.ts)
+- enum express use case | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/08.enums/src/02.expressUseCase.ts)
 
 ### Generics in TS
 
 - `generic` enables the programmer to write a **General Algorithm** which will work for all **data types**
 - It is the same concept as `templates` in C++
-- Without Generics | [Example]()
-- With Generics concept | [Example]()
+- Without Generics | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/09.generics/src/withoutGenerics.ts)
+- With Generics concept | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/09.generics/src/generics.ts)
