@@ -14,7 +14,7 @@
 
   ```js
     import c, { a , b } from "./a.js"
-    console.log(c);
+    console.log(c); // 100
 
     // or
 
