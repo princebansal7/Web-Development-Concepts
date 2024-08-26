@@ -64,3 +64,26 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
 - type can let you do few extra things like
   - **union**: use **"|"** symbol, lets you take either of data type | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/06.type/src/02.union.ts)
   - **intersection**: use **"&"** symbol, helps in let you have every property of multiple `type` or `interface` | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/06.type/src/03.intersection.ts)
+
+### Arrays in TS
+
+  - To create array type in TS, simple add `[]` next to type like: 
+    ```ts
+      let arr: number[] = [1,2,3];
+      let str: string[] = ["1","Prince","Bansal"];
+      let bool: boolean[] = [true,false,true,true];
+    ```
+  - [Example]()
+  
+### enum in TS
+
+- **enums** (short for Enumerations) is feature which allows you to define a set of **named constants**
+- enum | [Example]()
+- enum express use case | [Example]()
+
+### Generics in TS
+
+- `generic` enables the programmer to write a **General Algorithm** which will work for all **data types**
+- It is the same concept as `templates` in C++
+- Without Generics | [Example]()
+- With Generics concept | [Example]()
