@@ -24,11 +24,11 @@
     console.log(AnyNameForImportedC);
   ```
 - TypeScript by default uses **ES6**  import export
-- In JavaScript, in `package.json` if want to use ES6 import/export add `"type": "module`
+- In JavaScript, in `package.json` if want to use ES6 import/export add `"type": "module"`
   
   ```json
     {
-      "type": "module", // Like this
+      "type": "module",
       "author": "Prince Bansal",
       "dependencies": {
         "axios": "^1.7.4"
