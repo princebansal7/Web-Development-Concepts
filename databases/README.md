@@ -55,8 +55,10 @@
     - Validation data before it goes to DB
     - Making sure to use schemas to make mongoDB less dangerous
     - So, with mongoose, mongoDB becomes strict ? yes kinda but at nodejs level, not at the DB level, we still can put erroneous data in db that doesn't follow schema
+  
   - Similar to `JavaScript` & `TypeScript` as TS provides more **type safety** on top of JS.
   - mongoDb let us put **nested complex objects** in DB, which **SQL DBs doesn't**. => easy is establish relationships between data.
+  
   - MongoDB [Example](add mongoDB folder link here)
     - We'll first do mongoose connection test example. refer file: `01.mongooseConnect.js`
     - MongoDb with Authentication, refer file `02.mongoDBwithAuthenticationAndInputValidation.js`
@@ -74,8 +76,11 @@
    - Update the schema as your app changes and perform `migrations`
  
 - So there are 4 parts when using an SQL database (not connecting it to Node.js, just running it and putting data in it)
-   1. Running the database.
+   1. Running the database. (use docker or get connection string from supabase, neonTech online providers)
    2. Using a library that let’s you connect and put data in it.
    3. Creating a table and defining it’s schema.
    4. Run queries on the database to interact with the data, perform CRUD (create, read, update, delete) operations
+
 - SQL with Postgres [Example]()
+  - install `pg` library to use in backend to do CRUD in postgres db (similar to mongoose)
+  - use `psql` library which provided terminal based front-end to postgresSQL (optional)
