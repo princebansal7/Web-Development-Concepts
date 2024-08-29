@@ -32,8 +32,8 @@ I created this repository to provide a clear and structured pathway for understa
   
   - Database basics | [theory](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/01.database.md)
   - MongoDB example with auth & input validation | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/03.mongoDBwithAuthInputValidation.js)
-  - Postgres [Upcoming]()
-  - Prisma [Upcoming]()
+  - Postgres - Upcoming [Link]()
+  - Prisma - Upcoming [Link]()
    
 - **Projects**
   
