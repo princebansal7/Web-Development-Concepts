@@ -43,7 +43,7 @@
    - Cluster > Database > Tables
    - Cluster is made up of multiple databases, databases are made up of multiple tables
 
-## MongoDB & mongoose library** 
+## MongoDB & mongoose library
 
   - MongoDB is **schemaless**, can put any data without worrying about the structure of data.
   - Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
@@ -59,7 +59,7 @@
   - Similar to `JavaScript` & `TypeScript` as TS provides more **type safety** on top of JS.
   - mongoDb let us put **nested complex objects** in DB, which **SQL DBs doesn't**. => easy is establish relationships between data.
   
-  - MongoDB [Example](add mongoDB folder link here)
+  - MongoDB [Example]()
     - We'll first do mongoose connection test example. refer file: `01.mongooseConnect.js`
     - MongoDb with Authentication, refer file `02.mongoDBwithAuthenticationAndInputValidation.js`
          - Connect to mongoDB using `mongoose` library.

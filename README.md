@@ -24,16 +24,17 @@ I created this repository to provide a clear and structured pathway for understa
   - Input validation, Zod | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/input-validation)
   - fetch - [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/fetch-axios-api/fetch.js) | axios - [link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/fetch-axios-api/axios.js)
   - Authentication - JWT | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/authentication-concepts/03.authenticationPrereqs.md)
-  - Database connectivity | [mongoDB connect](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/02.mongooseConnect.js)
+  - Database connectivity | [mongoDB connect](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/mongoDB/01.mongooseConnect.js)
   - frontend-backend connection | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend-connect)
   - Debouncing [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/frontend-backend-connect/03.throttling-debouncing/frontend.html) | Throttling [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/frontend-backend-connect/03.throttling-debouncing/backend.js)
   
 - **Databases** 
   
-  - Database basics | [theory](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/01.database.md)
-  - MongoDB example with auth & input validation | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases-basics/03.mongoDBwithAuthInputValidation.js)
-  - Postgres - Upcoming [Link]()
-  - Prisma - Upcoming [Link]()
+  - Databases NoSQL & SQL | [theory](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases#databases-concepts)
+  - MongoDB - NoSQL | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/mongoDB/01.mongooseConnect.js)
+  - MongoDB example with authentication & input validation | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/mongoDB/02.mongoDBwithAuthenticationAndInputValidation.js)
+  - Postgres - Upcoming | [Link]()
+  - Prisma - Upcoming | [Link]()
    
 - **Projects**
   
