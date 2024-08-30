@@ -81,7 +81,7 @@
    3. Creating a table and defining it’s schema.
    4. Run queries on the database to interact with the data, perform CRUD (create, read, update, delete) operations
 
-- SQL with Postgres [Example]()
+- SQL with Postgres [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/postgres/src/index.ts)
   - install `pg` library to use in backend to do CRUD in postgres db (similar to mongoose)
     ```
       npm init -y
@@ -92,3 +92,4 @@
     ```
   - use `psql` library which provided terminal based front-end to postgresSQL (optional)
   - While putting data in DB, avoid adding data in the query itself and use separate values like $1, $2 etc to avoid `SQL injection`
+  - CRUD operations | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres/src/CRUD)
