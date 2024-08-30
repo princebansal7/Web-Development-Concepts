@@ -91,3 +91,4 @@
       npm install @types/pg
     ```
   - use `psql` library which provided terminal based front-end to postgresSQL (optional)
+  - While putting data in DB, avoid adding data in the query itself and use separate values like $1, $2 etc to avoid `SQL injection`
