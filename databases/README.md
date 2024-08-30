@@ -83,4 +83,11 @@
 
 - SQL with Postgres [Example]()
   - install `pg` library to use in backend to do CRUD in postgres db (similar to mongoose)
+    ```
+      npm init -y
+      npx tsc --init
+
+      npm install pg
+      npm install @types/pg
+    ```
   - use `psql` library which provided terminal based front-end to postgresSQL (optional)
