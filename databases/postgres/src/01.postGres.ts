@@ -6,10 +6,9 @@ if (!process.env.POSTGRES_URL) {
     throw new Error("POSTGRES_URL environment variable is not set.");
 }
 
-// connection string format: postgresql://<username>:<password@host/database>
-const client = new Client({ connectionString: process.env.POSTGRES_URL });
-
 const runDatabaseOperations = async () => {
+    // connection string format: postgresql://<username>:<password@host/database>
+    const client = new Client({ connectionString: process.env.POSTGRES_URL });
     try {
         await client.connect();
         console.log("Connected to the database.");

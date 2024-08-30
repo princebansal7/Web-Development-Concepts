@@ -6,7 +6,7 @@ if (!process.env.POSTGRES_URL) {
     throw new Error("POSTGRES_URL environment variable is not set.");
 }
 
-// Async function to insert data into a table
+// Async function to insert data into a table (also Preventing SQL Injection)
 async function insertData(username: string, email: string, password: string) {
     const client = new Client({ connectionString: process.env.POSTGRES_URL });
 
