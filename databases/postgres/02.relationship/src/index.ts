@@ -11,6 +11,7 @@ import {
     insertAddressData,
     insertUserAndAddress,
 } from "./db-operations/03.insertData";
+import { getUserDetailsWithAddress } from "./db-operations/04.getDataJoins";
 
 const runDatabaseOperations = async (): Promise<void> => {
     await connectToDatabase();
@@ -33,8 +34,42 @@ const runDatabaseOperations = async (): Promise<void> => {
         "Tokyo",
         "101010"
     );
-    await insertAddressData(2, "Konoha", "707070", "Leaf");
+    await insertAddressData(2, "Konoha", "707070", "Japan");
+    await getUserDetailsWithAddress("1");
+    await getUserDetailsWithAddress("2");
     await closeDatabaseConnection();
 };
 
 runDatabaseOperations();
+
+/*
+Output:
+
+        Connected to the database.
+        Table created successfully.
+        Inserted value successfully.
+        Table created successfully.
+        Inserted address successfully.
+        Inserted address successfully.
+        Inserted address successfully.
+        User and address inserted successfully
+        Inserted address successfully.
+        User and address found: {
+        user_id: 1,
+        username: 'prince',
+        email: 'prince.bansal007@hotmail.com',
+        city: 'Chandigarh',
+        pincode: '160003',
+        country: 'India'
+        }
+        User and address found: {
+        user_id: 2,
+        username: 'Tanjiro',
+        email: 'demon.slayer@ninja.com',
+        city: 'Japan',
+        pincode: '101010',
+        country: 'Tokyo'
+        }
+        Database connection closed.
+
+*/
