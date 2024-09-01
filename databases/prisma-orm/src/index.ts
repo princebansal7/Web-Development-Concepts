@@ -41,7 +41,7 @@ const insertUserData = async (
 //-------------------
 // reading user data
 
-const getUserData = async () => {
+const getUserData = async (): Promise<void> => {
     const result = await prisma.user.findMany();
     console.log(result);
 };
