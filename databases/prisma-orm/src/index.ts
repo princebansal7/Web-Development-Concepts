@@ -1,5 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-import { get } from "http";
 const prisma = new PrismaClient();
 
 // using prisma: clean code unlike pg library where we were creating

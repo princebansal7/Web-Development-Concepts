@@ -130,4 +130,4 @@
     - **Automated Migrations:** Prisma generates and runs database migrations based on changes to the Prisma schema.
     - **Type Safety:** Prisma generates a type-safe database client based on the Prisma schema.
     - **Auto Completions:** Helps in auto completion while writing code based on defined schema
-  - Prisma Hands on | [Example]()
+  - Prisma Hands on | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/prisma-orm#prisma-setup-and-commands)
