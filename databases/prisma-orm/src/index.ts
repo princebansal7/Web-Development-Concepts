@@ -1,7 +1,8 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-// using prisma: clean code unlike pg library where we were creating client, connecting to db, closing connection etc
+// using prisma: clean code unlike pg library where we were creating
+// client, connecting to db, closing connection etc
 
 const insertUserData = async (
     email: string,
@@ -19,14 +20,38 @@ const insertUserData = async (
             first_name,
             last_name,
         },
-        // select: if we need some specific data in output, (by default returns all the fields)
+        // select: if we need some specific data in output,
+        // (by default returns all the fields)
     });
     console.log(result);
 };
-insertUserData(
-    "prince.bansal7@gmail.com",
-    "princebansal_",
-    "ede2922ee",
-    "Prince",
-    "Bansal"
-);
+
+// In case of error like putting same user, auto increment still updates
+// and accordingly id number will be alloted in User table
+// insertUserData(
+//     "prince.bansal007@gmail.com",
+//     "princebansal7",
+//     "ede2922ee",
+//     "Prince",
+//     "Bansal"
+// );
+
+//-------------------
+// Update user data
+
+interface UserDataParameters {
+    first_name: string;
+    last_name: string;
+}
+
+const updateUserData = async (
+    username: string,
+    { first_name, last_name }: UserDataParameters
+): Promise<void> => {
+    await prisma.user.update({
+        where: { username },
+        data: { first_name, last_name },
+    });
+};
+
+updateUserData("princebansal7", { first_name: "Tanjiro", last_name: "Kamado" });

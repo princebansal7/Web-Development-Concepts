@@ -17,7 +17,7 @@ datasource db {
 model User {
   id         Int     @id @default(autoincrement()) // like user_id was primary key (@id) with SERIAL
   email      String  @unique
-  username   String
+  username   String  @unique
   password   String
   first_name String
   last_name  String? // optional
