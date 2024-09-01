@@ -31,9 +31,8 @@ I created this repository to provide a clear and structured pathway for understa
 - **Databases** 
   
   - Databases NoSQL & SQL | [theory](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases#databases-concepts)
-  - MongoDB - NoSQL | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/mongoDB/01.mongooseConnect.js)
-  - MongoDB example with authentication & input validation | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/mongoDB/02.mongoDBwithAuthenticationAndInputValidation.js)
-  - Postgres - SQL | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases#sql-database)
+  - MongoDB - NoSQL | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/mongoDB)
+  - Postgres - SQL | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres)
   - Prisma ORM (Object Relational Mapper) - Upcoming | [Link]()
    
 - **Projects**

@@ -59,9 +59,9 @@
   - Similar to `JavaScript` & `TypeScript` as TS provides more **type safety** on top of JS.
   - mongoDb let us put **nested complex objects** in DB, which **SQL DBs doesn't**. => easy is establish relationships between data.
   
-  - MongoDB [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/mongoDB)
-    - We'll first do mongoose connection test example. refer file: `01.mongooseConnect.js`
-    - MongoDb with Authentication, refer file `02.mongoDBwithAuthenticationAndInputValidation.js`
+  - MongoDB
+    - We'll first do mongoose connection test example. refer file: `01.mongooseConnect.js` | [Example-js](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/mongoDB/01.mongooseConnect.js)
+    - MongoDb with Authentication, refer file `02.mongoDBwithAuthenticationAndInputValidation.js` | [Example-js](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/mongoDB/02.mongoDBwithAuthenticationAndInputValidation.js)
          - Connect to mongoDB using `mongoose` library.
          - We'll have 3 routes: `/signup`, `/signin`, `/users`
            1. `/signup`: user will send `email`, `password`, `name`  in body and we'll put it in DB provided same user email doesn't exists
@@ -81,7 +81,7 @@
    3. Creating a table and defining it’s schema.
    4. Run queries on the database to interact with the data, perform CRUD (create, read, update, delete) operations
 
-- SQL with Postgres [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/postgres/src/index.ts)
+- SQL with Postgres (NOTE: code is in **TypeScript**)
   - install `pg` library to use in backend to do CRUD in postgres db (similar to mongoose)
     ```
       npm init -y
@@ -92,7 +92,8 @@
     ```
   - use `psql` library which provided terminal based front-end to postgresSQL (optional)
   - While putting data in DB, avoid adding data in the query itself and use separate values like $1, $2 etc to avoid `SQL injection`
-  - CRUD operations | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres/src/CRUD)
+  - CRUD operations | [main](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/postgres/01.crud-operations/src/index.ts) | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres/01.crud-operations/src/CRUD)
+  - Relationships & JOIN | [main](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/postgres/02.relationship/src/index.ts) | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres/02.relationship/src/db-operations)
 
 ## ORM (Object Relational Mapping) & Prisma
 
