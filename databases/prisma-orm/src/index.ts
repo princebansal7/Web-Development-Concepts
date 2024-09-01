@@ -30,13 +30,13 @@ const insertUserData = async (
 // In case of error like putting same user, auto increment still updates
 // and accordingly id number will be alloted in User table
 
-// insertUserData(
-//     "prince.bansal007@gmail.com",
-//     "princebansal7",
-//     "ede2922ee",
-//     "Prince",
-//     "Bansal"
-// );
+insertUserData(
+    "prince.bansal007@gmail.com",
+    "princebansal7",
+    "ede2922ee",
+    "Prince",
+    "Bansal"
+);
 
 //-------------------
 // Update user data
@@ -81,3 +81,16 @@ const findUserByEmail = async (email: string): Promise<void> => {
     console.log("user found:\n", user);
 };
 findUserByEmail("prince.bansal7@gmail.com");
+
+//--------------------
+// deleting userData
+
+const deleteUser = async (username: string): Promise<void> => {
+    const res = await prisma.user.delete({
+        where: {
+            username,
+        },
+    });
+    console.log("user deleted\n", res);
+};
+deleteUser("princebansal2");
