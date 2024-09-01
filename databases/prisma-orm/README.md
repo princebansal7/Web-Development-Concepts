@@ -25,5 +25,5 @@
 ## Example Links
 
 - Prisma Schema [File](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/prisma-orm/prisma/schema.prisma)   
-- Prisma CRUD operations | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/prisma-orm/src/index.ts)
 - Migration folder | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/prisma-orm/prisma/migrations)
+- Prisma CRUD operations | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/prisma-orm/src/index.ts)
