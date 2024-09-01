@@ -28,6 +28,7 @@ const insertUserData = async (
 
 // In case of error like putting same user, auto increment still updates
 // and accordingly id number will be alloted in User table
+
 // insertUserData(
 //     "prince.bansal007@gmail.com",
 //     "princebansal7",
@@ -48,10 +49,14 @@ const updateUserData = async (
     username: string,
     { first_name, last_name }: UserDataParameters
 ): Promise<void> => {
-    await prisma.user.update({
+    const res = await prisma.user.update({
         where: { username },
         data: { first_name, last_name },
     });
+    console.log(res);
 };
 
-updateUserData("princebansal7", { first_name: "Tanjiro", last_name: "Kamado" });
+updateUserData("princebansal7", {
+    first_name: "Tanjiro1",
+    last_name: "Kamado",
+});
