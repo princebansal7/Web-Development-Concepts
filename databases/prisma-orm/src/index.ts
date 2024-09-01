@@ -39,15 +39,6 @@ const insertUserData = async (
 // );
 
 //-------------------
-// reading user data
-
-const getUserData = async (): Promise<void> => {
-    const result = await prisma.user.findMany();
-    console.log(result);
-};
-getUserData();
-
-//-------------------
 // Update user data
 
 interface UserDataParameters {
@@ -70,3 +61,23 @@ updateUserData("princebansal7", {
     first_name: "Tanjiro1",
     last_name: "Kamado",
 });
+
+//-------------------
+// reading user data
+
+const getUserData = async (): Promise<void> => {
+    const result = await prisma.user.findMany();
+    console.log(result);
+};
+getUserData();
+
+// finding user by email
+
+const findUserByEmail = async (email: string): Promise<void> => {
+    const user = await prisma.user.findFirst({
+        where: { email },
+    });
+
+    console.log("user found:\n", user);
+};
+findUserByEmail("prince.bansal7@gmail.com");
