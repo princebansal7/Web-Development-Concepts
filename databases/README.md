@@ -94,3 +94,40 @@
   - While putting data in DB, avoid adding data in the query itself and use separate values like $1, $2 etc to avoid `SQL injection`
   - CRUD operations | [main](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/postgres/01.crud-operations/src/index.ts) | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres/01.crud-operations/src/CRUD)
   - Relationships & JOIN | [main](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/postgres/02.relationship/src/index.ts) | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres/02.relationship/src/db-operations)
+
+## ORM (Object Relational Mapping) & Prisma
+
+- ORM stands for Object-Relational Mapping, a programming technique used in software development to convert data between incompatible type systems in object-oriented programming languages. This technique creates a "virtual object database" that can be used from within the programming language.
+- ORMs are used to abstract the complexities of the underlying database into simpler, more easily managed objects within the code.
+- ORMs let you easily interact with your database without worrying too much about the underlying syntax (SQL language for eg)
+
+  - ORM provides simple syntax (converts objects to sql queries under the hood)
+    - pg (without ORM)
+      ```ts
+        const query = "SELECT * FROM users WHERE email=$1";
+        const result = await client.query(query,["prince.bansal@gmail.com"]);
+      ```
+    - with ORM
+      ```ts
+        User.find({
+          email: "prince.basnal@gmail.com"
+        })
+      ```
+  - Provides abstraction that lets you flip or change the database irrespective of what currently you are using (Unified API irrespective of database)   
+  - It means our node code will remains the same and underlying ORM API will covert the code corresponding to the DB (mysql, postgres, mongodb) we need it to support.
+  - Provides type safety/Auto completions, makes writing code easy
+
+- `Auto Migrations`
+  - What is **Migration?** 
+  - Migration is updating the database with latest schema as the application grows
+  - As application grows, schema changes, means hard to keep track of what all commands ran for creation of schema and when deploying to production databases or need to change databases, it's hard to keep track of all the commands which lead to current/final schema.
+  - So, ORM helps in this and gives a central place for all the migrations and automatically keeps the track of all the migrations happened
+
+- **Prisma**
+  - Prisma is NodeJS specific ORM
+  - It mainly provides `Data model`, `Type-Safety`, `Automated Migrations` & `Auto Completions`
+    - **Data Model:** In a single file, define your schema. What it looks like, what tables you have, what field each table has, how are rows related to each other.
+    - **Automated Migrations:** Prisma generates and runs database migrations based on changes to the Prisma schema.
+    - **Type Safety:** Prisma generates a type-safe database client based on the Prisma schema.
+    - **Auto Completions:** Helps in auto completion while writing code based on defined schema
+  - Prisma Hands on | [Example]()
