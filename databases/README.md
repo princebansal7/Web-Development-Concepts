@@ -92,5 +92,5 @@
     ```
   - use `psql` library which provided terminal based front-end to postgresSQL (optional)
   - While putting data in DB, avoid adding data in the query itself and use separate values like $1, $2 etc to avoid `SQL injection`
-  - CRUD operations | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres/src/CRUD)
-  - Relationships & JOIN | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres/02.relationship/src/db-operations)
+  - CRUD operations | [main](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/postgres/01.crud-operations/src/index.ts) [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres/src/CRUD)
+  - Relationships & JOIN | [main](https://github.com/princebansal7/Web-Development-Concepts/blob/main/databases/postgres/02.relationship/src/index.ts) [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/postgres/02.relationship/src/db-operations)
