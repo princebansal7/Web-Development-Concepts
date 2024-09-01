@@ -126,8 +126,8 @@
 - **Prisma**
   - Prisma is NodeJS specific ORM
   - It mainly provides `Data model`, `Type-Safety`, `Automated Migrations` & `Auto Completions`
-    - **Data Model:** In a single file, define your schema. What it looks like, what tables you have, what field each table has, how are rows related to each other.
-    - **Automated Migrations:** Prisma generates and runs database migrations based on changes to the Prisma schema.
-    - **Type Safety:** Prisma generates a type-safe database client based on the Prisma schema.
-    - **Auto Completions:** Helps in auto completion while writing code based on defined schema
+    - `Data Model`: In a single file, define your schema. What it looks like, what tables you have, what field each table has, how are rows related to each other.
+    - `Automated Migrations`: Prisma generates and runs database migrations based on changes to the Prisma schema.
+    - `Type Safety`: Prisma generates a type-safe database client based on the Prisma schema.
+    - `Auto Completions`: Helps in auto completion while writing code based on defined schema
   - Prisma Hands on | [Example](https://github.com/princebansal7/Web-Development-Concepts/tree/main/databases/prisma-orm#prisma-setup-and-commands)
