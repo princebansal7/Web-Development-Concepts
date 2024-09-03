@@ -61,7 +61,25 @@ What if, you could just write the code and someone else could take care of all o
     ``` 
   - To deploy local backend to cloudfare and starts a worker (internally below command will run `wrangler deploy`)
     ```sh
-        run run deploy
+        npm run deploy
+    ``` 
+  - To delete the deployment from cloudfare
+    ```sh
+        npx wrangler delete deployment
     ``` 
 - Check cloudfare `Worker & pages` section, application will be deployed with the same local folder name (in our example `cloudfare-backend`)
 - You can create new workers by updating `wrangler.toml` file
+- We saw there was not easy way to write routing we want to write cloudfare worker backend
+- And if we already have an NodeJS application which relies on express server and we now need to deploy it on cloudfare then
+  - Either need to write the code hard way
+  - Or minimize the code which depends on express and segregate and still need to write some code as per cloudfare
+
+## Using hono library 
+
+- To make this process easier, use `hono` library:
+- To Setup, use below commands:
+  - Initialize new app
+    ```sh
+        npm create hono@latest hono-cloudfare-backend
+    ```
+  - Check example | [Link]() 
