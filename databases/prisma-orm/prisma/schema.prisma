@@ -21,6 +21,7 @@ model User {
   password   String
   first_name String
   last_name  String? // optional
+  todos      Todo[]
 }
 
 // todo schema
@@ -29,4 +30,6 @@ model Todo {
   title             String
   description       String?
   completion_status Boolean @default(false)
+  user_id           Int // user User @relation(fields: [user_id], references: [id])
+  user              User    @relation(fields: [user_id], references: [id]) // indicates that the user_id field in Todo references the id field in the User model.
 }

@@ -29,13 +29,13 @@ const insertUserData = async (
 // In case of error like putting same user, auto increment still updates
 // and accordingly id number will be alloted in User table
 
-insertUserData(
-    "prince.bansal007@gmail.com",
-    "princebansal7",
-    "ede2922ee",
-    "Prince",
-    "Bansal"
-);
+// insertUserData(
+//     "prince.bansal007@gmail.com",
+//     "princebansal7",
+//     "ede2922ee",
+//     "Prince",
+//     "Bansal"
+// );
 
 //-------------------
 // Update user data
@@ -56,10 +56,10 @@ const updateUserData = async (
     console.log(res);
 };
 
-updateUserData("princebansal7", {
-    first_name: "Tanjiro1",
-    last_name: "Kamado",
-});
+// updateUserData("princebansal7", {
+//     first_name: "Tanjiro1",
+//     last_name: "Kamado",
+// });
 
 //-------------------
 // reading user data
@@ -68,7 +68,7 @@ const getUserData = async (): Promise<void> => {
     const result = await prisma.user.findMany();
     console.log(result);
 };
-getUserData();
+// getUserData();
 
 // finding user by email
 
@@ -79,7 +79,7 @@ const findUserByEmail = async (email: string): Promise<void> => {
 
     console.log("user found:\n", user);
 };
-findUserByEmail("prince.bansal7@gmail.com");
+// findUserByEmail("prince.bansal7@gmail.com");
 
 //--------------------
 // deleting userData
@@ -92,4 +92,51 @@ const deleteUser = async (username: string): Promise<void> => {
     });
     console.log("user deleted\n", res);
 };
-deleteUser("princebansal2");
+// deleteUser("princebansal2");
+
+//----------------------------------------
+// Todo operations
+
+async function createTodo(
+    user_id: number,
+    title: string,
+    description: string
+): Promise<void> {
+    const todo = await prisma.todo.create({
+        data: {
+            title,
+            description,
+            user_id,
+        },
+    });
+    console.log(todo);
+}
+// createTodo(1, "Do workout", "Do 100 pushups");
+// createTodo(1, "Buy Milk", "2 Ltr Milk");
+// createTodo(4, "Buy vegetables", "Mixed groceries");
+
+async function getTodos(user_id: number) {
+    const todos = await prisma.todo.findMany({
+        where: {
+            user_id,
+        },
+    });
+    console.log(todos);
+}
+
+getTodos(1);
+
+async function getTodosAndUserDetails(user_id: number) {
+    const todos = await prisma.todo.findMany({
+        where: {
+            user_id,
+        },
+        select: {
+            user: true,
+            title: true,
+            description: true,
+        },
+    });
+    console.log(todos);
+}
+getTodosAndUserDetails(1);
