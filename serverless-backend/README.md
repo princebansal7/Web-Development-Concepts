@@ -45,7 +45,7 @@ What if, you could just write the code and someone else could take care of all o
 - It provides `wrangler` (check *package.json*) as CLI tool which takes care of all the server listening code and stuff
 - Cloudflare expects you to just write the logic to handle a request.
 - Creating an HTTP server on top is handled by cloudflare and `wrangler` locally.
-- How to write code using cloudfare like we write using `express`? | [Link]()
+- How to write code using cloudfare like we write using `express`? | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/serverless-backend/cloudfare-backend/src/index.ts)
 
 ## Deploying on Internet from local
 
@@ -82,4 +82,4 @@ What if, you could just write the code and someone else could take care of all o
     ```sh
         npm create hono@latest hono-cloudfare-backend
     ```
-  - Check example | [Link]() 
+  - Check example | [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/serverless-backend/hono-cf-backend/src/index.ts) 
