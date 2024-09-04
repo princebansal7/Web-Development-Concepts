@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { Context } from "hono/jsx";
 
 const app = new Hono();
 
@@ -21,7 +22,29 @@ app.post("/input", async c => {
     console.log(c.req.query("a")); // 10
     console.log(c.req.query("b")); // 30
 
-    return c.text("Hello from /input!");
+    return c.text("Hello from /input");
+});
+
+// Similar to express we can add middlewares too.
+
+async function authMiddleware(c: any, next: any) {
+    if (c.req.header("Authorization")) {
+        // do some auth logic
+        // calculating request time
+        console.log(c.req.header("Authorization"));
+        const initialTime = new Date();
+        await next();
+        const totalTime = (new Date().getTime() - initialTime.getTime()) / 1000;
+        console.log(`Total time: ${totalTime} seconds`);
+    } else {
+        c.text("You don't have access");
+    }
+}
+
+// app.use(authMiddleware);
+
+app.post("/user", authMiddleware, async c => {
+    return c.text("Hello from /user");
 });
 
 export default app;
