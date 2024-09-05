@@ -28,6 +28,7 @@ I created this repository to provide a clear and structured pathway for understa
   - frontend-backend connection | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/frontend-backend-connect)
   - Debouncing [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/frontend-backend-connect/03.throttling-debouncing/frontend.html) | Throttling [Link](https://github.com/princebansal7/Web-Development-Concepts/blob/main/frontend-backend-connect/03.throttling-debouncing/backend.js)
   - Serverless Backend deployment - CloudFare | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/serverless-backend#backend-servers-and-serverless-deployment)
+  - Reverse proxy & certificate management | [Link](https://github.com/princebansal7/backend-server-cloud?tab=readme-ov-file#backend-server-cloud)
   
 - **Databases** 
   
