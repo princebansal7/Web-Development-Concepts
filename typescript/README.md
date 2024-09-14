@@ -87,3 +87,5 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
 - It is the same concept as `templates` in C++
 - Without Generics | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/09.generics/src/withoutGenerics.ts)
 - With Generics concept | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/09.generics/src/generics.ts)
+
+### Advance API in TS
