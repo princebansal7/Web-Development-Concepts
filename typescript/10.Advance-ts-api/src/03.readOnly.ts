@@ -28,7 +28,20 @@ const obj: UserNew = { name: "John", age: 22, mobile: "03202320309" };
 // obj.name = "Prince" // error
 
 // Making whole object as read only
-const newObj: Readonly<UserNew> = {
+type UserNew2 = {
+    name: string;
+    age: number;
+    mobile: string;
+};
+
+// Makes as:
+// type UserNew2 = {
+//     readonly name: string;
+//     readonly age: number;
+//     readonly mobile: string;
+// };
+
+const newObj: Readonly<UserNew2> = {
     name: "Hello",
     age: 32,
     mobile: "4233243423",
