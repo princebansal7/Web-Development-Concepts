@@ -90,6 +90,6 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
 
 ### Advance API in TS
 
-  - `Pick<>`: Allows you to create a new type by selecting a set of properties (keys) from an existing type (Type) | [example]()
-  - `Partial<>`: Makes all properties of type optional => creates a type with same properties but each marked as optional | [example]()
-  - `Readonly<>`: To make some configuration object read only and it can't be altered once initialized  | [example]()
+  - `Pick<>`: Allows you to create a new type by selecting a set of properties (keys) from an existing type (Type) | [example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/10.Advance-ts-api/src/01.pick.ts)
+  - `Partial<>`: Makes all properties of type optional => creates a type with same properties but each marked as optional | [example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/10.Advance-ts-api/src/02.partial.ts)
+  - `Readonly<>`: To make some configuration object read only and it can't be altered once initialized  | [example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/10.Advance-ts-api/src/03.readOnly.ts)
