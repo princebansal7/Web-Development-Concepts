@@ -29,6 +29,8 @@
  7. Basic types are:
     - `number`, `string`, `boolean`, `null`, `undefined` 
 
+**NOTE:** To check whether something is explicitly for JavaScript or typeScript, simply compile the TS code and check the JS file, if it doesn't exists in javaScript file => it's provided by TS
+
 ### Basic programs to understand types
 
 - first program | [Example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/01.tsc-basics/01.firstTS.ts)
@@ -93,3 +95,7 @@ In `tsconfig.json` file, we can toggle some line according to which transpilatio
   - `Pick<>`: Allows you to create a new type by selecting a set of properties (keys) from an existing type (Type) | [example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/10.Advance-ts-api/src/01.pick.ts)
   - `Partial<>`: Makes all properties of type optional => creates a type with same properties but each marked as optional | [example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/10.Advance-ts-api/src/02.partial.ts)
   - `Readonly<>`: To make some configuration object read only and it can't be altered once initialized  | [example](https://github.com/princebansal7/Web-Development-Concepts/blob/main/typescript/10.Advance-ts-api/src/03.readOnly.ts)
+  - `Record<>`: To give types in objects in cleaner way, TS provides record | [example]()
+  - `Map`: It's not specific to TS, but also exists in JS, another way to create and manipulate key-value pair | [example]()
+  - `Exclude<>`: when you want to exclude specific types of input being passed in an function | [example]()
+  - `infer<>`: Useful when need to do Type Inference, can extract the typeScript type of any schema with infer<>, helpful when have to extract types from `zod` schema | [example]()
