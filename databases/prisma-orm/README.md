@@ -12,7 +12,10 @@
     ```sh
         npx prisma init 
     ```
-- Write schema of application in `prisma/schema.prisma`
+- Write schema of application in
+    ```sh
+        prisma/schema.prisma
+    ```
 - Run below command for migration
     ```sh
         npx prisma migrate dev --name Initialize_first_schema
