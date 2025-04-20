@@ -2,8 +2,6 @@
 
 I created this repository to provide a clear and structured pathway for understanding web development, from the basics to advanced full-stack concepts. This resource is designed to help you grasp essential technologies—like HTML, CSS, and JavaScript, React etc while diving deeper into critical aspects such as backend connectivity, frontend-backend integration, and database management and integration.
 
-Website: [www.princebansal.tech](https://www.princebansal.tech)
-
 PS: below links will give more in depth knowledge of mentioned concepts with examples (within this repo to easily navigate)
 
 - `nvm` commands | [nvm](https://github.com/princebansal7/JavaScript-Projects?tab=readme-ov-file#steps-to-install-nodejs-via-nvm) 
