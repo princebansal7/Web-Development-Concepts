@@ -58,7 +58,7 @@ function App() {
                     <Todo title={todo.title} description={todo.description} />
                 );
             })}
-            {/* Child will also re-render if parent re-renders unless it is using state
+            {/* Child will also re-render if parent re-renders regardless it is using state
              variables or not */}
 
             <DummyButton a={a} />
