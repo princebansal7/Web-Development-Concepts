@@ -8,8 +8,8 @@
     const c = 100;
     export default c;
   ```
-- While importing and destructuring name should be same, expect for the default exported value
-- Can give any name to Default exported value
+- While importing and destructuring name should be same, execpt for the default exported value
+- Can give any name to default exported value
 - In file `b.js` 
 
   ```js
@@ -24,7 +24,7 @@
     console.log(AnyNameForImportedC); // 100
   ```
 - TypeScript by default uses **ES6**  import export
-- In JavaScript, in `package.json` if want to use ES6 import/export add `"type": "module"`
+- In JavaScript, in `package.json` if you want to use ES6 import/export then add `"type": "module"`
   
   ```json
     {
