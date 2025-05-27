@@ -24,8 +24,7 @@
                  obj = {val:"69"}; // ERROR
     - very Helpful in code understanding as coder gets clear idea what can change and what can not in complex codes
 
-NOTE:
-/*
+Hoisting:
        Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their scope before code execution. 
        This allows the use of variables and functions before their actual declaration in the code. 
        Variable Hoisting:
@@ -33,7 +32,6 @@ NOTE:
        => If you try to access a var variable before its declaration, you will get undefined. 
        - Variables declared with 'let' and 'const' are also hoisted, but they are not initialized. 
        => Accessing them before their declaration will result in a "ReferenceError".
-*/
 
 */
 
