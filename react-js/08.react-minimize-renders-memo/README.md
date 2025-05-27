@@ -3,7 +3,7 @@
 - **way-2: using React.memo()**
   - It lets you skip re-rendering the component when it's props are unchanged
   - Using `React.memo()`, it will render only those components, whose props will update i.e, in below example only for title-1 (as others have static props)
-  - Note: When you return `<div></div>` memo will not re-render static props but if return `Fragment: <></>` memo will re-render everything because fragment is not any element on DOM, hence it takes all components as individual hence re-renders them, but when we return <div> it is a element on DOM hence,  it memoise this.
+  - Note: When you return `<div></div>` memo will not re-render static props but if return `Fragment: <></>` memo will re-render everything because fragment is not any element on DOM, hence it takes all components as individual hence re-renders them, but when we return `<div></div>` it is a element on DOM hence,  it memoise this.
     ```jsx
       import { useState, memo } from "react";
 
