@@ -8,7 +8,7 @@
     const c = 100;
     export default c;
   ```
-- While importing and destructuring name should be same, execpt for the default exported value
+- While importing and destructuring name should be same, except for the default exported value
 - Can give any name to default exported value
 - In file `b.js` 
 
