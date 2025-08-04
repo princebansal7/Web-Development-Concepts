@@ -43,6 +43,7 @@ PS: below links will give more in depth knowledge of mentioned concepts with exa
   
   - MongoDB Project (structured) | [without-auth](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/01-mongo-with-routes) | [with-auth](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/02-mongo-with-jwt-auth)
   - React ToDo App (frontend & Backend) | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/03-todo-app)
-  - Background update | [Link](https://github.com/princebansal7/Web-Development-Concepts/tree/main/projects/04-react-tailwind-bgchange#readme) | [Demo](https://www.youtube.com/watch?v=eo0Fj72lmsc)
+  - Counter with Background change | [counterbg.princebansal.tech](https://counterbg.princebansal.tech) | [Demo](https://www.youtube.com/watch?v=eo0Fj72lmsc)
   - Sorting Visualizer | [sorting.princebansal.tech](https://sorting.princebansal.tech/)
   - Guess My Number | [guessnum.princebansal.tech](https://guessnum.princebansal.tech/)
+  - Random password Generator | [passgen.princebansal.tech](https://passgen.princebansal.tech)
