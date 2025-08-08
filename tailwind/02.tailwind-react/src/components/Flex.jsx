@@ -30,73 +30,79 @@ export function Flex() {
         <>
             <div className="flex">
                 <div style={{ backgroundColor: "lightblue" }}>
-                    tailwind - flex - Child-1
+                    flex - Child-1 - tw
                 </div>
                 <div style={{ backgroundColor: "yellow" }}>
-                    tailwind - flex - Child-2
+                    flex - Child-2 - tw
                 </div>
                 <div style={{ backgroundColor: "lightgrey" }}>
-                    tailwind - flex - Child-3
+                    flex - Child-3 - tw
                 </div>
             </div>
             <hr />
 
             <div className="flex justify-start">
                 <div style={{ backgroundColor: "lightblue" }}>
-                    tailwind - flex - Child-1
+                    flex:justify-start - Child-1 - tw
                 </div>
                 <div style={{ backgroundColor: "yellow" }}>
-                    tailwind - flex - Child-2
+                    flex:justify-start - Child-2 - tw
                 </div>
                 <div style={{ backgroundColor: "lightgrey" }}>
-                    tailwind - flex - Child-3
+                    flex:justify-start - Child-3 - tw
                 </div>
             </div>
             <hr />
 
             <div className="flex justify-end">
                 <div style={{ backgroundColor: "lightblue" }}>
-                    tailwind - flex - Child-1
+                    flex:justify-end - Child-1 - tw
                 </div>
                 <div style={{ backgroundColor: "yellow" }}>
-                    tailwind - flex - Child-2
+                    flex:justify-end - Child-2 - tw
                 </div>
                 <div style={{ backgroundColor: "lightgrey" }}>
-                    tailwind - flex - Child-3
+                    flex:justify-end - Child-3 - tw
                 </div>
             </div>
             <hr />
 
             <div className="flex justify-center">
                 <div style={{ backgroundColor: "lightblue" }}>
-                    tailwind - flex - Child-1
+                    flex:justify-center - Child-1 - tw
                 </div>
                 <div style={{ backgroundColor: "yellow" }}>
-                    tailwind - flex - Child-2
+                    flex:justify-center - Child-2 - tw
                 </div>
                 <div style={{ backgroundColor: "lightgrey" }}>
-                    tailwind - flex - Child-3
+                    flex:justify-center - Child-3 - tw
                 </div>
             </div>
             <hr />
 
             <div className="flex justify-around">
                 <div style={{ backgroundColor: "red" }}>
-                    tailwind - flex - Child-1
+                    flex:justify-around - Child-1 - tw
                 </div>
                 <div style={{ backgroundColor: "yellow" }}>
-                    tailwind - flex - Child-2
+                    flex:justify-around - Child-2 - tw
                 </div>
                 <div style={{ backgroundColor: "green" }}>
-                    tailwind - flex - Child-3
+                    flex:justify-around - Child-3 - tw
                 </div>
             </div>
             <hr />
 
             <div className="flex justify-between">
-                <div className="bg-red-600">tailwind - flex - Child-1</div>
-                <div className="bg-yellow-400">tailwind - flex - Child-2</div>
-                <div className="bg-green-600">tailwind - flex - Child-3</div>
+                <div className="bg-red-600">
+                    flex:justify-between - Child-1 - tw
+                </div>
+                <div className="bg-yellow-400">
+                    flex:justify-between - Child-2 - tw
+                </div>
+                <div className="bg-green-600">
+                    flex:justify-between - Child-3 - tw
+                </div>
             </div>
             <hr />
         </>
